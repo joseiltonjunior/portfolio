@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { shade } from "polished";
 
 export const Container = styled.div`
   background-color: var(--gray-800);
@@ -24,8 +23,8 @@ export const Container = styled.div`
     width: calc(3rem + 12px);
     height: calc(3rem + 12px);
     border-radius: 8px;
-    border: 4px solid var(--gray-800);
-    outline: 2px solid var(--green-500);
+    border: 4px solid var(--gray-900);
+    outline: 2px solid var(--orange-600);
   }
 
   .profile strong {
@@ -49,9 +48,10 @@ export const Container = styled.div`
     gap: 1rem;
   }
   .footer a {
-    background-color: var(--green-500);
+    background-color: transparent;
+    border: 1px solid var(--orange-600);
     text-decoration: none;
-    color: var(--gray-100);
+    color: var(--orange-600);
 
     border-radius: 50%;
     padding: 0.5rem;
@@ -60,10 +60,11 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
-    transition: background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
 
     :hover {
-      background: ${shade(0.2, "#00875f")};
+      background: var(--orange-600);
+      color: var(--gray-100);
     }
   }
 `;

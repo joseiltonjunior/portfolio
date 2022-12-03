@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import { LinkedinLogo, GithubLogo } from "phosphor-react";
+import { LinkedinLogo, GithubLogo, InstagramLogo } from "phosphor-react";
 
 export function Sidebar() {
   return (
@@ -20,11 +20,29 @@ export function Sidebar() {
       </div>
 
       <div className="footer">
-        <a href="*" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/joseilton-junior/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Linkedln"
+        >
           <LinkedinLogo size={22} />
         </a>
-        <a href="*" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/joseiltonjunior"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Github"
+        >
           <GithubLogo size={22} />
+        </a>
+        <a
+          href="https://www.instagram.com/dvlp.jr/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Instagram"
+        >
+          <InstagramLogo size={22} />
         </a>
       </div>
     </Container>
