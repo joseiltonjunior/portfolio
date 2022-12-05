@@ -1,5 +1,6 @@
+import React from "react";
 import { Container } from "./styles";
-import { LinkedinLogo, GithubLogo, InstagramLogo } from "phosphor-react";
+import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 
 export function Sidebar() {
   return (
@@ -26,7 +27,7 @@ export function Sidebar() {
           rel="noopener noreferrer"
           title="Linkedln"
         >
-          <LinkedinLogo size={22} />
+          <FiLinkedin size={20} />
         </a>
         <a
           href="https://github.com/joseiltonjunior"
@@ -34,7 +35,7 @@ export function Sidebar() {
           rel="noopener noreferrer"
           title="Github"
         >
-          <GithubLogo size={22} />
+          <FiGithub size={20} />
         </a>
         <a
           href="https://www.instagram.com/dvlp.jr/"
@@ -42,7 +43,7 @@ export function Sidebar() {
           rel="noopener noreferrer"
           title="Instagram"
         >
-          <InstagramLogo size={22} />
+          <FiInstagram size={20} />
         </a>
       </div>
     </Container>
