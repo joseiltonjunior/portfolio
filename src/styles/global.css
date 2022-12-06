@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
+:root {
+  --white: #fff;
 
-  background-color: #222;
-  color: #fff;
-  font-family: Roboto, sans-serif;
-  font-size: 1rem;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+
+  --green-500: #00875f;
+
+  --orange-600: #ff8c00;
+
+  --purple-600: #993399;
+
+  --purple-900: #4b0082;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-900);
+  color: var(--gray-300);
   -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
