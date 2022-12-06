@@ -1,13 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { Container } from "./styles";
 
 export function Abbout() {
+  const { t } = useTranslation();
+
   return (
     <Container>
-      <p>
-        Software Developer, with more than 3 years of experience in Front-end
-        and Mobile projects, developed in React, React Native, JavaScript,
-        TypeScript and their respective ecosystems.
-      </p>
+      <p>{t("aboutTextPrimary")}</p>
     </Container>
   );
 }
