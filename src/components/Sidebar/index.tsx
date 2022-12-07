@@ -24,7 +24,7 @@ export function Sidebar() {
           alt="pic_profile"
         />
         <NameProfile>Junior Ferreira</NameProfile>
-        <InfoProfile>Front-end Developer</InfoProfile>
+        <InfoProfile>Software Developer</InfoProfile>
       </ContetProfile>
 
       <Footer>
