@@ -9,7 +9,7 @@ import {
   TitleActivities,
   ContentActivities,
   Line,
-} from "./styles";
+} from "./style";
 
 import experience from "./experience.json";
 

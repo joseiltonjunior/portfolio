@@ -1,7 +1,7 @@
 import { Section } from "../Section";
 import { Abbout } from "../../pages/Abbout";
 
-import { Container } from "./styles";
+import { Container } from "./style";
 import { Experience } from "../../pages/Experience";
 import { Education } from "../../pages/Education";
 
