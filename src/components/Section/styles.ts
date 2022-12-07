@@ -8,7 +8,14 @@ export const Container = styled.div`
 
 export const Header = styled.div`
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const ShowButton = styled.button`
+  background-color: transparent;
+  border: none;
+  color: var(--gray-300);
 `;
 
 export const Title = styled.p`

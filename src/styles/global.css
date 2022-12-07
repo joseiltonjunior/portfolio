@@ -30,6 +30,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--orange-600);
+}
+
 body,
 input,
 textarea,

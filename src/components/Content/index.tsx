@@ -10,7 +10,7 @@ export function Content() {
       <Section title="Abbout">
         <Abbout />
       </Section>
-      <Section title="Experience">
+      <Section title="Experience" show>
         <Experience />
       </Section>
     </Container>
