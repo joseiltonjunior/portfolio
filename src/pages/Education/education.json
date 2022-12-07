@@ -1,0 +1,14 @@
+[
+  {
+   "NOME_EMPRESA": "Unicesumar",
+   "CARGO": "Sistemas para Internet",
+   "ATIVIDADES":"Curso Tecnólogo",
+   "TEMPO":"Abril 2020 - Dezembro 2023"
+  },
+  {
+   "NOME_EMPRESA": "Rocketseat",
+   "CARGO": "Bootcamp GoStack",
+   "ATIVIDADES":"Curso intensivo aonde foi abordado e desenvolvido projetos em JavaScript, TypeScript, Node, React, React Native e seus respectivos ecossistemas.",
+   "TEMPO":"Fevereiro 2020 - Fevereiro 2021"
+  }
+]
