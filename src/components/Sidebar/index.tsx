@@ -7,7 +7,7 @@ import {
   InfoProfile,
   Footer,
   Link,
-} from "./styles";
+} from "./style";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 
 export function Sidebar() {

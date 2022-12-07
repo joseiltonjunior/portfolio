@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IconBaseProps } from "react-icons";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Container, Header, Content, Title, ShowButton } from "./styles";
+import { Container, Header, Content, Title, ShowButton } from "./style";
 
 interface SectionProps extends React.PropsWithChildren {
   icon?: React.ComponentType<IconBaseProps>;
