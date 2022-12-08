@@ -17,8 +17,9 @@ export const TextInfo = styled.p`
   color: var(--gray-400);
 `;
 
-export const Line = styled.hr`
+export const Line = styled.div`
   margin: 1rem 0;
+  border-bottom: 1px solid var(--orange-600);
 `;
 
 export const ContentActivities = styled.div`

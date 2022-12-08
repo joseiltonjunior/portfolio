@@ -21,7 +21,7 @@ export const ShowButton = styled.button`
 export const Title = styled.p`
   font-size: 1.15rem;
   font-weight: bold;
-  color: var(--orange-600);
+  color: var(--gray-100);
 `;
 
 export const Content = styled.div`

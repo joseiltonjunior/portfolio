@@ -22,7 +22,7 @@ export function Section({ title, show, children }: SectionProps) {
         <Title>{title}</Title>
         {show && (
           <ShowButton onClick={handleShowContent}>
-            {showContent ? <FaEye /> : <FaEyeSlash />}
+            {!showContent ? <FaEye /> : <FaEyeSlash />}
           </ShowButton>
         )}
       </Header>
