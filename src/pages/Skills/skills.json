@@ -1,0 +1,70 @@
+[
+  {
+    "name": "HTML",
+    "url": "https://developer.mozilla.org/pt-BR/docs/Web/html"
+  },
+  {
+    "name": "CSS e Pré Processadores CSS"
+  },
+  {
+    "name": "Styled-Components"
+  },
+  {
+    "name": "Javascript",
+    "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+  },
+  {
+    "name": "TypeScript"
+  },
+  {
+    "name": "Bootstrap",
+    "url": "http://getbootstrap.com"
+  },
+  {
+    "name": "ReactJS",
+    "url": "http://pt-br.reactjs.org"
+  },
+  {
+    "name": "React Native",
+    "url": "https://reactnative.dev"
+  },
+  {
+    "name": "Node.Js",
+    "url": "https://nodejs.org/en"
+  },
+  {
+    "name": "Amazon AWS"
+  },
+  {
+    "name": "Google Geolocation"
+  },
+  {
+    "name": "Internacionalização de Projetos"
+  },
+  {
+    "name": "Consumo API's"
+  },
+  {
+    "name": "Gerênciamento de pacotes (NPM, Yarn)"
+  },
+
+  {
+    "name": "Git Flow (Git, GitHub)"
+
+  },
+  {
+    "name": "Sistemas Operacionais (Linux, Windows)"
+
+  },
+  {
+    "name": "Testes Unitários e Automatizados"
+  },
+  {
+    "name": "Microsoft Azure",
+    "url": "https://azure.microsoft.com/pt-br/services/devops"
+  },
+  {
+    "name": "Metodologias Ágeis (Kanbam, Scrum)"
+
+  }
+]

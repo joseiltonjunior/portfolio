@@ -1,14 +1,15 @@
 import { Section } from "../Section";
-import { Abbout } from "../../pages/Abbout";
+import { Abbout } from "../../pages/About";
 
 import { Container } from "./style";
 import { Experience } from "../../pages/Experience";
 import { Education } from "../../pages/Education";
+import { Skills } from "../../pages/Skills";
 
 export function Content() {
   return (
     <Container>
-      <Section title="Abbout">
+      <Section title="About">
         <Abbout />
       </Section>
       <Section title="Experience" show>
@@ -16,6 +17,9 @@ export function Content() {
       </Section>
       <Section title="Education" show>
         <Education />
+      </Section>
+      <Section title="Skills" show>
+        <Skills />
       </Section>
     </Container>
   );
