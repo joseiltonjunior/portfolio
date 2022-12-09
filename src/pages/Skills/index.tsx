@@ -8,7 +8,17 @@ export function Skills() {
   return (
     <>
       {skills.map((item) => (
-        <Skill key={item.name}>{item.name}</Skill>
+        <div>
+          <Skill
+            key={item.name}
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={item.url && `Certificado: ${item.name}`}
+          >
+            {item.name}
+          </Skill>
+        </div>
       ))}
     </>
   );
