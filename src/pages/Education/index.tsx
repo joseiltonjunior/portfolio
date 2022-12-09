@@ -1,7 +1,6 @@
 import {
   ContentActivities,
   Container,
-  Line,
   TextActivities,
   TextInfo,
   Title,
@@ -9,6 +8,7 @@ import {
 
 import education from "./education.json";
 import { useTranslation } from "react-i18next";
+import { Line } from "../../styles/global";
 
 export function Education() {
   const { t } = useTranslation();

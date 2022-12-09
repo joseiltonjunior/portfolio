@@ -5,20 +5,23 @@ import { Container } from "./style";
 import { Experience } from "../../pages/Experience";
 import { Education } from "../../pages/Education";
 import { Skills } from "../../pages/Skills";
+import { useTranslation } from "react-i18next";
 
 export function Content() {
+  const { t } = useTranslation();
+
   return (
     <Container>
-      <Section title="About">
+      <Section title={t("aboutTitle")}>
         <Abbout />
       </Section>
-      <Section title="Experience" show>
+      <Section title={t("experienceTitle")} show>
         <Experience />
       </Section>
-      <Section title="Education" show>
+      <Section title={t("educationTitle")} show>
         <Education />
       </Section>
-      <Section title="Skills" show>
+      <Section title={t("skillsTitle")} show>
         <Skills />
       </Section>
     </Container>

@@ -1,36 +1,38 @@
 [
   {
     "name": "HTML",
-    "url": "https://developer.mozilla.org/pt-BR/docs/Web/html"
+    "url": "https://drive.google.com/file/d/1HuFL4FwyxHECn90yopuHdwRmKkTtSf04/view?usp=share_link"
   },
   {
-    "name": "CSS e Pré Processadores CSS"
+    "name": "CSS e Pré Processadores CSS",
+    "url": "https://drive.google.com/file/d/1-t88T1COzewEeQ73-34hSEDZGg433oP0/view?usp=share_link"
   },
   {
     "name": "Styled-Components"
   },
   {
     "name": "Javascript",
-    "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+    "url": "https://drive.google.com/file/d/1sNF9rzcxvsRXO2werQiGT2vJXC__knYX/view?usp=share_link"
   },
   {
-    "name": "TypeScript"
+    "name": "TypeScript",
+    "url": "https://drive.google.com/file/d/16Lu66jvEWL44e1oi5gFezpYRsLjKSyIE/view?usp=share_link"
   },
   {
     "name": "Bootstrap",
-    "url": "http://getbootstrap.com"
+    "url": "https://drive.google.com/file/d/1d69Dy-aID2OqZrcmStK31_iZKEQ5p33l/view?usp=share_link"
   },
   {
-    "name": "ReactJS",
-    "url": "http://pt-br.reactjs.org"
+    "name": "React",
+    "url": "https://drive.google.com/file/d/1OJy0MCkEzDMiF9BFPzC5vrbiKpoR5r7U/view?usp=share_link"
   },
   {
     "name": "React Native",
-    "url": "https://reactnative.dev"
+    "url": "https://drive.google.com/file/d/1l517Dbu7zRj_jPmF0VwvADV-P6xhxI5N/view?usp=share_link"
   },
   {
-    "name": "Node.Js",
-    "url": "https://nodejs.org/en"
+    "name": "Node",
+    "url": "https://drive.google.com/file/d/1jVrxqrFxpSlF1UmiptovaL9vOGmYYCWr/view?usp=share_link"
   },
   {
     "name": "Amazon AWS"
@@ -42,29 +44,27 @@
     "name": "Internacionalização de Projetos"
   },
   {
-    "name": "Consumo API's"
+    "name": "Consumo API's",
+    "url": "https://drive.google.com/file/d/1oDTEcKkQtZ2y8xE4xUy4UbnkBhL0F1-h/view?usp=share_link"
   },
   {
     "name": "Gerênciamento de pacotes (NPM, Yarn)"
   },
 
   {
-    "name": "Git Flow (Git, GitHub)"
-
+    "name": "Git Flow (Git, GitHub)",
+    "url": "https://drive.google.com/file/d/1p_358XJkQYyXiwKJ0aHkMB6apnWYOrZc/view?usp=share_link"
   },
   {
     "name": "Sistemas Operacionais (Linux, Windows)"
-
   },
   {
     "name": "Testes Unitários e Automatizados"
   },
   {
-    "name": "Microsoft Azure",
-    "url": "https://azure.microsoft.com/pt-br/services/devops"
+    "name": "Microsoft Azure"
   },
   {
     "name": "Metodologias Ágeis (Kanbam, Scrum)"
-
   }
 ]

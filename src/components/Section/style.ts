@@ -1,3 +1,4 @@
+import { shade } from "polished";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -15,7 +16,14 @@ export const Header = styled.div`
 export const ShowButton = styled.button`
   background-color: transparent;
   border: none;
-  color: var(--gray-300);
+  color: var(--gray-100);
+
+  transition: color, 0.2s;
+  cursor: pointer;
+
+  :hover {
+    color: var(--orange-600);
+  }
 `;
 
 export const Title = styled.p`

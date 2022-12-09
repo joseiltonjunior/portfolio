@@ -8,10 +8,10 @@ import {
   TextInfo,
   TitleActivities,
   ContentActivities,
-  Line,
 } from "./style";
 
 import experience from "./experience.json";
+import { Line } from "../../styles/global";
 
 export function Experience() {
   const { t } = useTranslation();
