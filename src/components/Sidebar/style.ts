@@ -6,10 +6,47 @@ export const Container = styled.div`
   overflow: hidden;
 `;
 
-export const Background = styled.img`
+export const Settings = styled(Container)`
+  min-height: 8rem;
+  padding: 1rem;
+  height: auto;
+`;
+
+export const ContentSettings = styled.div`
+  margin-top: 1rem;
+`;
+
+export const HeaderSettings = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--gray-100);
+  font-weight: bold;
+`;
+
+export const ButtonSetting = styled.button`
+  border: none;
+  background: transparent;
+  color: var(--gray-100);
+  cursor: pointer;
+  transition: color 0.2s;
+
+  :hover {
+    color: var(--orange-600);
+  }
+`;
+
+export const Background = styled.div`
   width: 100%;
   height: 72px;
-  object-fit: cover;
+
+  background-image: url("https://images.unsplash.com/photo-1533709752211-118fcaf03312?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+
+  padding: 0.5rem;
 `;
 
 export const ContetProfile = styled.div`

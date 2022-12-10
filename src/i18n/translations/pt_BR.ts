@@ -45,4 +45,11 @@ export const TRANSLATIONS_PT_BR = {
   activiesEducation2:
     "Curso intensivo aonde foi abordado e desenvolvido projetos em JavaScript, TypeScript, Node, React, React Native e seus respectivos ecossistemas.",
   timeEducation2: "Fevereiro 2020 - Maio 2021",
+
+  settings: "Configuração",
+  lang: "Idioma",
+  ingles: "Inglês US",
+  portugues: "Português BR",
+  closeSettings: "Fechar configuração",
+  openSettings: "Abrir configuração",
 };
