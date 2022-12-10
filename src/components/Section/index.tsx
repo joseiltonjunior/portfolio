@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { IconBaseProps } from "react-icons";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Container, Header, Content, Title, ShowButton } from "./style";
@@ -12,6 +13,8 @@ interface SectionProps extends React.PropsWithChildren {
 export function Section({ title, show, children }: SectionProps) {
   const [showContent, setShowContent] = useState(false);
 
+  const { t } = useTranslation();
+
   function handleShowContent() {
     setShowContent(!showContent);
   }
@@ -22,7 +25,11 @@ export function Section({ title, show, children }: SectionProps) {
         <Title>{title}</Title>
         {show && (
           <ShowButton onClick={handleShowContent}>
-            {!showContent ? <FaEye /> : <FaEyeSlash />}
+            {!showContent ? (
+              <FaEye title={t("showContent") ?? ""} />
+            ) : (
+              <FaEyeSlash title={t("hideContent") ?? ""} />
+            )}
           </ShowButton>
         )}
       </Header>

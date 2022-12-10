@@ -20,8 +20,9 @@ export const HeaderSettings = styled.div`
   display: flex;
   justify-content: space-between;
 
-  color: var(--gray-100);
+  font-size: 1.15rem;
   font-weight: bold;
+  color: var(--gray-100);
 `;
 
 export const ButtonSetting = styled.button`

@@ -1,8 +1,7 @@
-import { shade } from "polished";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: var(--gray-800);
+  background: ${(props) => props.theme.background};
   border-radius: 8px;
   padding: 2rem;
 `;
