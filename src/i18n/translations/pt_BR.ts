@@ -52,4 +52,6 @@ export const TRANSLATIONS_PT_BR = {
   portugues: "Português BR",
   closeSettings: "Fechar configuração",
   openSettings: "Abrir configuração",
+  showContent: "Mostrar conteúdo",
+  hideContent: "Ocultar conteúdo",
 };

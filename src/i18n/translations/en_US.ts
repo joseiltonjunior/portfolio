@@ -51,4 +51,6 @@ export const TRANSLATIONS_EN_US = {
   portugues: "Portuguese BR",
   closeSettings: "Close settings",
   openSettings: "Open settings",
+  showContent: "Show content",
+  hideContent: "Hide content",
 };
