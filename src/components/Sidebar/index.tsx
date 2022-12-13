@@ -31,7 +31,7 @@ export function Sidebar() {
   const [settings, setSettings] = useState(false);
   const [lang, setLang] = useState(localStorage.getItem("i18nextLng") ?? "");
 
-  const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
+  const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", dark);
 
   const { t } = useTranslation();
 
