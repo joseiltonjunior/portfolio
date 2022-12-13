@@ -2,8 +2,6 @@
 
 <h3 align="center">In progress</h3>
 
-<h1 align="left">First Mobile built with React, Typescript, Styled-Components, Themes, Languages and much more.</h1>
-
 ```sh
 First Mobile built with React;
 Typescript;
