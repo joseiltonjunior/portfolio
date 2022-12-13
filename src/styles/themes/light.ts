@@ -1,6 +1,11 @@
 export default {
   title: "light",
 
-  background: "#c4c4cc",
-  color: "#121214",
+  background: "#fff",
+  color: "#202024",
+  section: "#e1e1e6",
+  showButton: "#121214",
+  select: "#fff",
+  lineSidebar: "#c4c4cc",
+  colorLinkSidebar: "#fff",
 };

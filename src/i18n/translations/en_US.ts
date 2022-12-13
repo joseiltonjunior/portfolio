@@ -53,4 +53,5 @@ export const TRANSLATIONS_EN_US = {
   openSettings: "Open settings",
   showContent: "Show content",
   hideContent: "Hide content",
+  theme: "Theme",
 };

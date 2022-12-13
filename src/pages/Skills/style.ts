@@ -7,7 +7,7 @@ export const Skill = styled.a`
   transition: color 0.1s;
 
   text-decoration: none;
-  color: var(--gray-300);
+  color: ${(props) => props.theme.color};
 
   :hover {
     color: var(--orange-600);

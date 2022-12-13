@@ -54,4 +54,5 @@ export const TRANSLATIONS_PT_BR = {
   openSettings: "Abrir configuração",
   showContent: "Mostrar conteúdo",
   hideContent: "Ocultar conteúdo",
+  theme: "Tema",
 };
