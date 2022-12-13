@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: var(--gray-800);
+  background: ${(props) => props.theme.section};
   border-radius: 8px;
   overflow: hidden;
 `;
@@ -14,6 +14,9 @@ export const Settings = styled(Container)`
 
 export const ContentSettings = styled.div`
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `;
 
 export const HeaderSettings = styled.div`
@@ -22,19 +25,23 @@ export const HeaderSettings = styled.div`
 
   font-size: 1.15rem;
   font-weight: bold;
-  color: var(--gray-100);
+  color: ${(props) => props.theme.color};
 `;
 
 export const ButtonSetting = styled.button`
   border: none;
   background: transparent;
-  color: var(--gray-100);
+  color: var(--white);
   cursor: pointer;
   transition: color 0.2s;
-
+  line-height: 0;
   :hover {
     color: var(--orange-600);
   }
+`;
+
+export const ButtonCloseSettings = styled(ButtonSetting)`
+  color: ${(props) => props.theme.color};
 `;
 
 export const Background = styled.div`
@@ -62,13 +69,12 @@ export const PicProfile = styled.img`
   width: calc(3rem + 12px);
   height: calc(3rem + 12px);
   border-radius: 8px;
-  border: 4px solid var(--gray-900);
+  border: 4px solid ${(props) => props.theme.background};
   outline: 2px solid var(--orange-600);
 `;
 
 export const NameProfile = styled.p`
   margin-top: 1rem;
-  color: var(--gray-100);
   line-height: 1.6;
   font-weight: bold;
 `;
@@ -79,7 +85,7 @@ export const InfoProfile = styled.div`
 `;
 
 export const Footer = styled.div`
-  border-top: 1px solid var(--gray-600);
+  border-top: 1px solid ${(props) => props.theme.lineSidebar};
   margin-top: 1.5rem;
   padding: 1.5rem 0;
   display: flex;
@@ -89,7 +95,7 @@ export const Footer = styled.div`
 
 export const Link = styled.a`
   background: var(--orange-600);
-  color: var(--gray-600);
+  color: ${(props) => props.theme.colorLinkSidebar};
 
   border-radius: 50%;
   padding: 0.5rem;

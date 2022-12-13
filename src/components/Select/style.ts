@@ -24,7 +24,7 @@ export const Container = styled.div<ContainerProps>`
 `;
 
 export const DropdownSelection = styled.button<DropdownSelectionProps>`
-  background-color: var(--gray-100);
+  background-color: ${(props) => props.theme.select};
   height: 100%;
   border-radius: 8px;
   padding: 0.4rem 1rem;
@@ -40,8 +40,8 @@ export const DropdownSelection = styled.button<DropdownSelectionProps>`
     border: 2px solid var(--gray-900);
     right: 16px;
     top: 15px;
-    border-top: 1px solid var(--gray-100);
-    border-right: 1px solid var(--gray-100);
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
     transform: rotate(-45deg);
     transition: all 0.2s;
   }
@@ -90,7 +90,7 @@ export const DropdownItemName = styled.div<DropdownItemNameProps>`
     props.isSelected &&
     css`
       background: var(--gray-900);
-      color: var(--gray-100);
+      color: var(--white);
       border-radius: 6px;
       width: fit-content;
       font-weight: 600;
@@ -98,7 +98,7 @@ export const DropdownItemName = styled.div<DropdownItemNameProps>`
 `;
 
 export const DropdownContainer = styled.div`
-  background-color: var(--gray-100);
+  background-color: ${(props) => props.theme.select};
   border-radius: 8px;
   margin-top: 1rem;
   padding: 0.6rem;

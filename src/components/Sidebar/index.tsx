@@ -11,6 +11,7 @@ import {
   ButtonSetting,
   HeaderSettings,
   ContentSettings,
+  ButtonCloseSettings,
 } from "./style";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import { FaCog } from "react-icons/fa";
@@ -20,16 +21,29 @@ import i18next from "i18next";
 import { Select } from "../Select";
 
 import { useTranslation } from "react-i18next";
+import { usePersistedState } from "../../hooks/usePersistedState";
+import { DefaultTheme } from "styled-components";
+
+import light from "../../styles/themes/light";
+import dark from "../../styles/themes/dark";
 
 export function Sidebar() {
   const [settings, setSettings] = useState(false);
   const [lang, setLang] = useState(localStorage.getItem("i18nextLng") ?? "");
+
+  const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
 
   const { t } = useTranslation();
 
   function handleChangeLanguage(newLang: string) {
     setLang(newLang);
     i18next.changeLanguage(newLang);
+  }
+
+  function handleChangeTheme(theme: string) {
+    setTheme(theme === "light" ? light : dark);
+
+    window.location.reload();
   }
 
   return (
@@ -85,12 +99,12 @@ export function Sidebar() {
         <Settings>
           <HeaderSettings>
             {t("settings")}
-            <ButtonSetting
+            <ButtonCloseSettings
               onClick={() => setSettings(false)}
               title={t("closeSettings") ?? ""}
             >
               <ImExit />
-            </ButtonSetting>
+            </ButtonCloseSettings>
           </HeaderSettings>
           <ContentSettings>
             <Select
@@ -100,6 +114,15 @@ export function Sidebar() {
               itens={[
                 { name: t("portugues"), value: "pt_BR" },
                 { name: t("ingles"), value: "en_US" },
+              ]}
+            />
+            <Select
+              label={t("theme")}
+              onAction={(item) => handleChangeTheme(item.value)}
+              defaultValue={theme.title}
+              itens={[
+                { name: "Light", value: "light" },
+                { name: "Dark", value: "dark" },
               ]}
             />
           </ContentSettings>
