@@ -21,11 +21,11 @@ import i18next from "i18next";
 import { Select } from "../Select";
 
 import { useTranslation } from "react-i18next";
-import { usePersistedState } from "../../hooks/usePersistedState";
+import { usePersistedState } from "~/hooks/usePersistedState";
 import { DefaultTheme } from "styled-components";
 
-import light from "../../styles/themes/light";
-import dark from "../../styles/themes/dark";
+import light from "~/styles/themes/light";
+import dark from "~/styles/themes/dark";
 
 export function Sidebar() {
   const [settings, setSettings] = useState(false);
