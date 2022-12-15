@@ -1,5 +1,3 @@
-import React from "react";
-
 import { useTranslation } from "react-i18next";
 import {
   Container,
@@ -11,7 +9,7 @@ import {
 } from "./style";
 
 import experience from "./experience.json";
-import { Line } from "../../styles/global";
+import { Line } from "~/styles/global";
 
 export function Experience() {
   const { t } = useTranslation();

@@ -1,10 +1,10 @@
 import { Section } from "../Section";
-import { Abbout } from "../../pages/About";
+import { Abbout } from "~/pages/About";
 
 import { Container } from "./style";
-import { Experience } from "../../pages/Experience";
-import { Education } from "../../pages/Education";
-import { Skills } from "../../pages/Skills";
+import { Experience } from "~/pages/Experience";
+import { Education } from "~/pages/Education";
+import { Skills } from "~/pages/Skills";
 import { useTranslation } from "react-i18next";
 
 export function Content() {

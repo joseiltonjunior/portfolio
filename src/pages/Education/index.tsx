@@ -8,7 +8,7 @@ import {
 
 import education from "./education.json";
 import { useTranslation } from "react-i18next";
-import { Line } from "../../styles/global";
+import { Line } from "~/styles/global";
 
 export function Education() {
   const { t } = useTranslation();
