@@ -2,14 +2,6 @@
 
 <h3 align="center">In progress</h3>
 
-```sh
-First Mobile built with React;
-Typescript;
-Styled-Components;
-Internationalization; e
-much more.
-```
-
 <p align="center">
   <img src="https://i.ibb.co/9pfJm0t/portfolio.png" alt="portfolio" border="0">
 
