@@ -21,3 +21,4 @@ $ open your browser at localhost:3000
 ## Credits
 
 - @dvlp.jr
+- @dvlp.code
