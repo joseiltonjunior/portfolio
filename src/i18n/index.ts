@@ -17,5 +17,6 @@ i18n
         translation: TRANSLATIONS_PT_BR,
       },
     },
-    lng: "en_US",
+
+    // lng: "en_US",
   });
