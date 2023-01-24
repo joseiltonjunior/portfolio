@@ -16,7 +16,7 @@ import {
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import { FaCog } from "react-icons/fa";
 import { ImExit } from "react-icons/im";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import i18next from "i18next";
 import { Select } from "../Select";
 
@@ -65,7 +65,7 @@ export function Sidebar() {
               alt="pic_profile"
             />
             <NameProfile>Junior Ferreira</NameProfile>
-            <InfoProfile>Software Developer</InfoProfile>
+            <InfoProfile>Desenvolvedor de Software</InfoProfile>
           </ContetProfile>
 
           <Footer>

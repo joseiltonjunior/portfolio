@@ -2,7 +2,7 @@ export const TRANSLATIONS_PT_BR = {
   experienceTitle: "Experiências",
   aboutTitle: "Sobre",
   aboutTextPrimary:
-    "Desenvolvedor de Software, com 3 anos de experiência em projetos Front-end e Mobile, desenvolvidos em React, React Native, JavaScript, TypeScript e seus respectivos ecossistemas.",
+    "Desenvolvedor de Software, com experiência em projetos Back-end, Front-end e Mobile. Desenvolvidos com Node, React e React Native. Javascript, Typescript e seus respectivos ecossistemas.",
   educationTitle: "Educação",
   skillsTitle: "Habilidades",
 
@@ -41,9 +41,9 @@ export const TRANSLATIONS_PT_BR = {
   timeEducation1: "Abril 2020 - Dezembro 2023",
 
   courseEducation2: "Rocketseat",
-  descriptionEducation2: "Bootcamp GoStack",
+  descriptionEducation2: "Bootcamp FullStack",
   activiesEducation2:
-    "Curso intensivo aonde foi abordado e desenvolvido projetos em JavaScript, TypeScript, Node, React, React Native e seus respectivos ecossistemas.",
+    "Curso intensivo aonde foi abordado, projetado e desenvolvido projetos em Javascript, Typescript, Node, React, React Native e seus respectivos ecossistemas.",
   timeEducation2: "Fevereiro 2020 - Maio 2021",
 
   settings: "Configuração",
@@ -55,4 +55,6 @@ export const TRANSLATIONS_PT_BR = {
   showContent: "Mostrar conteúdo",
   hideContent: "Ocultar conteúdo",
   theme: "Tema",
+
+  projects: "Projetos",
 };
