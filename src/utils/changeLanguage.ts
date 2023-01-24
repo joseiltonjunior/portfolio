@@ -4,7 +4,7 @@ export function handleChangeLanguage() {
   const lang = localStorage.getItem("i18nextLng");
 
   if (lang && lang === "pt-PT") {
-    i18next.changeLanguage("en_US");
+    i18next.changeLanguage("pt_BR");
     window.location.reload();
   }
 }
