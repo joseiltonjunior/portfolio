@@ -56,4 +56,5 @@ export const TRANSLATIONS_EN_US = {
   theme: "Theme",
 
   projects: "Projects",
+  softwareDeveloper: "Software Developer",
 };
