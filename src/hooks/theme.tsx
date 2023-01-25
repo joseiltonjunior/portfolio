@@ -1,6 +1,6 @@
-import { usePersistedState } from "./usePersistedState";
-
 import { DefaultTheme, ThemeProvider } from "styled-components";
+
+import { usePersistedState } from "./usePersistedState";
 
 import dark from "../styles/themes/dark";
 

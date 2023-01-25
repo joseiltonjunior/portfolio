@@ -8,19 +8,25 @@ import { Projects } from "~/pages/Projects";
 import { useCallback, useEffect, useState } from "react";
 import { IRepositories } from "~/types/repositories";
 import apiGitHub from "~/services/apiGithub";
+import { useModal } from "~/hooks/useModal";
 
 export function Content() {
   const [repos, setRepos] = useState<IRepositories[]>();
+  const { openModal, closeModal } = useModal();
+
+  const errModal = (message: string) =>
+    openModal({
+      message,
+      confirm: () => closeModal(),
+      type: "info",
+    });
 
   const { t } = useTranslation();
 
   const handleReposGitHub = useCallback(() => {
-    apiGitHub
-      .get("/users/joseiltonjunior/repos")
-      .then((result) => {
-        setRepos(result.data);
-      })
-      .catch((error: Error) => console.log(error));
+    apiGitHub.get("/users/joseiltonjunior/repos").then((result) => {
+      setRepos(result.data);
+    });
   }, []);
 
   useEffect(() => {
@@ -35,9 +41,11 @@ export function Content() {
       <Section title={t("skillsTitle")} show>
         <Skills />
       </Section>
-      <Section title={t("projects")} show>
-        <Projects data={repos} />
-      </Section>
+      {repos && (
+        <Section title={t("projects")} show>
+          <Projects data={repos} />
+        </Section>
+      )}
     </Container>
   );
 }

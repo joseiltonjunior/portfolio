@@ -57,4 +57,5 @@ export const TRANSLATIONS_PT_BR = {
   theme: "Tema",
 
   projects: "Projetos",
+  softwareDeveloper: "Desenvolvedor de Software",
 };

@@ -65,7 +65,7 @@ export function Sidebar() {
               alt="pic_profile"
             />
             <NameProfile>Junior Ferreira</NameProfile>
-            <InfoProfile>Desenvolvedor de Software</InfoProfile>
+            <InfoProfile>{t("softwareDeveloper")}</InfoProfile>
           </ContetProfile>
 
           <Footer>
