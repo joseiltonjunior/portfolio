@@ -20,9 +20,9 @@ export const Card = styled.button`
   flex-direction: column;
   gap: 0.5rem;
 
-  flex: 1;
   transition: all 0.2s;
-  :hover{
+
+  :hover {
     border: 1px solid var(--orange-600);
   }
 `;
