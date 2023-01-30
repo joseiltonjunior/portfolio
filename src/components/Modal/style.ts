@@ -4,14 +4,10 @@ interface ContainerProps {
   isVisible: boolean;
 }
 
-interface ButtonProps {
-  type: "danger" | "success";
-}
-
 export const Container = styled.div<ContainerProps>`
-  position: absolute;
+  position: fixed;
 
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
   display: ${(props) => (props.isVisible ? "flex" : "none")};
   width: 100vw;
   height: 100vh;
@@ -25,7 +21,7 @@ export const Content = styled.div`
   padding: 1rem;
   border-radius: 6px;
 
-  max-width: 500px;
+  max-width: 800px;
 `;
 
 export const Description = styled.div`

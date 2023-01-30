@@ -10,7 +10,7 @@ import {
   Title,
   StarContent,
   Info,
-} from "./styles";
+} from "./style";
 
 interface IProjects {
   data?: IRepositories[];
@@ -20,7 +20,11 @@ export function Projects({ data }: IProjects) {
   const [repos, setRepos] = useState<IRepositories[]>();
 
   const filterRepos = useCallback((repos: IRepositories[]) => {
-    const filter = repos.filter((item) => item.name !== "portfolio-deprecated" && item.name !== 'SwitchThemesReactTS');
+    const filter = repos.filter(
+      (item) =>
+        item.name !== "portfolio-deprecated" &&
+        item.name !== "SwitchThemesReactTS"
+    );
 
     setRepos(filter);
   }, []);

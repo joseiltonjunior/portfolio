@@ -9,17 +9,10 @@ import { useCallback, useEffect, useState } from "react";
 import { IRepositories } from "~/types/repositories";
 import apiGitHub from "~/services/apiGithub";
 import { useModal } from "~/hooks/useModal";
+import { LiveCode } from "~/pages/LiveCode";
 
 export function Content() {
   const [repos, setRepos] = useState<IRepositories[]>();
-  const { openModal, closeModal } = useModal();
-
-  const errModal = (message: string) =>
-    openModal({
-      message,
-      confirm: () => closeModal(),
-      type: "info",
-    });
 
   const { t } = useTranslation();
 
@@ -46,6 +39,9 @@ export function Content() {
           <Projects data={repos} />
         </Section>
       )}
+      <Section title="Live Code" show>
+        <LiveCode />
+      </Section>
     </Container>
   );
 }

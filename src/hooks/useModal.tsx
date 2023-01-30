@@ -1,9 +1,16 @@
-import { createContext, useContext, useState } from "react";
+import {
+  createContext,
+  ReactComponentElement,
+  ReactNode,
+  useContext,
+  useState,
+} from "react";
 
 interface ModalInfoProps {
   message?: string;
   confirm?: () => void;
   type?: "info" | "confirm";
+  children?: ReactNode;
 }
 
 interface ModalStateProps extends ModalInfoProps {
@@ -23,9 +30,15 @@ export function ModalProvider({ children }: React.PropsWithChildren) {
     visible: false,
   });
 
-  const openModal = (payload: ModalStateProps) =>
+  const openModal = (payload: ModalStateProps) => {
     setState({ ...payload, visible: true });
-  const closeModal = () => setState({ visible: false });
+    window.document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    setState({ visible: false });
+    window.document.body.style.overflow = "scroll";
+  };
 
   return (
     <ModalContext.Provider value={{ modalState, closeModal, openModal }}>
