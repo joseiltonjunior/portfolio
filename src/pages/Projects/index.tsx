@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { FaRegStar } from "react-icons/fa";
-import apiGitHub from "~/services/apiGithub";
+
 import { IRepositories } from "~/types/repositories";
 import {
   Card,
@@ -20,12 +20,9 @@ export function Projects({ data }: IProjects) {
   const [repos, setRepos] = useState<IRepositories[]>();
 
   const filterRepos = useCallback((repos: IRepositories[]) => {
-    const portfolio = repos.filter((item) => item.name === "portfolio");
-    const portfolioBackend = repos.filter(
-      (item) => item.name === "portfolio-backend"
-    );
+    const filter = repos.filter((item) => item.name !== "portfolio-deprecated" && item.name !== 'SwitchThemesReactTS');
 
-    setRepos([...portfolio, ...portfolioBackend]);
+    setRepos(filter);
   }, []);
 
   useEffect(() => {

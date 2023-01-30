@@ -15,12 +15,16 @@ export const Card = styled.button`
   border: 1px solid var(--gray-600);
   border-radius: 6px;
   padding: 1rem 0.75rem;
-
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 
   flex: 1;
+  transition: all 0.2s;
+  :hover{
+    border: 1px solid var(--orange-600);
+  }
 `;
 
 export const Title = styled.p`
