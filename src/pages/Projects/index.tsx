@@ -39,6 +39,7 @@ export function Projects({ data }: IProjects) {
         repos.map((repo) => (
           <Card
             key={repo.id}
+            title={`Abrir o projeto ${repo.name} no Github`}
             onClick={() => {
               window.open(repo.html_url, "_blank");
             }}

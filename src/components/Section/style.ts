@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: ${(props) => props.theme.section};
+  background: var(--gray-800);
 
   border-radius: 8px;
   padding: 2rem;
@@ -16,7 +16,7 @@ export const Header = styled.div`
 export const ShowButton = styled.button`
   background-color: transparent;
   border: none;
-  color: ${(props) => props.theme.showButton};
+  color: var(--gray-100);
   line-height: 0;
   transition: color, 0.2s;
   cursor: pointer;
@@ -29,7 +29,7 @@ export const ShowButton = styled.button`
 export const Title = styled.p`
   font-size: 1.15rem;
   font-weight: bold;
-  color: ${(props) => props.theme.showButton};
+  color: var(--gray-100);
 `;
 
 export const Content = styled.div`

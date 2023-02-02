@@ -57,4 +57,6 @@ export const TRANSLATIONS_EN_US = {
 
   projects: "Projects",
   softwareDeveloper: "Software Developer",
+  video: "Videos",
+  noContent: "New content coming soon.",
 };

@@ -1,47 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: ${(props) => props.theme.section};
+  background: var(--gray-800);
   border-radius: 8px;
   overflow: hidden;
-`;
-
-export const Settings = styled(Container)`
-  min-height: 8rem;
-  padding: 1rem;
-  height: auto;
-`;
-
-export const ContentSettings = styled.div`
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
-
-export const HeaderSettings = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-  font-size: 1.15rem;
-  font-weight: bold;
-  color: ${(props) => props.theme.color};
-`;
-
-export const ButtonSetting = styled.button`
-  border: none;
-  background: transparent;
-  color: var(--white);
-  cursor: pointer;
-  transition: color 0.2s;
-  line-height: 0;
-  :hover {
-    color: var(--orange-600);
-  }
-`;
-
-export const ButtonCloseSettings = styled(ButtonSetting)`
-  color: ${(props) => props.theme.color};
 `;
 
 export const Background = styled.div`
@@ -69,7 +31,7 @@ export const PicProfile = styled.img`
   width: calc(3rem + 12px);
   height: calc(3rem + 12px);
   border-radius: 8px;
-  border: 4px solid ${(props) => props.theme.background};
+  border: 4px solid var(--gray-900);
   outline: 2px solid var(--orange-600);
 `;
 
@@ -85,7 +47,7 @@ export const InfoProfile = styled.div`
 `;
 
 export const Footer = styled.div`
-  border-top: 1px solid ${(props) => props.theme.lineSidebar};
+  border-top: 1px solid var(--gray-600);
   margin-top: 1.5rem;
   padding: 1.5rem 0;
   display: flex;
@@ -95,7 +57,7 @@ export const Footer = styled.div`
 
 export const Link = styled.a`
   background: var(--orange-600);
-  color: ${(props) => props.theme.colorLinkSidebar};
+  color: var(--gray-600);
 
   border-radius: 50%;
   padding: 0.5rem;

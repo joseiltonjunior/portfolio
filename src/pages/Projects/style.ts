@@ -31,16 +31,17 @@ export const Title = styled.p`
   font-weight: 600;
   color: var(--orange-600);
   font-size: 1rem;
+  text-align: left;
 `;
 
 export const Description = styled.p`
-  color: ${(props) => props.theme.color};
+  color: var(--gray-300);
   font-size: 0.9rem;
   text-align: left;
 `;
 
 export const Info = styled.p`
-  color: ${(props) => props.theme.color};
+  color: var(--gray-300);
   font-size: 0.75rem;
 `;
 

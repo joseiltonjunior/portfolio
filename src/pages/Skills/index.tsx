@@ -1,13 +1,12 @@
 import skills from "./skills.json";
-import { Skill } from "./style";
+import { Container, Skill } from "./style";
 
 export function Skills() {
   return (
     <>
       {skills.map((item) => (
-        <div>
+        <Container key={item.name}>
           <Skill
-            key={item.name}
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
@@ -15,7 +14,7 @@ export function Skills() {
           >
             {item.name}
           </Skill>
-        </div>
+        </Container>
       ))}
     </>
   );
