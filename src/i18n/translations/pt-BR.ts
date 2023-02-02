@@ -58,4 +58,6 @@ export const TRANSLATIONS_PT_BR = {
 
   projects: "Projetos",
   softwareDeveloper: "Desenvolvedor de Software",
+  video: "Vídeos",
+  noContent: "Em breve novos conteúdos.",
 };

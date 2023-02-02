@@ -9,7 +9,7 @@ import { useCallback, useEffect, useState } from "react";
 import { IRepositories } from "~/types/repositories";
 import apiGitHub from "~/services/apiGithub";
 import { useModal } from "~/hooks/useModal";
-import { LiveCode } from "~/pages/LiveCode";
+import { Videos } from "~/pages/Videos";
 
 export function Content() {
   const [repos, setRepos] = useState<IRepositories[]>();
@@ -39,8 +39,8 @@ export function Content() {
           <Projects data={repos} />
         </Section>
       )}
-      <Section title="Live Code" show>
-        <LiveCode />
+      <Section title={t("video")} show>
+        <Videos />
       </Section>
     </Container>
   );

@@ -6,6 +6,10 @@ interface CardProps {
 
 export const Container = styled.div``;
 
+export const Video = styled.iframe`
+  border: none;
+`;
+
 export const Title = styled.p`
   font-weight: 600;
   color: var(--orange-600);
@@ -13,7 +17,6 @@ export const Title = styled.p`
 `;
 
 export const Description = styled.p`
-  color: ${(props) => props.theme.color};
   font-size: 0.9rem;
   text-align: left;
 `;

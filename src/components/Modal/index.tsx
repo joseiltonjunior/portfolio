@@ -1,8 +1,10 @@
+import { useCallback, useEffect, useState } from "react";
 import { useModal } from "~/hooks/useModal";
 
 import {
   Container,
-  Content,
+  Overlay,
+  BoxModal,
   Description,
   ButtonClose,
   ButtonConfirm,
@@ -12,17 +14,18 @@ import {
 export function Modal() {
   const {
     closeModal,
-    modalState: { visible, message, confirm, type = "info", children },
+    modalState: { visible, message, confirm, type, children },
   } = useModal();
 
   return (
     <Container isVisible={visible}>
-      <Content>
+      <Overlay isVisible={visible} onClick={() => closeModal()} />
+      <BoxModal>
         {children}
 
         <Description>{message}</Description>
 
-        {type === "info" ? (
+        {!type ? (
           <ButtonConfirm onClick={confirm}>Fechar</ButtonConfirm>
         ) : (
           <RowContent>
@@ -30,7 +33,7 @@ export function Modal() {
             <ButtonConfirm onClick={confirm}>Confirmar</ButtonConfirm>
           </RowContent>
         )}
-      </Content>
+      </BoxModal>
     </Container>
   );
 }

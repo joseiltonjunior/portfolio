@@ -33,8 +33,8 @@ export default createGlobalStyle`
 }
 
 body {
-  background: ${(props) => props.theme.background};
-  color: ${(props) => props.theme.color};
+  background: var(--gray-900);
+  color: var(--gray-300);
   -webkit-font-smoothing: antialiased;
 }
 

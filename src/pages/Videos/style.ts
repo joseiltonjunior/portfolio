@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ReactPlayer from "react-player/youtube";
 
 export const MobileView = styled.div`
   display: none;
@@ -25,4 +24,6 @@ export const Container = styled.div`
   }
 `;
 
-export const ContentCard = styled.div``;
+export const NoContent = styled.p`
+  color: var(--orange-600);
+`;

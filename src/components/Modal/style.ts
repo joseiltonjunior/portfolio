@@ -6,17 +6,23 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   position: fixed;
-
-  background-color: rgba(0, 0, 0, 0.8);
-  display: ${(props) => (props.isVisible ? "flex" : "none")};
   width: 100vw;
   height: 100vh;
 
+  display: ${(props) => (props.isVisible ? "flex" : "none")};
   align-items: center;
   justify-content: center;
 `;
 
-export const Content = styled.div`
+export const Overlay = styled.div<ContainerProps>`
+  background-color: rgba(0, 0, 0, 0.8);
+  display: ${(props) => (props.isVisible ? "block" : "none")};
+  width: 100%;
+  height: 100%;
+`;
+
+export const BoxModal = styled.div`
+  position: absolute;
   background-color: var(--gray-600);
   padding: 1rem;
   border-radius: 6px;

@@ -24,13 +24,14 @@ export const Container = styled.div<ContainerProps>`
 `;
 
 export const DropdownSelection = styled.button<DropdownSelectionProps>`
-  background-color: ${(props) => props.theme.select};
-  height: 100%;
+  background-color: var(--gray-100);
+  height: auto;
   border-radius: 8px;
   padding: 0.4rem 1rem;
   width: 100%;
   cursor: pointer;
   border: none;
+  box-shadow: none;
 
   ::before {
     content: "";
@@ -98,7 +99,7 @@ export const DropdownItemName = styled.div<DropdownItemNameProps>`
 `;
 
 export const DropdownContainer = styled.div`
-  background-color: ${(props) => props.theme.select};
+  background-color: var(--gray-100);
   border-radius: 8px;
   margin-top: 1rem;
   padding: 0.6rem;
