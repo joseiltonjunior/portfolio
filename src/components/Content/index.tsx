@@ -8,7 +8,7 @@ import { Projects } from "~/pages/Projects";
 import { useCallback, useEffect, useState } from "react";
 import { IRepositories } from "~/types/repositories";
 import apiGitHub from "~/services/apiGithub";
-import { useModal } from "~/hooks/useModal";
+
 import { Videos } from "~/pages/Videos";
 
 export function Content() {
@@ -28,7 +28,7 @@ export function Content() {
 
   return (
     <Container>
-      <Section title={t("aboutTitle")}>
+      <Section title={t("aboutTitle")} show>
         <Abbout />
       </Section>
       <Section title={t("skillsTitle")} show>

@@ -2,7 +2,7 @@ export const TRANSLATIONS_PT_BR = {
   experienceTitle: "Experiências",
   aboutTitle: "Sobre",
   aboutTextPrimary:
-    "Desenvolvedor de Software, com experiência em projetos Back-end, Front-end e Mobile. Desenvolvidos com Node, React e React Native. Javascript, Typescript e seus respectivos ecossistemas.",
+    "Desenvolvedor de Software com experiência em projetos Back-end, Front-end e Mobile. Desenvolvidos com Node, React e React Native. Javascript, Typescript e seus respectivos ecossistemas.",
   educationTitle: "Educação",
   skillsTitle: "Habilidades",
 

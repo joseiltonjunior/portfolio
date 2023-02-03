@@ -19,11 +19,14 @@ export function Modal() {
 
   return (
     <Container isVisible={visible}>
-      <Overlay isVisible={visible} onClick={() => closeModal()} />
+      <Overlay onClick={() => closeModal()} />
       <BoxModal>
         {children}
-
-        <Description>{message}</Description>
+        <Description>
+          {message?.map((item, index) => (
+            <p key={index}>{item.message}</p>
+          ))}
+        </Description>
 
         {!type ? (
           <ButtonConfirm onClick={confirm}>Fechar</ButtonConfirm>

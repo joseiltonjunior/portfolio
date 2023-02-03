@@ -2,7 +2,7 @@ export const TRANSLATIONS_EN_US = {
   experienceTitle: "Experiences",
   aboutTitle: "About",
   aboutTextPrimary:
-    "Software Developer, with experience in Back-end, Front-end and Mobile projects. Developed with Node, React and React Native. Javascript, Typescript and their respective ecosystems.",
+    "Software Developer with experience in Back-end, Front-end and Mobile projects. Developed with Node, React and React Native. Javascript, Typescript and their respective ecosystems.",
   educationTitle: "Education",
   skillsTitle: "Skills",
 

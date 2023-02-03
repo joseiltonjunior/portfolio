@@ -1,19 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Card } from "./Card";
 import { Container, MobileView, WebView, NoContent } from "./style";
 
 import { CardProps } from "~/types/cardVideo";
 
-// Aguardando novos vídeos...
-// import videos from "./videos-info.json";
+import videos from "./videos-info.json";
 import { t } from "i18next";
 
 export function Videos() {
   const [infoVideos, setInfoVideos] = useState<CardProps[]>();
 
-  // useEffect(() => {
-  //   setInfoVideos(videos);
-  // }, []);
+  useEffect(() => {
+    setInfoVideos(videos);
+  }, []);
 
   return (
     <Container>

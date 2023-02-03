@@ -1,7 +1,11 @@
+export interface DescriptionProps {
+  message: string,
+}
+
 export interface CardProps {
   thumb: string;
   id: string;
-  description: string;
+  description: DescriptionProps[];
   title: string;
   mobile?: boolean;
 }
