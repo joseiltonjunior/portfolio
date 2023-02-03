@@ -4,47 +4,38 @@ interface CardProps {
   thumb: string;
 }
 
-export const Container = styled.div``;
-
-export const Video = styled.iframe`
-  border: none;
-`;
-
-export const Title = styled.p`
-  font-weight: 600;
-  color: var(--orange-600);
-  font-size: 1rem;
-`;
-
-export const Description = styled.p`
-  font-size: 0.9rem;
-  text-align: left;
-`;
-
-export const Header = styled.div<CardProps>`
-  height: 150px;
-  width: 224px;
-
-  background-color: transparent;
-  background-image: url(${(props) => props.thumb});
-  background-size: cover;
-
+export const Container = styled.div`
   border: 1px solid var(--gray-600);
+  overflow: hidden;
   border-radius: 6px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-
-  transition: all 0.2s;
 
   :hover {
     border: 1px solid var(--orange-600);
   }
 `;
 
+export const Video = styled.iframe`
+  border: none;
+`;
+
+export const Header = styled.div<CardProps>`
+  height: 8.125rem;
+
+  background-color: transparent;
+  background-image: url(${(props) => props.thumb});
+  background-size: cover;
+
+  cursor: pointer;
+
+  transition: all 0.2s;
+
+  @media (max-width: 558px) {
+    height: 10rem;
+  }
+`;
+
 export const Footer = styled.div`
-  margin-top: 0.5rem;
+  padding: 1rem 0.5rem;
+  background-color: var(--gray-600);
+  text-align: center;
 `;

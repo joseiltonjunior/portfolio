@@ -1,14 +1,15 @@
 [
   {
-    "title": "Video teste 1",
-    "thumb": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-    "id": "7k3LLt-BUHA",
-    "description": "Video teste 1"
-  },
-  {
-    "title": "Video teste 2",
-    "thumb": "https://media.istockphoto.com/id/1322593478/vector/program-code-bug-screen-glitch-vector-background.jpg?s=612x612&w=0&k=20&c=w7f1x3uhcqxkEOeYcIMJIJw1GRaiQ_-ipMYC2LpWd_4=",
-    "id": "o7B3E2MfEHM",
-    "description": "Video teste 2"
+    "title": "Resolvendo problemas com React + Typescript",
+    "thumb": "https://i.ibb.co/WBvzdfT/thumb-react-ts-1x.png",
+    "id": "8hUrdjSWTqU",
+    "description": [
+      {
+        "message": "Criação e manutenção de novas funcionalidades de um site tipo blog, desenvolvido com o Framework React e a Linguagem de Programação Typescript."
+      },
+      {
+        "message": "Obs: vídeo prático e direto ao ponto em resolver problemas do dia a dia, apenas imagens da tela!"
+      }
+    ]
   }
 ]

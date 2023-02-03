@@ -5,9 +5,10 @@ import {
   useContext,
   useState,
 } from "react";
+import { DescriptionProps } from "~/types/cardVideo";
 
 interface ModalInfoProps {
-  message?: string;
+  message?: DescriptionProps[];
   confirm?: () => void;
   type?: "info" | "confirm";
   children?: ReactNode;
@@ -37,7 +38,7 @@ export function ModalProvider({ children }: React.PropsWithChildren) {
 
   const closeModal = () => {
     setState({ visible: false });
-    window.document.body.style.overflow = "scroll";
+    window.document.body.style.overflow = "auto";
   };
 
   return (
