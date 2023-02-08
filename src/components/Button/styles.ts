@@ -16,11 +16,6 @@ export const Container = styled.button<ContainerProps>`
   cursor: pointer;
   transition: all 0.3s;
 
-  :hover:not():disabled {
-    color: var(--gray-100);
-    background-color: var(--orange-600);
-  }
-
   ${(props) =>
     props.variant === "secondary" &&
     css`
@@ -30,19 +25,28 @@ export const Container = styled.button<ContainerProps>`
       :focus {
         box-shadow: none;
       }
-
-      :hover {
-        color: var(--gray-600);
-        background-color: var(--gray-100);
-      }
     `}
 
   ${(props) =>
-    props.disabled &&
-    css`
-      opacity: 0.5;
-      cursor: not-allowed;
-    `}
+    props.disabled
+      ? css`
+          opacity: 0.5;
+          cursor: not-allowed;
+        `
+      : css`
+          :hover {
+            color: var(--gray-100);
+            background-color: var(--orange-600);
+          }
+
+          ${props.variant === "secondary" &&
+          css`
+            :hover {
+              color: var(--gray-600);
+              background-color: var(--gray-100);
+            }
+          `}
+        `}
 `;
 
 export const Box = styled.div`
