@@ -7,7 +7,7 @@ export function Card({ description, thumb, title, id, mobile }: CardProps) {
 
   const videoModal = (
     id: string,
-    description: string[],
+    description: string,
     mobile?: boolean
   ) =>
     openModal({
