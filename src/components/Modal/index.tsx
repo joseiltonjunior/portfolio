@@ -14,20 +14,22 @@ export function Modal() {
       <Overlay onClick={() => closeModal()} />
       <BoxModal>
         {children}
-        <Description>
-          {message}
-        </Description>
+        <Description>{message}</Description>
 
         {!type ? (
-          <Button onClick={closeModal} title="Fechar" />
+          <Button onClick={closeModal} title="Fechar">
+            Fechar
+          </Button>
         ) : (
           <RowContent>
             <Button
-              typeButton="secondary"
+              variant="secondary"
               onClick={closeModal}
               title="Cancelar"
             />
-            <Button onClick={confirm} title="Confirmar" />
+            <Button onClick={confirm} title="Confirmar">
+              Confirmar
+            </Button>
           </RowContent>
         )}
       </BoxModal>

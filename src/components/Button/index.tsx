@@ -1,18 +1,17 @@
 import { Container } from "./styles";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  typeButton?: "primary" | "secondary";
-  title: string;
+  variant?: "primary" | "secondary";
 }
 
 export function Button({
-  title,
-  typeButton = "primary",
+  children,
+  variant = "primary",
   ...rest
 }: ButtonProps) {
   return (
-    <Container {...rest} typeButton={typeButton} type="button">
-      {title}
+    <Container {...rest} variant={variant} type="button">
+      {children}
     </Container>
   );
 }
