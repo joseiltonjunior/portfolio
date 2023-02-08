@@ -60,4 +60,8 @@ export const TRANSLATIONS_PT_BR = {
   softwareDeveloper: "Desenvolvedor de Software",
   video: "Vídeos",
   noContent: "Em breve novos conteúdos.",
+
+  titleVideo1: "Resolvendo problemas com React + Typescript",
+  descriptionVideo1:
+    "Criação e manutenção de novas funcionalidades de um site tipo blog, desenvolvido com o Framework React e a Linguagem de Programação Typescript.",
 };

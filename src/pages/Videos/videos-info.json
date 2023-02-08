@@ -1,15 +1,8 @@
 [
   {
     "title": "Resolvendo problemas com React + Typescript",
-    "thumb": "https://i.ibb.co/WBvzdfT/thumb-react-ts-1x.png",
+    "thumb": "",
     "id": "8hUrdjSWTqU",
-    "description": [
-      {
-        "message": "Criação e manutenção de novas funcionalidades de um site tipo blog, desenvolvido com o Framework React e a Linguagem de Programação Typescript."
-      },
-      {
-        "message": "Obs: vídeo prático e direto ao ponto em resolver problemas do dia a dia, apenas imagens da tela!"
-      }
-    ]
+    "description": "Criação e manutenção de novas funcionalidades de um site tipo blog, desenvolvido com o Framework React e a Linguagem de Programação Typescript."
   }
 ]

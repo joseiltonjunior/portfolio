@@ -1,4 +1,3 @@
-export interface SwitchProps {
-  value: boolean;
-  action(): void;
+export interface SwitchProps extends React.InputHTMLAttributes<HTMLInputElement> {
+
 }

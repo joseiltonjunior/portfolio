@@ -1,15 +1,7 @@
-import { useCallback, useEffect, useState } from "react";
-import { useModal } from "~/hooks/useModal";
+import { useModal } from "../../hooks/useModal";
+import { Button } from "../Button";
 
-import {
-  Container,
-  Overlay,
-  BoxModal,
-  Description,
-  ButtonClose,
-  ButtonConfirm,
-  RowContent,
-} from "./style";
+import { Container, Overlay, BoxModal, Description, RowContent } from "./style";
 
 export function Modal() {
   const {
@@ -23,17 +15,19 @@ export function Modal() {
       <BoxModal>
         {children}
         <Description>
-          {message?.map((item, index) => (
-            <p key={index}>{item.message}</p>
-          ))}
+          {message}
         </Description>
 
         {!type ? (
-          <ButtonConfirm onClick={confirm}>Fechar</ButtonConfirm>
+          <Button onClick={closeModal} title="Fechar" />
         ) : (
           <RowContent>
-            <ButtonClose onClick={closeModal}>Cancelar</ButtonClose>
-            <ButtonConfirm onClick={confirm}>Confirmar</ButtonConfirm>
+            <Button
+              typeButton="secondary"
+              onClick={closeModal}
+              title="Cancelar"
+            />
+            <Button onClick={confirm} title="Confirmar" />
           </RowContent>
         )}
       </BoxModal>

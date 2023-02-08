@@ -1,5 +1,5 @@
 import { useModal } from "~/hooks/useModal";
-import { CardProps, DescriptionProps } from "~/types/cardVideo";
+import { CardProps } from "~/types/cardVideo";
 import { Container, Header, Footer, Video } from "./style";
 
 export function Card({ description, thumb, title, id, mobile }: CardProps) {
@@ -7,7 +7,7 @@ export function Card({ description, thumb, title, id, mobile }: CardProps) {
 
   const videoModal = (
     id: string,
-    description: DescriptionProps[],
+    description: string[],
     mobile?: boolean
   ) =>
     openModal({
