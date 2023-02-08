@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import i18next from "i18next";
 
-import logo from "~/assets/binary-code.png";
-import brazil from "~/assets/brazil.png";
-import eua from "~/assets/eua.png";
+
+import logo from "../../assets/binary-code.png";
+import brazil from "../../assets/brazil.png";
+import eua from "../../assets/eua.png";
 import { Swicth } from "../Switch";
 
 import { Containe, Content, Logo, Flag } from "./style";
@@ -38,7 +39,7 @@ export function Header() {
 
       <Content>
         <Flag src={brazil} alt="FlagBrazil" />
-        <Swicth value={lang === "en-US"} action={handleChangeLanguage} />
+        <Swicth checked={lang === "en-US"} onChange={handleChangeLanguage} />
         <Flag src={eua} alt="FlagEua" />
       </Content>
     </Containe>

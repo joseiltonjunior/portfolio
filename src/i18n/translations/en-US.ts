@@ -59,4 +59,8 @@ export const TRANSLATIONS_EN_US = {
   softwareDeveloper: "Software Developer",
   video: "Videos",
   noContent: "New content coming soon.",
+
+  titleVideo1: "Solving problems with React + Typescript",
+  descriptionVideo1:
+    "Creation and maintenance of new functionalities of a blog-type website, developed with the React Framework and the Typescript Programming Language.",
 };

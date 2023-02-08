@@ -5,10 +5,9 @@ import {
   useContext,
   useState,
 } from "react";
-import { DescriptionProps } from "~/types/cardVideo";
 
 interface ModalInfoProps {
-  message?: DescriptionProps[];
+  message?: string;
   confirm?: () => void;
   type?: "info" | "confirm";
   children?: ReactNode;

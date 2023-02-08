@@ -5,7 +5,6 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Container, Header, Content, Title, ShowButton } from "./style";
 
 interface SectionProps extends React.PropsWithChildren {
-  icon?: React.ComponentType<IconBaseProps>;
   title: string;
   show?: boolean;
 }

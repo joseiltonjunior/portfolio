@@ -1,10 +1,10 @@
 import { SwitchProps } from "~/types/switch";
 import { Checkbox, Slider, Switch } from "./style";
 
-export function Swicth({ value, action }: SwitchProps) {
+export function Swicth({ ...rest }: SwitchProps) {
   return (
     <Switch>
-      <Checkbox type="checkbox" onChange={action} checked={value} />
+      <Checkbox {...rest} type="checkbox" />
       <Slider />
     </Switch>
   );
