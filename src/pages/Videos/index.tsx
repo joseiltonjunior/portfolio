@@ -2,27 +2,33 @@ import { useEffect, useState } from "react";
 import { Card } from "./Card";
 import { Container, MobileView, WebView, NoContent } from "./style";
 
-import { CardProps } from "~/types/cardVideo";
+import thumb from "~/assets/thumb-react-ts.png";
+import thumb2 from "~/assets/thumb-react-storybook.png";
 
-import videos from "./videos-info.json";
-import thumb from "~/assets/thumb-react-ts@1x.png";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
+interface VideosProps {
+  id: string;
+  thumb: string;
+}
+
 export function Videos() {
-  const [infoVideos, setInfoVideos] = useState<CardProps[]>();
+  const [infoVideos, setInfoVideos] = useState<VideosProps[]>();
 
   const { t } = useTranslation();
 
-  useEffect(() => {
-    videos[0].thumb = thumb;
+  const videos = [
+    { thumb: thumb, id: "8hUrdjSWTqU" },
+    { thumb: thumb2, id: "xTsHUpVuWmo" },
+  ] as VideosProps[];
 
+  useEffect(() => {
     setInfoVideos(videos);
   }, []);
 
   return (
     <Container>
-      {infoVideos ? (
+      {infoVideos && infoVideos?.length > 0 ? (
         <>
           <WebView>
             {infoVideos.map((item, index) => (
@@ -37,12 +43,12 @@ export function Videos() {
           </WebView>
 
           <MobileView>
-            {infoVideos.map((item) => (
+            {infoVideos.map((item, index) => (
               <Card
                 key={item.id}
-                description={item.description}
+                description={t(`descriptionVideo${index + 1}`)}
                 thumb={item.thumb}
-                title={item.title}
+                title={t(`titleVideo${index + 1}`)}
                 id={item.id}
                 mobile
               />

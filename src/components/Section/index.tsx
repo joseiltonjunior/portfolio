@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { IconBaseProps } from "react-icons";
+
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Container, Header, Content, Title, ShowButton } from "./style";
 
-interface SectionProps extends React.PropsWithChildren {
+interface SectionProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
   title: string;
   show?: boolean;
 }
 
-export function Section({ title, show, children }: SectionProps) {
+export function Section({ title, show, children, ...rest }: SectionProps) {
   const [showContent, setShowContent] = useState(false);
 
   const { t } = useTranslation();
@@ -32,8 +32,8 @@ export function Section({ title, show, children }: SectionProps) {
           </ShowButton>
         )}
       </Header>
-      {show && showContent && <Content>{children}</Content>}
-      {!show && <Content>{children}</Content>}
+      {show && showContent && <Content {...rest}>{children}</Content>}
+      {!show && <Content {...rest}>{children}</Content>}
     </Container>
   );
 }

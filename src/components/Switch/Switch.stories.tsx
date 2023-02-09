@@ -1,14 +1,19 @@
 import { Swicth } from "./index";
-import { Meta, Story } from "@storybook/react";
-import { useState } from "react";
+import { Meta, StoryObj } from "@storybook/react";
 
 export default {
   title: "Components/Swicth",
   component: Swicth,
+  args: {
+    checked: false,
+  },
+  argTypes: {
+    checked: {
+      control: {
+        type: "boolean",
+      },
+    },
+  },
 } as Meta;
 
-export const Default: Story = () => {
-  const [value, setValue] = useState<boolean>(false);
-
-  return <Swicth checked={value} onChange={() => setValue(!value)} />;
-};
+export const Default: StoryObj = {};

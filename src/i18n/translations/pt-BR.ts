@@ -64,4 +64,8 @@ export const TRANSLATIONS_PT_BR = {
   titleVideo1: "Resolvendo problemas com React + Typescript",
   descriptionVideo1:
     "Criação e manutenção de novas funcionalidades de um site tipo blog, desenvolvido com o Framework React e a Linguagem de Programação Typescript.",
+
+  titleVideo2: "React + Storybook (Criando componente button)",
+  descriptionVideo2:
+    "Criação de um componente button, usando React, Typescript, Styled-components e documentando o componente com Storybook.",
 };
