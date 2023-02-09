@@ -17,19 +17,13 @@ export function Modal() {
         <Description>{message}</Description>
 
         {!type ? (
-          <Button onClick={closeModal} title="Fechar">
-            Fechar
-          </Button>
+          <Button onClick={confirm}>Fechar</Button>
         ) : (
           <RowContent>
-            <Button
-              variant="secondary"
-              onClick={closeModal}
-              title="Cancelar"
-            />
-            <Button onClick={confirm} title="Confirmar">
-              Confirmar
+            <Button variant="secondary" onClick={closeModal}>
+              Cancelar
             </Button>
+            <Button onClick={confirm}>Confirmar</Button>
           </RowContent>
         )}
       </BoxModal>

@@ -35,3 +35,10 @@ export const Title = styled.p`
 export const Content = styled.div`
   margin-top: 1rem;
 `;
+
+export const Box = styled.div`
+  max-width: 70rem;
+`;
+
+Container.displayName = "Section"
+Box.displayName = "Box"

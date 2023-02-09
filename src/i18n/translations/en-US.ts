@@ -63,4 +63,8 @@ export const TRANSLATIONS_EN_US = {
   titleVideo1: "Solving problems with React + Typescript",
   descriptionVideo1:
     "Creation and maintenance of new functionalities of a blog-type website, developed with the React Framework and the Typescript Programming Language.",
+
+  titleVideo2: "React + Storybook (Creating component button)",
+  descriptionVideo2:
+    "Creating a button component, using React, Typescript, Styled-components and documenting the component with Storybook.",
 };
