@@ -5,12 +5,12 @@ interface CardProps {
 }
 
 export const Container = styled.div`
-  border: 1px solid var(--gray-600);
+  border: 1px solid ${(props) => props.theme.colors.Dark_600};
   overflow: hidden;
   border-radius: 6px;
 
   :hover {
-    border: 1px solid var(--orange-600);
+    border: 1px solid ${(props) => props.theme.colors.Orange};
   }
 `;
 
@@ -36,6 +36,6 @@ export const Header = styled.div<CardProps>`
 
 export const Footer = styled.div`
   padding: 1rem 0.5rem;
-  background-color: var(--gray-600);
+  background-color: ${(props) => props.theme.colors.Dark_600};
   text-align: center;
 `;

@@ -28,17 +28,17 @@ export function Content() {
 
   return (
     <Container>
-      <Section title={t("aboutTitle")} show>
+      <Section title={t("aboutTitle")}>
         <Abbout />
       </Section>
       <Section title={t("skillsTitle")} show>
         <Skills />
       </Section>
-      {repos && (
-        <Section title={t("projects")} show>
-          <Projects data={repos} />
-        </Section>
-      )}
+
+      <Section title={t("projects")} show>
+        <Projects data={repos} />
+      </Section>
+
       <Section title={t("video")} show>
         <Videos />
       </Section>

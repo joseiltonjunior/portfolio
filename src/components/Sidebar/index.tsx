@@ -8,7 +8,7 @@ import {
   Footer,
   Link,
 } from "./style";
-import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiInstagram, FiDownload } from "react-icons/fi";
 
 import { useTranslation } from "react-i18next";
 
@@ -52,6 +52,14 @@ export function Sidebar() {
           title="Instagram"
         >
           <FiInstagram size={20} />
+        </Link>
+        <Link
+          href="https://drive.google.com/file/d/130vKvC_chV9Swmd6ExtgitOOqv_f82Jc/view?usp=share_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Curriculum vitæ"
+        >
+          <FiDownload size={20} />
         </Link>
       </Footer>
     </Container>

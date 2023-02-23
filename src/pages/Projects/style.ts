@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const Card = styled.button`
   background-color: transparent;
-  border: 1px solid var(--gray-600);
+  border: 1px solid ${(props) => props.theme.colors.Dark_600};
   border-radius: 6px;
   padding: 1rem 0.75rem;
   cursor: pointer;
@@ -22,26 +22,26 @@ export const Card = styled.button`
 
   transition: all 0.2s;
 
-  :hover {
-    border: 1px solid var(--orange-600);
+  :hover:not(:disabled) {
+    border: 1px solid ${(props) => props.theme.colors.Orange};
   }
 `;
 
 export const Title = styled.p`
   font-weight: 600;
-  color: var(--orange-600);
+  color: ${(props) => props.theme.colors.Orange};
   font-size: 1rem;
   text-align: left;
 `;
 
 export const Description = styled.p`
-  color: var(--gray-300);
+  color: ${(props) => props.theme.colors.Dark_300};
   font-size: 0.9rem;
   text-align: left;
 `;
 
 export const Info = styled.p`
-  color: var(--gray-300);
+  color: ${(props) => props.theme.colors.Dark_300};
   font-size: 0.75rem;
 `;
 
@@ -55,6 +55,6 @@ export const RowContent = styled.div`
 export const StarContent = styled.div`
   display: flex;
   gap: 0.3rem;
-  color: var(--gray-400);
+  color: ${(props) => props.theme.colors.Dark_400};
   align-items: center;
 `;

@@ -2,7 +2,9 @@ export const TRANSLATIONS_EN_US = {
   experienceTitle: "Experiences",
   aboutTitle: "About",
   aboutTextPrimary:
-    "Software Developer with experience in Back-end, Front-end and Mobile projects. Developed with Node, React and React Native. Javascript, Typescript and their respective ecosystems.",
+    "Software Developer with good experience in Front-end and Mobile projects and with knowledge in Back-end projects. ",
+  aboutTextSecondary:
+    "Currently focused on the Node, React and React Native (Javascript/Typescript) stack, applying SOLID and Clean Code principles, in order to ensure greater efficiency and ease of maintenance.",
   educationTitle: "Education",
   skillsTitle: "Skills",
 
@@ -55,9 +57,9 @@ export const TRANSLATIONS_EN_US = {
   hideContent: "Hide content",
   theme: "Theme",
 
-  projects: "Projects",
+  projects: "Personal Projects",
   softwareDeveloper: "Software Developer",
-  video: "Videos",
+  video: "Codes and Hacks",
   noContent: "New content coming soon.",
 
   titleVideo1: "Solving problems with React + Typescript",

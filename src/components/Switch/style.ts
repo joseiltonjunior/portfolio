@@ -13,7 +13,7 @@ export const Slider = styled.span`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--gray-400);
+  background-color: ${(props) => props.theme.colors.Dark_400};
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 12px;
@@ -24,7 +24,7 @@ export const Slider = styled.span`
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-color: var(--gray-100);
+    background-color: ${(props) => props.theme.colors.Dark_100};
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -37,11 +37,11 @@ export const Switch = styled.label`
   height: 12px;
 
   ${Checkbox}:checked + ${Slider} {
-    background-color: var(--orange-600);
+    background-color: ${(props) => props.theme.colors.Orange};
   }
 
   ${Checkbox}:focus + ${Slider} {
-    box-shadow: 0 0 1px var(--orange-600);
+    box-shadow: 0 0 1px ${(props) => props.theme.colors.Orange};
   }
 
   ${Checkbox}:checked + ${Slider}:before {

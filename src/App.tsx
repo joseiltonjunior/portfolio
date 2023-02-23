@@ -1,5 +1,6 @@
 import { Layout } from "./components/Layout";
 import GlobalStyle from "./styles/global";
+import "react-loading-skeleton/dist/skeleton.css";
 
 function App() {
   return (

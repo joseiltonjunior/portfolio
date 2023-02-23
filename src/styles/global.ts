@@ -1,29 +1,10 @@
 import styled, { createGlobalStyle } from "styled-components";
+import theme from "./theme";
 
 export default createGlobalStyle`
-  :root {
-  --white: #fff;
-
-  --gray-100: #e1e1e6;
-  --gray-300: #c4c4cc;
-  --gray-400: #8d8d99;
-  --gray-600: #323238;
-  --gray-700: #29292e;
-  --gray-800: #202024;
-  --gray-900: #121214;
-
-  --green-500: #00875f;
-
-  --orange-600: #ff8c00;
-
-  --purple-600: #993399;
-
-  --purple-900: #4b0082;
-}
-
 :focus{
   outline: transparent;
-  box-shadow: 0 0 0 1px var(--orange-600);
+  box-shadow: 0 0 0 1px ${theme.colors.Orange};
 }
 
 * {
@@ -33,8 +14,8 @@ export default createGlobalStyle`
 }
 
 body {
-  background: var(--gray-900);
-  color: var(--gray-300);
+  background: ${theme.colors.Dark_900};
+  color: ${theme.colors.Dark_300};
   -webkit-font-smoothing: antialiased;
 }
 
@@ -43,7 +24,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--orange-600);
+  background: ${theme.colors.Orange};
 }
 
 body,
@@ -59,5 +40,5 @@ button {
 
 export const Line = styled.div`
   margin: 1rem 0;
-  border-bottom: 1px solid var(--orange-600);
+  border-bottom: 1px solid ${theme.colors.Orange};
 `;

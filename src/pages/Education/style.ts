@@ -14,7 +14,7 @@ export const TextActivities = styled.p`
 
 export const TextInfo = styled.p`
   font-size: 0.875rem;
-  color: var(--gray-400);
+  color: ${(props) => props.theme.colors.Dark_400};
 `;
 
 export const ContentActivities = styled.div`

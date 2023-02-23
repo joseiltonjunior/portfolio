@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: var(--gray-800);
+  background: ${(props) => props.theme.colors.Dark_800};
   border-radius: 8px;
   overflow: hidden;
 `;
@@ -31,8 +31,8 @@ export const PicProfile = styled.img`
   width: calc(3rem + 12px);
   height: calc(3rem + 12px);
   border-radius: 8px;
-  border: 4px solid var(--gray-900);
-  outline: 2px solid var(--orange-600);
+  border: 4px solid ${(props) => props.theme.colors.Dark_900};
+  outline: 2px solid ${(props) => props.theme.colors.Orange};
 `;
 
 export const NameProfile = styled.p`
@@ -43,11 +43,11 @@ export const NameProfile = styled.p`
 
 export const InfoProfile = styled.div`
   font-size: 0.875rem;
-  color: var(--gray-400);
+  color: ${(props) => props.theme.colors.Dark_400};
 `;
 
 export const Footer = styled.div`
-  border-top: 1px solid var(--gray-600);
+  border-top: 1px solid ${(props) => props.theme.colors.Dark_600};
   margin-top: 1.5rem;
   padding: 1.5rem 0;
   display: flex;
@@ -56,8 +56,8 @@ export const Footer = styled.div`
 `;
 
 export const Link = styled.a`
-  background: var(--orange-600);
-  color: var(--gray-600);
+  background: ${(props) => props.theme.colors.Orange};
+  color: ${(props) => props.theme.colors.Dark_600};
 
   border-radius: 50%;
   padding: 0.5rem;
@@ -69,6 +69,6 @@ export const Link = styled.a`
   transition: color 0.3s;
 
   :hover {
-    color: var(--gray-100);
+    color: ${(props) => props.theme.colors.Dark_100};
   }
 `;
