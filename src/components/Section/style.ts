@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: var(--gray-800);
+  background: ${(props) => props.theme.colors.Dark_800};
 
   border-radius: 8px;
   padding: 2rem;
@@ -16,20 +16,20 @@ export const Header = styled.div`
 export const ShowButton = styled.button`
   background-color: transparent;
   border: none;
-  color: var(--gray-100);
+  color: ${(props) => props.theme.colors.Dark_100};
   line-height: 0;
   transition: color, 0.2s;
   cursor: pointer;
 
   :hover {
-    color: var(--orange-600);
+    color: ${(props) => props.theme.colors.Orange};
   }
 `;
 
 export const Title = styled.p`
   font-size: 1.15rem;
   font-weight: bold;
-  color: var(--gray-100);
+  color: ${(props) => props.theme.colors.Dark_100};
 `;
 
 export const Content = styled.div`
@@ -40,5 +40,5 @@ export const Box = styled.div`
   max-width: 70rem;
 `;
 
-Container.displayName = "Section"
-Box.displayName = "Box"
+Container.displayName = "Section";
+Box.displayName = "Box";

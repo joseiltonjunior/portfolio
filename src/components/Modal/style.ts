@@ -24,7 +24,7 @@ export const Overlay = styled.div`
 
 export const BoxModal = styled.div`
   position: absolute;
-  background-color: var(--gray-600);
+  background-color: ${(props) => props.theme.colors.Dark_600};
   padding: 1rem;
   border-radius: 6px;
   width: 100%;

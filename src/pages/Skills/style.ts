@@ -8,9 +8,9 @@ export const Skill = styled.p`
   cursor: default;
   transition: color 0.1s;
 
-  color: var(--gray-300);
+  color: ${(props) => props.theme.colors.Dark_300};
 
   :hover {
-    color: var(--orange-600);
+    color: ${(props) => props.theme.colors.Orange};
   }
 `;

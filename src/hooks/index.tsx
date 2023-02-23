@@ -1,5 +1,19 @@
+import { SkeletonTheme } from "react-loading-skeleton";
 import { ModalProvider } from "./useModal";
+import { ThemeProvider } from "styled-components";
+import theme from "~/styles/theme";
 
 export function Hooks({ children }: React.PropsWithChildren) {
-  return <ModalProvider>{children}</ModalProvider>;
+  return (
+    <ThemeProvider theme={theme}>
+      <ModalProvider>
+        <SkeletonTheme
+          baseColor={theme.colors.Dark_800}
+          highlightColor={theme.colors.Dark_300}
+        >
+          {children}
+        </SkeletonTheme>
+      </ModalProvider>
+    </ThemeProvider>
+  );
 }

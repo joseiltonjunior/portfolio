@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Containe = styled.div`
-  background: var(--gray-800);
+  background: ${(props) => props.theme.colors.Dark_800};
   padding: 1rem 2rem;
 
   display: flex;

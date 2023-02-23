@@ -34,11 +34,11 @@ export function Content() {
       <Section title={t("skillsTitle")} show>
         <Skills />
       </Section>
-      {repos && (
-        <Section title={t("projects")} show>
-          <Projects data={repos} />
-        </Section>
-      )}
+
+      <Section title={t("projects")} show>
+        <Projects data={repos} />
+      </Section>
+
       <Section title={t("video")} show>
         <Videos />
       </Section>

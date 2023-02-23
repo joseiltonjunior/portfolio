@@ -25,5 +25,5 @@ export const Container = styled.div`
 `;
 
 export const NoContent = styled.p`
-  color: var(--orange-600);
+  color: ${(props) => props.theme.colors.Orange};
 `;

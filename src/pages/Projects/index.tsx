@@ -1,3 +1,5 @@
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+
 import { useCallback, useEffect, useState } from "react";
 import { FaRegStar } from "react-icons/fa";
 
@@ -11,6 +13,7 @@ import {
   StarContent,
   Info,
 } from "./style";
+import { SkeletonCard } from "./SkeletonCard";
 
 interface IProjects {
   data?: IRepositories[];
@@ -37,7 +40,7 @@ export function Projects({ data }: IProjects) {
 
   return (
     <Container>
-      {repos &&
+      {repos ? (
         repos.map((repo) => (
           <Card
             key={repo.id}
@@ -56,7 +59,13 @@ export function Projects({ data }: IProjects) {
               </StarContent>
             </RowContent>
           </Card>
-        ))}
+        ))
+      ) : (
+        <>
+          <SkeletonCard />
+          <SkeletonCard />
+        </>
+      )}
     </Container>
   );
 }

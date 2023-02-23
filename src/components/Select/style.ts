@@ -24,7 +24,7 @@ export const Container = styled.div<ContainerProps>`
 `;
 
 export const DropdownSelection = styled.button<DropdownSelectionProps>`
-  background-color: var(--gray-100);
+  background-color: ${(props) => props.theme.colors.Dark_100};
   height: auto;
   border-radius: 8px;
   padding: 0.4rem 1rem;
@@ -38,7 +38,7 @@ export const DropdownSelection = styled.button<DropdownSelectionProps>`
     position: absolute;
     width: 6px;
     height: 6px;
-    border: 2px solid var(--gray-900);
+    border: 2px solid ${(props) => props.theme.colors.Dark_900};
     right: 16px;
     top: 15px;
     border-top: 1px solid transparent;
@@ -67,7 +67,7 @@ export const SelectedItemName = styled.span`
   font-weight: 600;
   font-size: 1rem;
 
-  color: var(--gray-900);
+  color: ${(props) => props.theme.colors.Dark_900};
 `;
 
 export const DropdownItem = styled.div`
@@ -77,7 +77,7 @@ export const DropdownItem = styled.div`
   font-size: 16px;
 
   margin-bottom: 0.5rem;
-  color: var(--gray-900);
+  color: ${(props) => props.theme.colors.Dark_900};
 
   &:hover > div {
     font-weight: 600;
@@ -90,8 +90,8 @@ export const DropdownItemName = styled.div<DropdownItemNameProps>`
   ${(props) =>
     props.isSelected &&
     css`
-      background: var(--gray-900);
-      color: var(--white);
+      background: ${(props) => props.theme.colors.Dark_900};
+      color: ${(props) => props.theme.colors.Light};
       border-radius: 6px;
       width: fit-content;
       font-weight: 600;
@@ -99,7 +99,7 @@ export const DropdownItemName = styled.div<DropdownItemNameProps>`
 `;
 
 export const DropdownContainer = styled.div`
-  background-color: var(--gray-100);
+  background-color: ${(props) => props.theme.colors.Dark_100};
   border-radius: 8px;
   margin-top: 1rem;
   padding: 0.6rem;
@@ -113,7 +113,7 @@ export const DropdownItensContainer = styled.div`
 
 export const Label = styled.label<labelProps>`
   font-size: 0.8rem;
-  color: var(--gray-600);
+  color: ${(props) => props.theme.colors.Dark_600};
   display: none;
 
   ${(props) =>
