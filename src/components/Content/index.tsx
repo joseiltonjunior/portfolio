@@ -28,7 +28,7 @@ export function Content() {
 
   return (
     <Container>
-      <Section title={t("aboutTitle")} show>
+      <Section title={t("aboutTitle")}>
         <Abbout />
       </Section>
       <Section title={t("skillsTitle")} show>

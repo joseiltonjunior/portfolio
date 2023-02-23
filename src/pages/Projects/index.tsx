@@ -23,7 +23,9 @@ export function Projects({ data }: IProjects) {
     const filter = repos.filter(
       (item) =>
         item.name !== "portfolio-deprecated" &&
-        item.name !== "SwitchThemesReactTS"
+        item.name !== "SwitchThemesReactTS" &&
+        item.name !== "joseiltonjunior" &&
+        item.name !== "after-app-deprecated"
     );
 
     setRepos(filter);
