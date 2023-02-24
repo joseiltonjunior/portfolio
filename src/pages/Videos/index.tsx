@@ -4,6 +4,7 @@ import { Container, MobileView, WebView, NoContent } from "./style";
 
 import thumb from "~/assets/thumb-react-ts.png";
 import thumb2 from "~/assets/thumb-react-storybook.png";
+import thumb3 from "~/assets/thumb-skeleton.png";
 
 import { useTranslation } from "react-i18next";
 
@@ -20,6 +21,7 @@ export function Videos() {
   const videos = [
     { thumb: thumb, id: "8hUrdjSWTqU" },
     { thumb: thumb2, id: "xTsHUpVuWmo" },
+    { thumb: thumb3, id: "cNARhMjDgSM" },
   ] as VideosProps[];
 
   useEffect(() => {

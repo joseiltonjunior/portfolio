@@ -2,6 +2,7 @@ import { SkeletonTheme } from "react-loading-skeleton";
 import { ModalProvider } from "./useModal";
 import { ThemeProvider } from "styled-components";
 import theme from "~/styles/theme";
+import "react-loading-skeleton/dist/skeleton.css";
 
 export function Hooks({ children }: React.PropsWithChildren) {
   return (

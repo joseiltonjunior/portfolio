@@ -10,7 +10,7 @@ export const Container = styled.div`
   gap: 2rem;
   align-items: flex-start;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
     font-size: 87.5%;
   }

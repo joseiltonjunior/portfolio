@@ -13,7 +13,7 @@ export const WebView = styled.div`
 `;
 
 export const Container = styled.div`
-  @media (max-width: 558px) {
+  @media (max-width: 600px) {
     ${MobileView} {
       display: grid;
     }

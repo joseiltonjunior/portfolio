@@ -25,6 +25,10 @@ export const Card = styled.button`
   :hover:not(:disabled) {
     border: 1px solid ${(props) => props.theme.colors.Orange};
   }
+
+  :disabled {
+    cursor: default;
+  }
 `;
 
 export const Title = styled.p`
