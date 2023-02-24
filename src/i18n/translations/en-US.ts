@@ -69,4 +69,8 @@ export const TRANSLATIONS_EN_US = {
   titleVideo2: "React + Storybook (Creating component button)",
   descriptionVideo2:
     "Creating a button component, using React, Typescript, Styled-components and documenting the component with Storybook.",
+
+  titleVideo3: "React + Skeleton",
+  descriptionVideo3:
+    "Skeleton loading is an approach that aims to improve the user experience by displaying loading elements that are similar to the actual content that will be displayed when all the data loads.",
 };

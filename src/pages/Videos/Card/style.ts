@@ -8,9 +8,14 @@ export const Container = styled.div`
   border: 1px solid ${(props) => props.theme.colors.Dark_600};
   overflow: hidden;
   border-radius: 6px;
+  width: 222px;
 
   :hover {
     border: 1px solid ${(props) => props.theme.colors.Orange};
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;
 
@@ -38,4 +43,5 @@ export const Footer = styled.div`
   padding: 1rem 0.5rem;
   background-color: ${(props) => props.theme.colors.Dark_600};
   text-align: center;
+  height: 100%;
 `;

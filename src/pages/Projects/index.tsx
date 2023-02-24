@@ -1,5 +1,3 @@
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
-
 import { useCallback, useEffect, useState } from "react";
 import { FaRegStar } from "react-icons/fa";
 
