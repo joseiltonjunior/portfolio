@@ -2,9 +2,9 @@ export const TRANSLATIONS_PT_BR = {
   experienceTitle: "Experiências",
   aboutTitle: "Sobre",
   aboutTextPrimary:
-    "Desenvolvedor de Software com boa experiência em projetos Front-end e Mobile e com conhecimento em projetos Back-end. ",
+    "Apaixonado por Tecnologia e Desenvolvimento, tenho colaborado desde 2020 em projetos Front-end e Mobile e auxiliado em projetos Back-end.",
   aboutTextSecondary:
-    "Atualmente focado no stack Node, React e React Native (Javascript/Typescript), aplicando princípios SOLID e Clean Code, afins de garantir maior eficiência e facilidade de manutenção.",
+    "Atualmente focado no stack React e React Native desenvolvidos com Typescript, seguindo princípios SOLID e Clean Code afins de garantir maior eficiência e facilidade em futuras manutenções. ",
   educationTitle: "Educação",
   skillsTitle: "Habilidades",
 
@@ -58,20 +58,20 @@ export const TRANSLATIONS_PT_BR = {
   hideContent: "Ocultar conteúdo",
   theme: "Tema",
 
-  projects: "Projetos Pessoais",
+  projects: "Projetos",
   softwareDeveloper: "Desenvolvedor de Software",
-  video: "Códigos e Gambiarras",
+  video: "Dicas do Dev",
   noContent: "Em breve novos conteúdos.",
 
-  titleVideo1: "Resolvendo problemas com React + Typescript",
+  titleVideo1: "Typescript na prática",
   descriptionVideo1:
     "Criação e manutenção de novas funcionalidades de um site tipo blog, desenvolvido com o Framework React e a Linguagem de Programação Typescript.",
 
-  titleVideo2: "React + Storybook (Criando componente button)",
+  titleVideo2: "Storybook na prática",
   descriptionVideo2:
     "Criação de um componente button, usando React, Typescript, Styled-components e documentando o componente com Storybook.",
 
-  titleVideo3: "React + Skeleton",
+  titleVideo3: "Skeleton na prática",
   descriptionVideo3:
     "O skeleton loading é uma abordagem que visa melhorar a experiência do usuário exibindo elementos de carregamento que são similares ao conteúdo real que vai ser apresentado quando todos os dados carregarem.",
 };
