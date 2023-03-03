@@ -2,11 +2,11 @@ export const TRANSLATIONS_EN_US = {
   experienceTitle: "Experiences",
   aboutTitle: "About",
   aboutTextPrimary:
-    "Software Developer with good experience in Front-end and Mobile projects and with knowledge in Back-end projects. ",
+    "Passionate about Technology and Development, I have been collaborating since 2020 in Front-end and Mobile projects and assisting in Back-end projects.",
   aboutTextSecondary:
-    "Currently focused on the Node, React and React Native (Javascript/Typescript) stack, applying SOLID and Clean Code principles, in order to ensure greater efficiency and ease of maintenance.",
+    "Currently focused on the React and React Native stack influenced by Typescript, following the SOLID and Clean Code principles to ensure greater efficiency and ease in future maintenance.",
   educationTitle: "Education",
-  skillsTitle: "Skills",
+  skillsTitle: "Hard-skills",
 
   sectionExperienceTextInfo: "Technologies used",
 
@@ -57,20 +57,20 @@ export const TRANSLATIONS_EN_US = {
   hideContent: "Hide content",
   theme: "Theme",
 
-  projects: "Personal Projects",
+  projects: "Projects",
   softwareDeveloper: "Software Developer",
-  video: "Codes and Hacks",
+  video: "Dev Tips",
   noContent: "New content coming soon.",
 
-  titleVideo1: "Solving problems with React + Typescript",
+  titleVideo1: "Typescript in practice",
   descriptionVideo1:
     "Creation and maintenance of new functionalities of a blog-type website, developed with the React Framework and the Typescript Programming Language.",
 
-  titleVideo2: "React + Storybook (Creating component button)",
+  titleVideo2: "Storybook in practice",
   descriptionVideo2:
     "Creating a button component, using React, Typescript, Styled-components and documenting the component with Storybook.",
 
-  titleVideo3: "React + Skeleton",
+  titleVideo3: "Skeleton in practice",
   descriptionVideo3:
     "Skeleton loading is an approach that aims to improve the user experience by displaying loading elements that are similar to the actual content that will be displayed when all the data loads.",
 };

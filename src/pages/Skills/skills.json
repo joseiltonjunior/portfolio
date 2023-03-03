@@ -12,9 +12,6 @@
     "name": "Typescript"
   },
   {
-    "name": "Bootstrap/Material UI"
-  },
-  {
     "name": "React"
   },
   {
@@ -22,9 +19,6 @@
   },
   {
     "name": "React Native"
-  },
-  {
-    "name": "Node.js"
   },
   {
     "name": "Cloud (AWS/Azure)"
@@ -36,7 +30,7 @@
     "name": "Internacionalização de Projetos"
   },
   {
-    "name": "API Restful"
+    "name": "Consumo de API's"
   },
   {
     "name": "Gerênciadores de pacotes (NPM/Yarn)"
@@ -52,6 +46,6 @@
     "name": "Testes Unitários e Automatizados (Jest/Cypress)"
   },
   {
-    "name": "Metodologias Ágeis (Kanbam, Scrum)"
+    "name": "Metodologias Ágeis (Kanbam/Scrum)"
   }
 ]
