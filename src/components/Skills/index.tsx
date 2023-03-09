@@ -1,7 +1,7 @@
-import skills from "./skills.json";
-import { Container, Skill } from "./style";
+import { SKillsDataProps } from '~/types/skills'
+import { Container, Skill } from './style'
 
-export function Skills() {
+export function Skills({ skills }: SKillsDataProps) {
   return (
     <>
       {skills.map((item) => (
@@ -10,5 +10,5 @@ export function Skills() {
         </Container>
       ))}
     </>
-  );
+  )
 }

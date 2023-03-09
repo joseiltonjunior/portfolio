@@ -1,9 +1,9 @@
-import { Header } from "./index";
-import { Meta, StoryObj } from "@storybook/react";
+import { Header } from './index'
+import { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: "Components/Header",
+  title: 'Components/Header',
   component: Header,
-} as Meta;
+} as Meta
 
-export const Default: StoryObj = {};
+export const Default: StoryObj = {}

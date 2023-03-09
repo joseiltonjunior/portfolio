@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Container = styled.div``;
+export const Container = styled.div``
 
 export const Skill = styled.p`
   font-size: 0.9rem;
@@ -13,4 +13,4 @@ export const Skill = styled.p`
   :hover {
     color: ${(props) => props.theme.colors.Orange};
   }
-`;
+`

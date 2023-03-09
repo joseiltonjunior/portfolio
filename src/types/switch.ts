@@ -1,3 +1,4 @@
-export interface SwitchProps extends React.InputHTMLAttributes<HTMLInputElement> {
+import React from 'react'
 
-}
+export interface SwitchProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {}

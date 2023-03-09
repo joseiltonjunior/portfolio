@@ -7,13 +7,13 @@ import {
   InfoProfile,
   Footer,
   Link,
-} from "./style";
-import { FiGithub, FiLinkedin, FiInstagram, FiDownload } from "react-icons/fi";
+} from './style'
+import { FiGithub, FiLinkedin, FiInstagram, FiDownload } from 'react-icons/fi'
 
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 export function Sidebar() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <Container>
@@ -25,7 +25,7 @@ export function Sidebar() {
           alt="pic_profile"
         />
         <NameProfile>Junior Ferreira</NameProfile>
-        <InfoProfile>{t("softwareDeveloper")}</InfoProfile>
+        <InfoProfile>{t('softwareDeveloper')}</InfoProfile>
       </ContetProfile>
 
       <Footer>
@@ -63,5 +63,5 @@ export function Sidebar() {
         </Link>
       </Footer>
     </Container>
-  );
+  )
 }

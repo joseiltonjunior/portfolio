@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 interface ContainerProps {
-  isVisible: boolean;
+  isVisible: boolean
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -9,18 +9,18 @@ export const Container = styled.div<ContainerProps>`
   width: 100vw;
   height: 100vh;
 
-  display: ${(props) => (props.isVisible ? "flex" : "none")};
+  display: ${(props) => (props.isVisible ? 'flex' : 'none')};
   align-items: center;
   justify-content: center;
 
   z-index: 1000;
-`;
+`
 
 export const Overlay = styled.div`
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
-`;
+`
 
 export const BoxModal = styled.div`
   position: absolute;
@@ -33,7 +33,7 @@ export const BoxModal = styled.div`
   @media (max-width: 558px) {
     max-width: 370px;
   }
-`;
+`
 
 export const Description = styled.div`
   padding: 1rem 0;
@@ -43,7 +43,7 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-`;
+`
 
 export const RowContent = styled.div`
   display: grid;
@@ -51,4 +51,4 @@ export const RowContent = styled.div`
   grid-template-columns: 1fr 1fr;
 
   justify-content: center;
-`;
+`

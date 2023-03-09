@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 interface CardProps {
-  thumb: string;
+  thumb: string
 }
 
 export const Container = styled.div`
@@ -14,11 +14,11 @@ export const Container = styled.div`
   :hover {
     border: 1px solid ${(props) => props.theme.colors.Orange};
   }
-`;
+`
 
 export const Video = styled.iframe`
   border: none;
-`;
+`
 
 export const Header = styled.div<CardProps>`
   background-color: transparent;
@@ -27,10 +27,10 @@ export const Header = styled.div<CardProps>`
   background-position: center;
   transition: all 0.2s;
   height: 8rem;
-`;
+`
 
 export const Footer = styled.div`
   padding: 1rem 0.5rem;
   background-color: ${(props) => props.theme.colors.Dark_600};
   text-align: center;
-`;
+`

@@ -1,27 +1,27 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 type labelProps = {
-  index: number;
-};
+  index: number
+}
 
 type ContainerProps = {
-  disabled?: boolean;
-  selectIndex: number;
-};
+  disabled?: boolean
+  selectIndex: number
+}
 
 interface DropdownItemNameProps {
-  isSelected?: boolean;
+  isSelected?: boolean
 }
 
 interface DropdownSelectionProps {
-  disabled?: boolean;
-  isOpen?: boolean;
-  hasSelected?: boolean;
+  disabled?: boolean
+  isOpen?: boolean
+  hasSelected?: boolean
 }
 
 export const Container = styled.div<ContainerProps>`
   position: relative;
-`;
+`
 
 export const DropdownSelection = styled.button<DropdownSelectionProps>`
   background-color: ${(props) => props.theme.colors.Dark_100};
@@ -34,7 +34,7 @@ export const DropdownSelection = styled.button<DropdownSelectionProps>`
   box-shadow: none;
 
   ::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 6px;
     height: 6px;
@@ -55,20 +55,20 @@ export const DropdownSelection = styled.button<DropdownSelectionProps>`
         transform: rotate(-225deg);
       }
     `}
-`;
+`
 
 export const SelectedItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-`;
+`
 
 export const SelectedItemName = styled.span`
   font-weight: 600;
   font-size: 1rem;
 
   color: ${(props) => props.theme.colors.Dark_900};
-`;
+`
 
 export const DropdownItem = styled.div`
   cursor: pointer;
@@ -82,7 +82,7 @@ export const DropdownItem = styled.div`
   &:hover > div {
     font-weight: 600;
   }
-`;
+`
 
 export const DropdownItemName = styled.div<DropdownItemNameProps>`
   padding: 0.2rem 0.5rem;
@@ -96,7 +96,7 @@ export const DropdownItemName = styled.div<DropdownItemNameProps>`
       width: fit-content;
       font-weight: 600;
     `}
-`;
+`
 
 export const DropdownContainer = styled.div`
   background-color: ${(props) => props.theme.colors.Dark_100};
@@ -105,11 +105,11 @@ export const DropdownContainer = styled.div`
   padding: 0.6rem;
   width: 100%;
   z-index: 1000;
-`;
+`
 
 export const DropdownItensContainer = styled.div`
   overflow: auto;
-`;
+`
 
 export const Label = styled.label<labelProps>`
   font-size: 0.8rem;
@@ -122,4 +122,4 @@ export const Label = styled.label<labelProps>`
       display: block;
       opacity: 1;
     `}
-`;
+`

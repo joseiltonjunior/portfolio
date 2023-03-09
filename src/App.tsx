@@ -1,13 +1,13 @@
-import { Layout } from "./components/Layout";
-import GlobalStyle from "./styles/global";
+import { Home } from './pages/Home'
+import GlobalStyle from './styles/global'
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Layout />
+      <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

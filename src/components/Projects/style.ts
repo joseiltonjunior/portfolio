@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: grid;
@@ -8,17 +8,19 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-`;
+`
 
 export const Card = styled.button`
   background-color: transparent;
   border: 1px solid ${(props) => props.theme.colors.Dark_600};
   border-radius: 6px;
-  padding: 1rem 0.75rem;
+  padding: 0.75rem;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+
+  gap: 1rem;
 
   transition: all 0.2s;
 
@@ -29,36 +31,41 @@ export const Card = styled.button`
   :disabled {
     cursor: default;
   }
-`;
+`
 
 export const Title = styled.p`
   font-weight: 600;
   color: ${(props) => props.theme.colors.Orange};
   font-size: 1rem;
   text-align: left;
-`;
+`
 
 export const Description = styled.p`
   color: ${(props) => props.theme.colors.Dark_300};
   font-size: 0.9rem;
   text-align: left;
-`;
+`
 
-export const Info = styled.p`
-  color: ${(props) => props.theme.colors.Dark_300};
-  font-size: 0.75rem;
-`;
-
-export const RowContent = styled.div`
+export const ContentInfo = styled.div`
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.25rem;
+`
 
-  align-items: center;
-`;
+export const ContentIcon = styled.div`
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid ${(props) => props.theme.colors.Orange};
 
-export const StarContent = styled.div`
   display: flex;
-  gap: 0.3rem;
-  color: ${(props) => props.theme.colors.Dark_400};
+  justify-content: center;
   align-items: center;
-`;
+
+  img {
+    object-fit: cover;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+`

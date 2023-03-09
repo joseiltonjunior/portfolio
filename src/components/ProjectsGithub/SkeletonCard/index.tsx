@@ -1,4 +1,4 @@
-import Skeleton from "react-loading-skeleton";
+import Skeleton from 'react-loading-skeleton'
 import {
   Card,
   Description,
@@ -6,7 +6,7 @@ import {
   RowContent,
   StarContent,
   Title,
-} from "../style";
+} from '../style'
 
 export function SkeletonCard() {
   return (
@@ -29,5 +29,5 @@ export function SkeletonCard() {
         </StarContent>
       </RowContent>
     </Card>
-  );
+  )
 }
