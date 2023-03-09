@@ -1,8 +1,8 @@
-import { Swicth } from "./index";
-import { Meta, StoryObj } from "@storybook/react";
+import { Swicth } from './index'
+import { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: "Components/Swicth",
+  title: 'Components/Swicth',
   component: Swicth,
   args: {
     checked: false,
@@ -10,10 +10,10 @@ export default {
   argTypes: {
     checked: {
       control: {
-        type: "boolean",
+        type: 'boolean',
       },
     },
   },
-} as Meta;
+} as Meta
 
-export const Default: StoryObj = {};
+export const Default: StoryObj = {}

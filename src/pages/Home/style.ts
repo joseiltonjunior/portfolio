@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 70rem;
@@ -14,4 +14,10 @@ export const Container = styled.div`
     grid-template-columns: 1fr;
     font-size: 87.5%;
   }
-`;
+`
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`

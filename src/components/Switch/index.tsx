@@ -1,5 +1,5 @@
-import { SwitchProps } from "~/types/switch";
-import { Checkbox, Slider, Switch } from "./style";
+import { SwitchProps } from '~/types/switch'
+import { Checkbox, Slider, Switch } from './style'
 
 export function Swicth({ ...rest }: SwitchProps) {
   return (
@@ -7,5 +7,5 @@ export function Swicth({ ...rest }: SwitchProps) {
       <Checkbox {...rest} type="checkbox" />
       <Slider />
     </Switch>
-  );
+  )
 }

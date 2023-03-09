@@ -1,8 +1,9 @@
-import { SkeletonTheme } from "react-loading-skeleton";
-import { ModalProvider } from "./useModal";
-import { ThemeProvider } from "styled-components";
-import theme from "~/styles/theme";
-import "react-loading-skeleton/dist/skeleton.css";
+import { SkeletonTheme } from 'react-loading-skeleton'
+import { ModalProvider } from './useModal'
+import { ThemeProvider } from 'styled-components'
+import theme from '~/styles/theme'
+import 'react-loading-skeleton/dist/skeleton.css'
+import React from 'react'
 
 export function Hooks({ children }: React.PropsWithChildren) {
   return (
@@ -16,5 +17,5 @@ export function Hooks({ children }: React.PropsWithChildren) {
         </SkeletonTheme>
       </ModalProvider>
     </ThemeProvider>
-  );
+  )
 }

@@ -1,13 +1,13 @@
-import { useModal } from "../../hooks/useModal";
-import { Button } from "../Button";
+import { useModal } from '../../hooks/useModal'
+import { Button } from '../Button'
 
-import { Container, Overlay, BoxModal, Description, RowContent } from "./style";
+import { Container, Overlay, BoxModal, Description, RowContent } from './style'
 
 export function Modal() {
   const {
     closeModal,
     modalState: { visible, message, confirm, type, children },
-  } = useModal();
+  } = useModal()
 
   return (
     <Container isVisible={visible}>
@@ -28,5 +28,5 @@ export function Modal() {
         )}
       </BoxModal>
     </Container>
-  );
+  )
 }

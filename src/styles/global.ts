@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from "styled-components";
-import theme from "./theme";
+import styled, { createGlobalStyle } from 'styled-components'
+import theme from './theme'
 
 export default createGlobalStyle`
 :focus{
@@ -36,9 +36,9 @@ button {
   font-weight: 400;
 }
 
-`;
+`
 
 export const Line = styled.div`
   margin: 1rem 0;
   border-bottom: 1px solid ${theme.colors.Orange};
-`;
+`

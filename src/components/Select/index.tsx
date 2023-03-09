@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from 'react'
 
 import {
   Container,
@@ -10,20 +10,20 @@ import {
   DropdownItem,
   DropdownItemName,
   SelectedItemName,
-} from "./style";
+} from './style'
 
 type ItensDropdownProps = {
-  value: string;
-  name: ReactNode;
-};
+  value: string
+  name: ReactNode
+}
 
 type SelectProps = {
-  label: string;
-  itens: ItensDropdownProps[];
-  defaultValue: string;
-  disabled?: boolean;
-  onAction(item: ItensDropdownProps): void;
-};
+  label: string
+  itens: ItensDropdownProps[]
+  defaultValue: string
+  disabled?: boolean
+  onAction(item: ItensDropdownProps): void
+}
 
 export function Select({
   label,
@@ -31,30 +31,30 @@ export function Select({
   defaultValue,
   onAction,
   disabled,
-}: SelectProps): JSX.Element {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedItemIndex, setSelectedItemIndex] = useState(0);
+}: SelectProps) {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const [selectedItemIndex, setSelectedItemIndex] = useState(0)
 
   useEffect(() => {
     const itemFoundIndex = itens.findIndex(
-      (item) => item.value === defaultValue
-    );
+      (item) => item.value === defaultValue,
+    )
 
-    setSelectedItemIndex(itemFoundIndex);
-  }, [itens]);
+    setSelectedItemIndex(itemFoundIndex)
+  }, [defaultValue, itens])
 
   return (
     <Container
       selectIndex={selectedItemIndex}
       disabled={disabled}
       onBlur={() => {
-        setTimeout(() => setIsDropdownOpen(false), 200);
+        setTimeout(() => setIsDropdownOpen(false), 200)
       }}
     >
       <DropdownSelection
         disabled={disabled}
         onClick={() => {
-          setIsDropdownOpen(!isDropdownOpen);
+          setIsDropdownOpen(!isDropdownOpen)
         }}
         isOpen={isDropdownOpen}
         hasSelected={selectedItemIndex > 0}
@@ -78,9 +78,9 @@ export function Select({
               <DropdownItem
                 key={item.value}
                 onClick={() => {
-                  if (onAction) onAction(item);
-                  setSelectedItemIndex(index);
-                  setIsDropdownOpen(false);
+                  if (onAction) onAction(item)
+                  setSelectedItemIndex(index)
+                  setIsDropdownOpen(false)
                 }}
               >
                 <DropdownItemName isSelected={index === selectedItemIndex}>
@@ -92,5 +92,5 @@ export function Select({
         </DropdownContainer>
       )}
     </Container>
-  );
+  )
 }

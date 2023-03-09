@@ -1,33 +1,33 @@
-import { Button } from "./index";
-import { Box } from "./styles";
-import { Meta, StoryObj } from "@storybook/react";
+import { Button } from './index'
+import { Box } from './styles'
+import { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: "Components/Button",
+  title: 'Components/Button',
   component: Button,
   decorators: [
     (Story) => {
-      return <Box>{Story()}</Box>;
+      return <Box>{Story()}</Box>
     },
   ],
   args: {
-    children: "Button",
-    variant: "primary",
+    children: 'Button',
+    variant: 'primary',
     disabled: false,
   },
   argTypes: {
     disabled: {
       control: {
-        type: "boolean",
+        type: 'boolean',
       },
     },
     variant: {
-      options: ["primary", "secondary"],
+      options: ['primary', 'secondary'],
       control: {
-        type: "inline-radio",
+        type: 'inline-radio',
       },
     },
   },
-} as Meta;
+} as Meta
 
-export const Default: StoryObj = {};
+export const Default: StoryObj = {}

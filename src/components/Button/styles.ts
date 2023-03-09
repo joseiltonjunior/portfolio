@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 interface ContainerProps {
-  variant: "primary" | "secondary";
+  variant: 'primary' | 'secondary'
 }
 
 export const Container = styled.button<ContainerProps>`
@@ -17,7 +17,7 @@ export const Container = styled.button<ContainerProps>`
   transition: all 0.3s;
 
   ${(props) =>
-    props.variant === "secondary" &&
+    props.variant === 'secondary' &&
     css`
       border: 1px solid ${(props) => props.theme.colors.Dark_100};
       color: ${(props) => props.theme.colors.Dark_100};
@@ -39,7 +39,7 @@ export const Container = styled.button<ContainerProps>`
             background-color: ${(props) => props.theme.colors.Orange};
           }
 
-          ${props.variant === "secondary" &&
+          ${props.variant === 'secondary' &&
           css`
             :hover {
               color: ${(props) => props.theme.colors.Dark_600};
@@ -47,11 +47,11 @@ export const Container = styled.button<ContainerProps>`
             }
           `}
         `}
-`;
+`
 
 export const Box = styled.div`
   max-width: 18.75rem;
-`;
+`
 
-Container.displayName = "Button";
-Box.displayName = "Box";
+Container.displayName = 'Button'
+Box.displayName = 'Box'

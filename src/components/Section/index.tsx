@@ -1,21 +1,21 @@
-import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
-import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Container, Header, Content, Title, ShowButton } from "./style";
+import { FaEye, FaEyeSlash } from 'react-icons/fa'
+import { Container, Header, Content, Title, ShowButton } from './style'
 
 interface SectionProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
-  title: string;
-  show?: boolean;
+  title: string
+  show?: boolean
 }
 
 export function Section({ title, show, children, ...rest }: SectionProps) {
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(false)
 
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   function handleShowContent() {
-    setShowContent(!showContent);
+    setShowContent(!showContent)
   }
 
   return (
@@ -25,9 +25,9 @@ export function Section({ title, show, children, ...rest }: SectionProps) {
         {show && (
           <ShowButton onClick={handleShowContent}>
             {!showContent ? (
-              <FaEye title={t("showContent") ?? ""} />
+              <FaEye title={t('showContent') ?? ''} />
             ) : (
-              <FaEyeSlash title={t("hideContent") ?? ""} />
+              <FaEyeSlash title={t('hideContent') ?? ''} />
             )}
           </ShowButton>
         )}
@@ -35,5 +35,5 @@ export function Section({ title, show, children, ...rest }: SectionProps) {
       {show && showContent && <Content {...rest}>{children}</Content>}
       {!show && <Content {...rest}>{children}</Content>}
     </Container>
-  );
+  )
 }

@@ -1,7 +1,7 @@
-import { useCallback, useEffect, useState } from "react";
-import { FaRegStar } from "react-icons/fa";
+import { useCallback, useEffect, useState } from 'react'
+import { FaRegStar } from 'react-icons/fa'
 
-import { IRepositories } from "~/types/repositories";
+import { RepositoriesDataProps, RepositoriesProps } from '~/types/repositories'
 import {
   Card,
   Container,
@@ -10,31 +10,27 @@ import {
   Title,
   StarContent,
   Info,
-} from "./style";
-import { SkeletonCard } from "./SkeletonCard";
+} from './style'
+import { SkeletonCard } from './SkeletonCard'
 
-interface IProjects {
-  data?: IRepositories[];
-}
+export function ProjectsGithub({ repositories }: RepositoriesDataProps) {
+  const [repos, setRepos] = useState<RepositoriesProps[]>()
 
-export function Projects({ data }: IProjects) {
-  const [repos, setRepos] = useState<IRepositories[]>();
-
-  const filterRepos = useCallback((repos: IRepositories[]) => {
+  const filterRepos = useCallback((repos: RepositoriesProps[]) => {
     const filter = repos.filter(
       (item) =>
-        item.name !== "portfolio-deprecated" &&
-        item.name !== "SwitchThemesReactTS" &&
-        item.name !== "joseiltonjunior" &&
-        item.name !== "after-app-deprecated"
-    );
+        item.name !== 'portfolio-deprecated' &&
+        item.name !== 'SwitchThemesReactTS' &&
+        item.name !== 'joseiltonjunior' &&
+        item.name !== 'after-app-deprecated',
+    )
 
-    setRepos(filter);
-  }, []);
+    setRepos(filter)
+  }, [])
 
   useEffect(() => {
-    if (data) filterRepos(data);
-  }, []);
+    if (repositories) filterRepos(repositories)
+  }, [repositories, filterRepos])
 
   return (
     <Container>
@@ -44,7 +40,7 @@ export function Projects({ data }: IProjects) {
             key={repo.id}
             title={`Abrir o projeto ${repo.name} no Github`}
             onClick={() => {
-              window.open(repo.html_url, "_blank");
+              window.open(repo.html_url, '_blank')
             }}
           >
             <Title>{repo.name}</Title>
@@ -65,5 +61,5 @@ export function Projects({ data }: IProjects) {
         </>
       )}
     </Container>
-  );
+  )
 }

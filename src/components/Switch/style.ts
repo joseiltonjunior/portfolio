@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Checkbox = styled.input`
   opacity: 0;
   width: 0;
   height: 0;
-`;
+`
 
 export const Slider = styled.span`
   position: absolute;
@@ -20,7 +20,7 @@ export const Slider = styled.span`
 
   :before {
     position: absolute;
-    content: "";
+    content: '';
     height: 12px;
     width: 12px;
     border-radius: 50%;
@@ -28,7 +28,7 @@ export const Slider = styled.span`
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
-`;
+`
 
 export const Switch = styled.label`
   position: relative;
@@ -49,4 +49,4 @@ export const Switch = styled.label`
     -ms-transform: translateX(12px);
     transform: translateX(12px);
   }
-`;
+`
