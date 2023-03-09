@@ -54,7 +54,7 @@ export function Sidebar() {
           <FiInstagram size={20} />
         </Link>
         <Link
-          href="https://drive.google.com/file/d/1alBh8KD-R0LFVq-bhfyI0mbRHEn_nAtP/view?usp=share_link"
+          href="https://drive.google.com/file/d/1iHEb9ThuliqKPtPWKXdgSbnCgXZjdMcV/view?usp=share_link"
           target="_blank"
           rel="noopener noreferrer"
           title="Curriculum vitæ"
