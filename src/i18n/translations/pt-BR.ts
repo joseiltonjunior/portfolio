@@ -75,4 +75,8 @@ export const TRANSLATIONS_PT_BR = {
   titleVideo3: 'Skeleton na prática',
   descriptionVideo3:
     'O skeleton loading é uma abordagem que visa melhorar a experiência do usuário exibindo elementos de carregamento que são similares ao conteúdo real que vai ser apresentado quando todos os dados carregarem.',
+
+  titleVideo4: 'Deploy + Netlify na prática',
+  descriptionVideo4:
+    'O video de hoje é como estar disponibilizando seus projetos publicamente utilizando o Github + Netlify e ainda contar com Deploy automático de forma totalmente gratuita.',
 }

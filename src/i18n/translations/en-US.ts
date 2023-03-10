@@ -74,4 +74,8 @@ export const TRANSLATIONS_EN_US = {
   titleVideo3: 'Skeleton in practice',
   descriptionVideo3:
     'Skeleton loading is an approach that aims to improve the user experience by displaying loading elements that are similar to the actual content that will be displayed when all the data loads.',
+
+  titleVideo4: 'Deploy + Netlify in practice',
+  descriptionVideo4:
+    'Today video is how to make your projects publicly available using Github + Netlify and still have automatic Deploy completely free of charge.',
 }
