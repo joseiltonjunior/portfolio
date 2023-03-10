@@ -6,6 +6,7 @@ import thumb4 from '~/assets/thumb-netlify.png'
 import portfolioIcon from '~/assets/binary-code.png'
 import igniteIcon from '~/assets/ignite.png'
 import storybookIcon from '~/assets/storybook.svg'
+import styledIcon from '~/assets/styled.png'
 
 export const videos = [
   { thumb, id: '8hUrdjSWTqU' },
@@ -32,6 +33,13 @@ export const projects = [
     url: 'https://ignite-shop-dvlp.netlify.app/',
     name: 'Ignite Shop',
     description: 'Projeto do curso da Rocketseat, desenvolvido com Next + TS',
+  },
+  {
+    icon: styledIcon,
+    url: 'https://base-themes-react-dvlp.netlify.app/',
+    name: 'Switch Theme',
+    description:
+      'Projeto demonstrativo de como utilizar ThemeProvider do Styled-components',
   },
 ]
 
