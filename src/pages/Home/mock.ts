@@ -3,10 +3,7 @@ import thumb2 from '~/assets/thumb-react-storybook.png'
 import thumb3 from '~/assets/thumb-skeleton.png'
 import thumb4 from '~/assets/thumb-netlify.png'
 
-import portfolioIcon from '~/assets/binary-code.png'
-import igniteIcon from '~/assets/ignite.png'
 import storybookIcon from '~/assets/storybook.svg'
-import styledIcon from '~/assets/styled.png'
 
 export const videos = [
   { thumb, id: '8hUrdjSWTqU' },
@@ -17,29 +14,16 @@ export const videos = [
 
 export const projects = [
   {
-    icon: portfolioIcon,
-    url: 'https://ferreirajr.tech',
-    name: 'Porfólio',
-    description: 'Projeto pessoal desenvolvido com React + TS',
-  },
-  {
     icon: storybookIcon,
     url: 'https://storybook-portfolio-dvlp.netlify.app',
     name: 'Storybook Porfólio',
     description: 'Documentação dos componentes do Portfólio',
   },
   {
-    icon: igniteIcon,
-    url: 'https://ignite-shop-dvlp.netlify.app/',
-    name: 'Ignite Shop',
-    description: 'Projeto do curso da Rocketseat, desenvolvido com Next + TS',
-  },
-  {
-    icon: styledIcon,
-    url: 'https://base-themes-react-dvlp.netlify.app/',
-    name: 'Switch Theme',
-    description:
-      'Projeto demonstrativo de como utilizar ThemeProvider do Styled-components',
+    icon: 'https://i.ibb.co/jTQPhV8/C-pia-de-D-Coffee-Shop-3.png',
+    url: 'https://dcoffee-shop.netlify.app',
+    name: `D'Coffee Shop`,
+    description: 'Cafés Gourmet | Copos e Garrafas',
   },
 ]
 
@@ -48,16 +32,17 @@ export const skills = [
     name: 'HTML',
   },
   {
-    name: 'CSS e CSS in JS (Styled-components)',
+    name: 'CSS/CSS in JS (Styled-components, Stitches)',
   },
   {
-    name: 'Javascript',
+    name: 'Javascript/Typescript',
   },
-  {
-    name: 'Typescript',
-  },
+
   {
     name: 'React',
+  },
+  {
+    name: 'Next',
   },
   {
     name: 'React Hooks',
