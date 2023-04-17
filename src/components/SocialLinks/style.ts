@@ -30,9 +30,9 @@ export const Link = styled.a<linkProps>`
 `
 
 export const Button = styled.button`
-  background: ${(props) => props.theme.colors.Light};
-  color: ${(props) => props.theme.colors.Dark_600};
-  border: none;
+  background: transparent;
+  color: ${(props) => props.theme.colors.Orange};
+  border: 1px solid ${(props) => props.theme.colors.Orange};
   border-radius: 8px;
   padding: 0.5rem;
 
@@ -40,9 +40,10 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
 
-  transition: color 0.3s;
+  transition: background 0.3s;
 
   :hover {
-    color: ${(props) => props.theme.colors.Orange};
+    background: ${(props) => props.theme.colors.Orange};
+    color: ${(props) => props.theme.colors.Dark_800};
   }
 `
