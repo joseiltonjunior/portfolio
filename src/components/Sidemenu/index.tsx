@@ -8,11 +8,11 @@ import {
   Footer,
   Link,
 } from './style'
-import { FiGithub, FiLinkedin, FiInstagram, FiDownload } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiInstagram, FiYoutube } from 'react-icons/fi'
 
 import { useTranslation } from 'react-i18next'
 
-export function Sidebar() {
+export function Sidemenu() {
   const { t } = useTranslation()
 
   return (
@@ -54,12 +54,12 @@ export function Sidebar() {
           <FiInstagram size={20} />
         </Link>
         <Link
-          href="https://drive.google.com/file/d/1iHEb9ThuliqKPtPWKXdgSbnCgXZjdMcV/view?usp=share_link"
+          href="https://www.youtube.com/channel/UCeJD8gJRoNW_2__3E_vizvQ"
           target="_blank"
           rel="noopener noreferrer"
-          title="Curriculum vitæ"
+          title="Canal Youtube"
         >
-          <FiDownload size={20} />
+          <FiYoutube size={20} />
         </Link>
       </Footer>
     </Container>

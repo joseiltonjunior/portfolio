@@ -20,6 +20,8 @@ export const Card = styled.button`
   flex-direction: column;
   gap: 0.5rem;
 
+  z-index: 9999;
+
   transition: all 0.2s;
 
   :hover:not(:disabled) {
@@ -47,6 +49,14 @@ export const Description = styled.p`
 export const Info = styled.p`
   color: ${(props) => props.theme.colors.Dark_300};
   font-size: 0.75rem;
+`
+
+export const Tag = styled.p`
+  color: ${(props) => props.theme.colors.Dark_900};
+  font-size: 0.75rem;
+  background-color: ${(props) => props.theme.colors.Orange};
+  border-radius: 8px;
+  padding: 2px 4px;
 `
 
 export const RowContent = styled.div`

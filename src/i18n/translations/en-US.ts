@@ -1,14 +1,21 @@
 export const TRANSLATIONS_EN_US = {
   experienceTitle: 'Experiences',
-  aboutTitle: 'About',
+  aboutTitle: 'More about :)',
   aboutTextPrimary:
-    "Hello, I'm a Front-end Developer and aspiring creator of programming and technology content!",
+    "Hi, I'm a Software Developer and aspiring technology content creator.",
   aboutTextSecondary:
-    'Passionate about Technology and Development, I have been collaborating since 2020 in Front-end and Mobile projects and assisting in Back-end projects.',
+    'Passionate about Technology and Development, I started my journey in 2020 and since then I have been working with Web and Mobile application development and assisting in Back-end projects.',
   educationTitle: 'Education',
-  skillsTitle: 'Hard-skills',
+  skillsTitle: 'Skills',
 
   sectionExperienceTextInfo: 'Technologies used',
+
+  webDeveloper: 'Web Developer',
+  mobileDeveloper: 'Mobile Developer',
+  createContent: 'Content creator',
+
+  endText:
+    "If you've made it this far, how about joining me on my networks and staying on top of upcoming projects.",
 
   nameWork1: 'Havan Labs',
   descripitionWork1: 'Front-end Developer',

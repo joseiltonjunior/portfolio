@@ -29,29 +29,40 @@ export const projects = [
 
 export const skills = [
   {
-    name: 'HTML',
+    name: 'Javascript',
   },
   {
-    name: 'CSS/CSS in JS (Styled-components, Stitches)',
+    name: 'Typescript',
   },
-  {
-    name: 'Javascript/Typescript',
-  },
-
   {
     name: 'React',
   },
   {
-    name: 'Next',
-  },
-  {
-    name: 'React Hooks',
+    name: 'Next.js',
   },
   {
     name: 'React Native',
   },
   {
+    name: 'Node.js',
+  },
+  {
+    name: 'CSS in JS (Styled-components, Stitches)',
+  },
+  {
+    name: 'React Hooks',
+  },
+  {
+    name: 'React Redux',
+  },
+  {
+    name: 'CI / CD',
+  },
+  {
     name: 'Cloud (AWS/Azure)',
+  },
+  {
+    name: 'Stripe',
   },
   {
     name: 'Serviços de Geolocalização',

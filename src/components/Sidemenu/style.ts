@@ -4,6 +4,9 @@ export const Container = styled.div`
   background: ${(props) => props.theme.colors.Dark_800};
   border-radius: 8px;
   overflow: hidden;
+
+  width: 100%;
+  min-width: 300px;
 `
 
 export const Background = styled.div`
@@ -23,7 +26,7 @@ export const ContetProfile = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding-bottom: 20px;
   margin-top: calc(0px - 1.5rem - 6px);
 `
 
@@ -53,6 +56,10 @@ export const Footer = styled.div`
   display: flex;
   justify-content: center;
   gap: 1rem;
+
+  @media (min-width: 900px) {
+    display: none;
+  }
 `
 
 export const Link = styled.a`

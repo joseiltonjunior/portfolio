@@ -5,6 +5,12 @@ export const Container = styled.div`
 
   border-radius: 8px;
   padding: 2rem;
+
+  width: 800px;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `
 
 export const Header = styled.div`
