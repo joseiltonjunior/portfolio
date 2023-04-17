@@ -17,6 +17,11 @@ body {
   background: ${theme.colors.Dark_900};
   color: ${theme.colors.Dark_300};
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+
+  @media (max-width: 900px) {
+    overflow-y: scroll;
+  }
 }
 
 body::-webkit-scrollbar {

@@ -26,12 +26,10 @@ export function ModalProvider({ children }: React.PropsWithChildren) {
 
   const openModal = (payload: ModalStateProps) => {
     setState({ ...payload, visible: true })
-    window.document.body.style.overflow = 'hidden'
   }
 
   const closeModal = () => {
     setState({ visible: false })
-    window.document.body.style.overflow = 'auto'
   }
 
   return (

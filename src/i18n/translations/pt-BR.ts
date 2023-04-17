@@ -1,14 +1,21 @@
 export const TRANSLATIONS_PT_BR = {
   experienceTitle: 'Experiências',
-  aboutTitle: 'Sobre',
+  aboutTitle: 'Mais sobre :)',
   aboutTextPrimary:
-    'Olá, sou Desenvolvedor Front-end e aspirante a criador de conteúdos de programação e tecnologia!',
+    'Olá, sou Desenvolvedor de Software e aspirante a criador de conteúdos de tecnologia.',
   aboutTextSecondary:
-    'Apaixonado por Tecnologia e Desenvolvimento, tenho colaborado desde 2020 em projetos Front-end e Mobile e auxiliado em projetos Back-end.',
+    'Apaixonado por Tecnologia e Desenvolvimento, iniciei minha jornada em 2020 e desde então tenho atuado com desenvolvimento de aplicações Web, Mobile e auxiliado em projetos Back-end.',
   educationTitle: 'Educação',
-  skillsTitle: 'Habilidades',
+  skillsTitle: 'Conhecimento',
+
+  webDeveloper: 'Desenvolvedor Web',
+  mobileDeveloper: 'Desenvolvedor Mobile',
+  createContent: 'Criador de Conteúdo',
 
   sectionExperienceTextInfo: 'Tecnologias utilizadas',
+
+  endText:
+    'Se chegou até aqui, que tal me acompanhar nas minhas redes e ficar por dentro dos proximos projetos.',
 
   nameWork1: 'Havan Labs',
   descripitionWork1: 'Desenvolvedor Front-end',

@@ -5,6 +5,7 @@ export interface RepositoriesProps {
   name: string
   stargazers_count: string
   html_url: string
+  topics: string[]
 }
 
 export interface RepositoriesDataProps {

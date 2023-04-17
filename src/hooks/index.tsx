@@ -4,6 +4,9 @@ import { ThemeProvider } from 'styled-components'
 import theme from '~/styles/theme'
 import 'react-loading-skeleton/dist/skeleton.css'
 import React from 'react'
+import { ToastContainer } from 'react-toastify'
+
+import 'react-toastify/dist/ReactToastify.css'
 
 export function Hooks({ children }: React.PropsWithChildren) {
   return (
@@ -15,6 +18,7 @@ export function Hooks({ children }: React.PropsWithChildren) {
         >
           {children}
         </SkeletonTheme>
+        <ToastContainer />
       </ModalProvider>
     </ThemeProvider>
   )

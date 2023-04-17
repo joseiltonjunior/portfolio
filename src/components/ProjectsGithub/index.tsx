@@ -10,6 +10,7 @@ import {
   Title,
   StarContent,
   Info,
+  Tag,
 } from './style'
 import { SkeletonCard } from './SkeletonCard'
 
@@ -22,7 +23,8 @@ export function ProjectsGithub({ repositories }: RepositoriesDataProps) {
         item.name !== 'portfolio-deprecated' &&
         item.name !== 'SwitchThemesReactTS' &&
         item.name !== 'joseiltonjunior' &&
-        item.name !== 'after-app-deprecated',
+        item.name !== 'after-app-deprecated' &&
+        item.name !== 'dcoffee-shop-assets',
     )
 
     setRepos(filter)
@@ -52,6 +54,20 @@ export function ProjectsGithub({ repositories }: RepositoriesDataProps) {
                 <Info>{repo.stargazers_count}</Info>
               </StarContent>
             </RowContent>
+            {repo.topics.length > 0 && (
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '2px',
+                  marginTop: '10px',
+                }}
+              >
+                {repo.topics.map((topic, index) => (
+                  <Tag key={index}>{`${topic}`}</Tag>
+                ))}
+              </div>
+            )}
           </Card>
         ))
       ) : (
