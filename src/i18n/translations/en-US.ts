@@ -2,17 +2,13 @@ export const TRANSLATIONS_EN_US = {
   experienceTitle: 'Experiences',
   aboutTitle: 'More about :)',
   aboutTextPrimary:
-    "Hi, I'm a Software Developer and aspiring technology content creator.",
+    "Hello, I'm a Full-stack Developer and aspiring programming content creator.",
   aboutTextSecondary:
-    'Passionate about Technology and Development, I started my journey in 2020 and since then I have been working with Web and Mobile application development and assisting in Back-end projects.',
+    "Passionate about Technology and Development, I started my journey in 2020 and since then I've worked on projects Front-end, Mobile and I was able to learn more about Back-end projects. I seek to evolve my knowledge, learn new skills, become a more complete professional and build a solid career.",
   educationTitle: 'Education',
   skillsTitle: 'Skills',
 
   sectionExperienceTextInfo: 'Technologies used',
-
-  webDeveloper: 'Web Developer',
-  mobileDeveloper: 'Mobile Developer',
-  createContent: 'Content creator',
 
   endText:
     "If you've made it this far, how about joining me on my networks and staying on top of upcoming projects.",
@@ -66,7 +62,7 @@ export const TRANSLATIONS_EN_US = {
 
   projects: 'Projects',
   projectsGithub: 'Portfolio Github',
-  softwareDeveloper: 'Software Developer',
+  softwareDeveloper: 'Full-stack Developer',
   video: 'Programming content',
   noContent: 'New content coming soon.',
 

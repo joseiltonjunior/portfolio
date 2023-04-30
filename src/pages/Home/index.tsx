@@ -96,9 +96,10 @@ export function Home() {
               <div onClick={() => setOpen((state) => !state)}>
                 {open ? (
                   <Trail open={open}>
-                    <span>{t('webDeveloper')}</span>
-                    <span>{t('mobileDeveloper')}</span>
-                    <span>{t('createContent')}</span>
+                    <span>Node.js</span>
+                    <span>React.js</span>
+                    <span>React Native</span>
+                    <span>Typescript</span>
                   </Trail>
                 ) : (
                   <button className="pressStart">

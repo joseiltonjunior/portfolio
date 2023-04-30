@@ -2,15 +2,11 @@ export const TRANSLATIONS_PT_BR = {
   experienceTitle: 'Experiências',
   aboutTitle: 'Mais sobre :)',
   aboutTextPrimary:
-    'Olá, sou Desenvolvedor de Software e aspirante a criador de conteúdos de tecnologia.',
+    'Olá, sou Desenvolvedor de Full-stack e aspirante a criador de conteúdos de programação.',
   aboutTextSecondary:
-    'Apaixonado por Tecnologia e Desenvolvimento, iniciei minha jornada em 2020 e desde então tenho atuado com desenvolvimento de aplicações Web, Mobile e auxiliado em projetos Back-end.',
+    'Apaixonado por Tecnologia e Desenvolvimento, iniciei minha jornada em 2020 e desde então trabalhei em projetos Front-end, Mobile e pude aprender mais sobre projetos Back-end. Busco evoluir meus conhecimentos, aprender novas habilidades, me tornar um profissional mais completo e construir uma sólida carreira.',
   educationTitle: 'Educação',
-  skillsTitle: 'Conhecimento',
-
-  webDeveloper: 'Desenvolvedor Web',
-  mobileDeveloper: 'Desenvolvedor Mobile',
-  createContent: 'Criador de Conteúdo',
+  skillsTitle: 'Competências',
 
   sectionExperienceTextInfo: 'Tecnologias utilizadas',
 
@@ -67,7 +63,7 @@ export const TRANSLATIONS_PT_BR = {
 
   projects: 'Projetos',
   projectsGithub: 'Portfólio Github',
-  softwareDeveloper: 'Desenvolvedor de Software',
+  softwareDeveloper: 'Desenvolvedor Full-stack',
   video: 'Conteúdos sobre programação',
   noContent: 'Em breve novos conteúdos.',
 
