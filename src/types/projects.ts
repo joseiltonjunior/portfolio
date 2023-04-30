@@ -3,6 +3,8 @@ interface ProjectProps {
   url: string
   name: string
   description: string
+  stage: string
+  skills: string
 }
 
 export interface ProjectsDataProps {

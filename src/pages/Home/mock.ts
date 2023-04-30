@@ -3,8 +3,6 @@ import thumb2 from '~/assets/thumb-react-storybook.png'
 import thumb3 from '~/assets/thumb-skeleton.png'
 import thumb4 from '~/assets/thumb-netlify.png'
 
-import storybookIcon from '~/assets/storybook.svg'
-
 export const videos = [
   { thumb, id: '8hUrdjSWTqU' },
   { thumb: thumb2, id: 'xTsHUpVuWmo' },
@@ -14,16 +12,40 @@ export const videos = [
 
 export const projects = [
   {
-    icon: storybookIcon,
+    icon: 'https://i.ibb.co/bWfLzB7/Tela-produto.png',
+    url: 'https://dcoffee-shop.netlify.app',
+    name: `D'Coffee Shop`,
+    description:
+      'E-commerce do nincho de Café, Action Figure, Copos e Garrafas',
+    stage: 'prod',
+    skills:
+      'Next, Typescript, Stripe, Stitches, Redux, React Hooks, Eslint, Prettier e outros',
+  },
+  {
+    icon: 'https://i.ibb.co/M7RJRyL/flow-new-user.png',
+    url: 'https://github.com/joseiltonjunior/after-app/tree/develop',
+    name: 'After App',
+    description: 'Guia de bolso dos melhores roles da cidade',
+    stage: 'dev',
+    skills:
+      'React Native, Typescript, Styled-components, Redux, React Hooks, React Navigation, Eslint, Prettier e outros',
+  },
+  {
+    icon: 'https://i.ibb.co/B2X0Grk/api-solid.png',
+    url: 'https://github.com/joseiltonjunior/node-api-solid/tree/develop',
+    name: 'API Node.js',
+    description: 'API Solid PostgreSQL',
+    stage: 'dev',
+    skills:
+      'Node, Prisma, PostgreSQL, Docker, Typescript, Eslint, Prettier, Vitest e outros',
+  },
+  {
+    icon: 'https://i.ibb.co/6B1n2V2/storybook1.png',
     url: 'https://storybook-portfolio-dvlp.netlify.app',
     name: 'Storybook Porfólio',
     description: 'Documentação dos componentes do Portfólio',
-  },
-  {
-    icon: 'https://i.ibb.co/jTQPhV8/C-pia-de-D-Coffee-Shop-3.png',
-    url: 'https://dcoffee-shop.netlify.app',
-    name: `D'Coffee Shop`,
-    description: 'Cafés Gourmet | Copos e Garrafas',
+    stage: 'prod',
+    skills: 'React, Typescript, Storybook',
   },
 ]
 

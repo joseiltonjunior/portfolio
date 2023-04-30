@@ -17,6 +17,7 @@
     "axios": "^1.2.4",
     "i18next": "^22.0.8",
     "i18next-browser-languagedetector": "^7.0.1",
+    "keen-slider": "^6.8.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.0.0",
