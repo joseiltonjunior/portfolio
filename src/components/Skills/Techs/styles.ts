@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-export const Container = styled.div``
+export const Container = styled.div`
+  margin-top: 1rem;
+`
 
 export const Skill = styled.img`
   width: 3rem;

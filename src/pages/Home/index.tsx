@@ -96,8 +96,8 @@ export function Home() {
               <div onClick={() => setOpen((state) => !state)}>
                 {open ? (
                   <Trail open={open}>
-                    <span>Node.js</span>
-                    <span>React.js</span>
+                    <span>Node</span>
+                    <span>React</span>
                     <span>React Native</span>
                     <span>Typescript</span>
                   </Trail>

@@ -1,6 +1,7 @@
 import { Container, Link, Button } from './style'
 import { FiGithub, FiLinkedin, FiInstagram, FiYoutube } from 'react-icons/fi'
 import { VscDebugRestart } from 'react-icons/vsc'
+import { BsFilePdf } from 'react-icons/bs'
 
 interface linksProps {
   action(): void
@@ -40,6 +41,14 @@ export function SocialLinks({ action }: linksProps) {
         title="Canal Youtube"
       >
         <FiYoutube size={25} />
+      </Link>
+      <Link
+        href="https://drive.google.com/file/d/1tgVcHBROcjJaoIn-U7rt5ZUIXjKereRa/view?usp=share_link"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Curriculum vitæ"
+      >
+        <BsFilePdf size={25} />
       </Link>
       <Button
         onClick={() => {

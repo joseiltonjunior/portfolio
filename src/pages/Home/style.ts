@@ -74,7 +74,7 @@ export const WebContent = styled.div`
     width: 15%;
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1700px) {
     .parallax {
       margin-right: 10%;
     }
