@@ -43,7 +43,7 @@ export function SocialLinks({ action }: linksProps) {
         <FiYoutube size={25} />
       </Link>
       <Link
-        href="https://drive.google.com/file/d/1tgVcHBROcjJaoIn-U7rt5ZUIXjKereRa/view?usp=share_link"
+        href="https://drive.google.com/file/d/1es1EzhO69XSqdeE3L59go8CYNinhDJPc/view?usp=share_link"
         target="_blank"
         rel="noopener noreferrer"
         title="Curriculum vitæ"
