@@ -2,9 +2,9 @@ export const TRANSLATIONS_EN_US = {
   experienceTitle: 'Experiences',
   aboutTitle: 'More about :)',
   aboutTextPrimary:
-    "Hello, I'm a Full-stack Developer and aspiring programming content creator.",
+    "Hello, I'm a Full-stack Developer and creator of programming and technology content.",
   aboutTextSecondary:
-    "Passionate about Technology and Development, I started my journey in 2020 and since then I've worked on projects Front-end, Mobile and I was able to learn more about Back-end projects. I seek to evolve my knowledge, learn new skills, become a more complete professional and build a solid career.",
+    "Passionate about technology and development since I was young, I've always been curious and wanted to learn more about it. I studied hardware support and networks and was able to improve myself during my time in the barracks (Armed Forces), but it was in 2018 that my focus shifted to software development. I decided to start studying and looking for a job opportunity and finally, in 2020, I started my journey working on Mobile projects with React Native + Javascript. In 2021, I worked on Front-end projects with React + Typescript and have been improving my Back-end skills using Node + Typescript. I seek to improve my knowledge, learn new skills, collaborate with the community and open-source projects, and become a more complete developer every day.",
   educationTitle: 'Education',
   skillsTitle: 'Skills',
 
