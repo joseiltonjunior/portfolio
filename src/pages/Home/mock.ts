@@ -1,13 +1,13 @@
-import thumb from '~/assets/thumb-react-ts.png'
-import thumb2 from '~/assets/thumb-react-storybook.png'
-import thumb3 from '~/assets/thumb-skeleton.png'
-import thumb4 from '~/assets/thumb-netlify.png'
+// import thumb from '~/assets/thumb-react-ts.png'
+// import thumb2 from '~/assets/thumb-react-storybook.png'
+// import thumb3 from '~/assets/thumb-skeleton.png'
+// import thumb4 from '~/assets/thumb-netlify.png'
 
 export const videos = [
-  { thumb, id: '8hUrdjSWTqU' },
-  { thumb: thumb2, id: 'xTsHUpVuWmo' },
-  { thumb: thumb3, id: 'cNARhMjDgSM' },
-  { thumb: thumb4, id: 'k1sgUGkyC_o' },
+  // { thumb, id: '8hUrdjSWTqU' },
+  // { thumb: thumb2, id: 'xTsHUpVuWmo' },
+  // { thumb: thumb3, id: 'cNARhMjDgSM' },
+  // { thumb: thumb4, id: 'k1sgUGkyC_o' },
 ]
 
 export const projects = [

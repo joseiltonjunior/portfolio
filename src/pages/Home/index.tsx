@@ -96,10 +96,10 @@ export function Home() {
               <div onClick={() => setOpen((state) => !state)}>
                 {open ? (
                   <Trail open={open}>
-                    <span>Node</span>
-                    <span>React</span>
-                    <span>React Native</span>
-                    <span>Typescript</span>
+                    <span>Mobile</span>
+                    <span>Back-end</span>
+                    <span>Front-end</span>
+                    <span>Developer</span>
                   </Trail>
                 ) : (
                   <button className="pressStart">

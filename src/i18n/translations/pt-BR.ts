@@ -2,9 +2,9 @@ export const TRANSLATIONS_PT_BR = {
   experienceTitle: 'Experiências',
   aboutTitle: 'Mais sobre :)',
   aboutTextPrimary:
-    'Olá, sou Desenvolvedor de Full-stack e aspirante a criador de conteúdos de programação.',
+    'Olá, sou Desenvolvedor Full-stack e criador de conteúdos de programação e tecnologia.',
   aboutTextSecondary:
-    'Apaixonado por Tecnologia e Desenvolvimento, iniciei minha jornada em 2020 e desde então trabalhei em projetos Front-end, Mobile e pude aprender mais sobre projetos Back-end. Busco evoluir meus conhecimentos, aprender novas habilidades, me tornar um profissional mais completo e construir uma sólida carreira.',
+    'Apaixonado por Tecnologia e Desenvolvimento desde pequeno sempre fui curioso e quis estudar mais sobre, cursei suporte de hardware e redes e pude me aperfeiçoar mais durante meu tempo na Caserna (Forças Armadas), mas foi a partir de  2018 que meu foco mudou para Desenvolvimento de Software e resolvi iniciar os estudos e buscar uma recolocação e finalmente em 2020 iniciei minha jornada atuando em projetos Mobile com React Native + Javascript, 2021 atuei em projetos Front-end com React + Typescript  e venho melhorando minhas skills Back-end utilizando Node + Typescript. Busco evoluir meus conhecimentos, aprender novas habilidades, colaborar com a comunidade e projetos open source e me tornar um desenvolvedor cada dia mais completo.',
   educationTitle: 'Educação',
   skillsTitle: 'Competências',
 
