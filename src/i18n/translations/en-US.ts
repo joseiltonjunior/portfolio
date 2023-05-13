@@ -1,10 +1,16 @@
 export const TRANSLATIONS_EN_US = {
   experienceTitle: 'Experiences',
   aboutTitle: 'More about :)',
+  aboutText:
+    'Hello, my name is Junior Ferreira and I am a Full-stack Developer and programming content creator!',
   aboutTextPrimary:
-    "Hello, I'm a Full-stack Developer and creator of programming and technology content.",
+    'Passionate about technology and development, I started my journey in 2020 working on Mobile projects with Javascript, React Native, API consumption, Hooks, Redux, Agile, AWS, Design Patterns, Clean Code, Git Flow, and others.',
   aboutTextSecondary:
-    "Passionate about technology and development since I was young, I've always been curious and wanted to learn more about it. I studied hardware support and networks and was able to improve myself during my time in the barracks (Armed Forces), but it was in 2018 that my focus shifted to software development. I decided to start studying and looking for a job opportunity and finally, in 2020, I started my journey working on Mobile projects with React Native + Javascript. In 2021, I worked on Front-end projects with React + Typescript and have been improving my Back-end skills using Node + Typescript. I seek to improve my knowledge, learn new skills, collaborate with the community and open-source projects, and become a more complete developer every day.",
+    'In 2021, I wanted to learn more about Web development and worked on projects with Typescript, React, Hooks, API consumption, Context API, Agile, Design Patterns, Clean Code, Azure, CI/CD, Tests (E2E and Automated).',
+  aboutTextActual:
+    'Currently, I also work on Backend and Database projects using other technologies such as Typescript, Node, Prisma, Docker, PostgreSQL, Fastify, JWT, Design Patterns, Clean Code, Unit Tests, E2E Tests, and others.',
+  aboutTextObjectives:
+    'I strive to evolve and acquire new knowledge daily in order to become a more complete Developer, capable of solving problems and contributing to the community.',
   educationTitle: 'Education',
   skillsTitle: 'Skills',
 
@@ -61,7 +67,7 @@ export const TRANSLATIONS_EN_US = {
   theme: 'Theme',
 
   projects: 'Projects',
-  projectsGithub: 'Portfolio Github',
+  projectsGithub: 'Github repositories',
   softwareDeveloper: 'Full-stack Developer',
   video: 'Programming content',
   noContent: 'New content coming soon.',
