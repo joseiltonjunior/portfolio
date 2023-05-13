@@ -6,8 +6,11 @@ export function Abbout() {
 
   return (
     <Container>
+      <Text>{t('aboutText')}</Text>
       <Text>{t('aboutTextPrimary')}</Text>
       <Text>{t('aboutTextSecondary')}</Text>
+      <Text>{t('aboutTextActual')}</Text>
+      <Text>{t('aboutTextObjectives')}</Text>
     </Container>
   )
 }

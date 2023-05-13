@@ -1,11 +1,17 @@
 export const TRANSLATIONS_PT_BR = {
   experienceTitle: 'Experiências',
   aboutTitle: 'Mais sobre :)',
+  aboutText:
+    'Olá, me chamo Junior Ferreira sou Desenvolvedor Full-stack e criador de conteúdos de programação!',
   aboutTextPrimary:
-    'Olá, sou Desenvolvedor Full-stack e criador de conteúdos de programação e tecnologia.',
-  aboutTextSecondary:
-    'Apaixonado por Tecnologia e Desenvolvimento desde pequeno sempre fui curioso e quis estudar mais sobre, cursei suporte de hardware e redes e pude me aperfeiçoar mais durante meu tempo na Caserna (Forças Armadas), mas foi a partir de  2018 que meu foco mudou para Desenvolvimento de Software e resolvi iniciar os estudos e buscar uma recolocação e finalmente em 2020 iniciei minha jornada atuando em projetos Mobile com React Native + Javascript, 2021 atuei em projetos Front-end com React + Typescript  e venho melhorando minhas skills Back-end utilizando Node + Typescript. Busco evoluir meus conhecimentos, aprender novas habilidades, colaborar com a comunidade e projetos open source e me tornar um desenvolvedor cada dia mais completo.',
+    'Apaixonado por tecnologia e desenvolvimento, iniciei minha jornada em 2020 atuando em projetos Mobile com Javascript, React Native, consumo de APIs, Hooks, Redux, Agile, AWS, Design Patterns, Clean Code, Git Flow e outros.',
   educationTitle: 'Educação',
+  aboutTextSecondary:
+    'Em 2021, quis entender mais sobre desenvolvimento Web e atuei em projetos com Typescript, React, Hooks, consumo de APIs, Context API, Agile, Design Patterns, Clean Code, Azure, CI/CD, Testes (E2E e Automatizados).',
+  aboutTextActual:
+    'Atualmente, também atuo em projetos Backend e de Banco de Dados utilizando as demais tecnologias: Typescript, Node, Prisma, Docker, PostgreSQL, Fastify, JWT, Design Patterns, Clean Code, Testes Unitários, Testes E2E e outros.',
+  aboutTextObjectives:
+    'Procuro evoluir e adquirir novos conhecimentos diariamente, afins de me tornar um Desenvolvedor cada dia mais completo, capaz de solucionar problemas e colaborar com a comunidade.',
   skillsTitle: 'Competências',
 
   sectionExperienceTextInfo: 'Tecnologias utilizadas',
@@ -62,7 +68,7 @@ export const TRANSLATIONS_PT_BR = {
   theme: 'Tema',
 
   projects: 'Projetos',
-  projectsGithub: 'Portfólio Github',
+  projectsGithub: 'Repositórios Github',
   softwareDeveloper: 'Desenvolvedor Full-stack',
   video: 'Conteúdos sobre programação',
   noContent: 'Em breve novos conteúdos.',

@@ -9,7 +9,6 @@ import {
   Link,
 } from './style'
 
-import profile from '~/assets/profile.png'
 import { FiGithub, FiLinkedin, FiInstagram, FiYoutube } from 'react-icons/fi'
 
 import { useTranslation } from 'react-i18next'
@@ -22,7 +21,10 @@ export function Sidemenu() {
       <Background />
 
       <ContetProfile>
-        <PicProfile src={profile} alt="pic_profile" />
+        <PicProfile
+          src={'https://avatars.githubusercontent.com/u/47725788?v=4z'}
+          alt="pic_profile"
+        />
         <NameProfile>Junior Ferreira</NameProfile>
         <InfoProfile>{t('softwareDeveloper')}</InfoProfile>
       </ContetProfile>
