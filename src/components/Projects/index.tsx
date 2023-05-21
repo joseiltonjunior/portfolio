@@ -5,6 +5,7 @@ import { useKeenSlider } from 'keen-slider/react'
 import { Slide, Container, Description, Title, Img, ContentInfo } from './style'
 import { useState } from 'react'
 import { DotCorousel } from '../DotCarousel'
+import { Tag } from '../Tag'
 
 export function Projects({ projects }: ProjectsDataProps) {
   const [index, setIndex] = useState(0)
@@ -31,25 +32,27 @@ export function Projects({ projects }: ProjectsDataProps) {
             target="_blank"
             className="keen-slider__slide"
           >
-            <div>
-              <Img src={item.icon} alt="" />
+            <Img src={item.icon} alt="" />
 
-              <ContentInfo>
-                <Title>
-                  {item.name}
-                  {item.stage === 'dev' && ` - Em desenvolvimento`}
-                </Title>
-                <Description>{item.description}</Description>
-                <Description>Tecnologias usadas: {item.skills}</Description>
-              </ContentInfo>
-            </div>
+            <ContentInfo>
+              <Title>
+                {item.name}
+                {item.stage === 'dev' && ` - Em desenvolvimento`}
+              </Title>
+              <Description>{item.description}</Description>
+              <div className="tags">
+                {item.skills.map((skill) => (
+                  <Tag key={skill}>{skill}</Tag>
+                ))}
+              </div>
+            </ContentInfo>
           </Slide>
         ))}
       </Container>
       {projects.length > 1 && (
         <DotCorousel
           currentSlide={index}
-          projects={projects}
+          items={projects}
           instanceRef={instanceRef}
         />
       )}

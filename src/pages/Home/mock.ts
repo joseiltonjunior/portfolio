@@ -18,8 +18,7 @@ export const projects = [
     description:
       'E-commerce do nincho de Café, Action Figure, Copos e Garrafas',
     stage: 'prod',
-    skills:
-      'Next, Typescript, Stripe, Stitches, Redux, React Hooks, Eslint, Prettier e outros',
+    skills: ['Next', 'Typescript', 'Stripe', 'Redux'],
   },
   {
     icon: 'https://i.ibb.co/M7RJRyL/flow-new-user.png',
@@ -27,17 +26,15 @@ export const projects = [
     name: 'After App',
     description: 'Guia de bolso dos melhores roles da cidade',
     stage: 'dev',
-    skills:
-      'React Native, Typescript, Styled-components, Redux, React Hooks, React Navigation, Eslint, Prettier e outros',
+    skills: ['React Native', 'Typescript', 'Redux', 'Navigation'],
   },
   {
     icon: 'https://i.ibb.co/B2X0Grk/api-solid.png',
     url: 'https://github.com/joseiltonjunior/dcoffee-shop-api-node',
-    name: 'API Node.js',
-    description: 'API Solid PostgreSQL',
+    name: 'API Solid',
+    description: "APIs e Banco de dados do e-commerce D'Coffee Shop",
     stage: 'dev',
-    skills:
-      'Node, Prisma, PostgreSQL, Docker, Typescript, Eslint, Prettier, Vitest e outros',
+    skills: ['Node', 'Prisma', 'PostgreSQL', 'Docker'],
   },
   {
     icon: 'https://i.ibb.co/6B1n2V2/storybook1.png',
@@ -45,7 +42,16 @@ export const projects = [
     name: 'Storybook Porfólio',
     description: 'Documentação dos componentes do Portfólio',
     stage: 'prod',
-    skills: 'React, Typescript, Storybook',
+    skills: ['React', 'Typescript', 'Storybook', 'i18n'],
+  },
+  {
+    icon: 'https://i.ibb.co/k3sw82N/C-pia-de-Tela-produto.png',
+    url: 'https://github.com/joseiltonjunior/i-love-football',
+    name: 'I Love Football',
+    description:
+      'Para se manter atualizado sobre o mundo do futebol e as estatísticas do seu time favorito.',
+    stage: 'prod',
+    skills: ['Next', 'Typescript', 'API Sports', 'Redux'],
   },
 ]
 
@@ -92,11 +98,11 @@ export const skills = [
     type: 'front-end',
     urlImg: 'https://img.icons8.com/?id=ttxR7mXaDvqS',
   },
-  {
-    name: 'Tailwind',
-    type: 'front-end',
-    urlImg: 'https://img.icons8.com/?size=512&id=4PiNHtUJVbLs&format=png',
-  },
+  // {
+  //   name: 'Tailwind',
+  //   type: 'front-end',
+  //   urlImg: 'https://img.icons8.com/?size=512&id=4PiNHtUJVbLs&format=png',
+  // },
 
   {
     name: 'React Redux',
@@ -162,7 +168,7 @@ export const skills = [
   {
     name: 'Github',
     type: 'settings',
-    urlImg: 'https://img.icons8.com/?id=106564',
+    urlImg: 'https://img.icons8.com/?id=12599',
   },
   {
     name: 'Linux',

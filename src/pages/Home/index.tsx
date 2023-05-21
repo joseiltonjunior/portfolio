@@ -61,19 +61,22 @@ export function Home() {
             <Section title={t('aboutTitle')}>
               <Abbout />
             </Section>
-            <Section title={t('skillsTitle')} show>
+            <Section title={t('skillsTitle')}>
               <Skills skills={skills} />
             </Section>
 
-            <Section title={t('projects')} show>
+            <Section title={t('projects')}>
               <Projects projects={projects} />
             </Section>
 
-            <Section title={t('projectsGithub')} show>
+            <Section
+              title={t('projectsGithub')}
+              viewUrl="https://github.com/joseiltonjunior?tab=repositories"
+            >
               <ProjectsGithub repositories={repos} />
             </Section>
 
-            <Section title={t('video')} show>
+            <Section title={t('video')}>
               <Videos videos={videos} />
             </Section>
           </Content>
@@ -96,10 +99,10 @@ export function Home() {
               <div onClick={() => setOpen((state) => !state)}>
                 {open ? (
                   <Trail open={open}>
+                    <span>Web</span>
                     <span>Mobile</span>
                     <span>Back-end</span>
-                    <span>Front-end</span>
-                    <span>Developer</span>
+                    <span>Software Developer</span>
                   </Trail>
                 ) : (
                   <button className="pressStart">
@@ -161,7 +164,10 @@ export function Home() {
               style={{ ...alignCenter, justifyContent: 'flex-end' }}
             >
               <div className={`${'card'} ${'parallax'}`}>
-                <Section title={t('projectsGithub')}>
+                <Section
+                  title={t('projectsGithub')}
+                  viewUrl="https://github.com/joseiltonjunior?tab=repositories"
+                >
                   <ProjectsGithub repositories={repos} />
                 </Section>
               </div>

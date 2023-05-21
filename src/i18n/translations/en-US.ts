@@ -1,6 +1,6 @@
 export const TRANSLATIONS_EN_US = {
   experienceTitle: 'Experiences',
-  aboutTitle: 'More about :)',
+  aboutTitle: 'More about 👨‍💻',
   aboutText:
     'Hello, my name is Junior Ferreira and I am a Full-stack Developer and programming content creator!',
   aboutTextPrimary:
@@ -68,7 +68,7 @@ export const TRANSLATIONS_EN_US = {
 
   projects: 'Projects',
   projectsGithub: 'Github repositories',
-  softwareDeveloper: 'Full-stack Developer',
+  softwareDeveloper: 'Software Developer',
   video: 'Programming content',
   noContent: 'New content coming soon.',
 
