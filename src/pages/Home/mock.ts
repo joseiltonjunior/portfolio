@@ -133,11 +133,11 @@ export const skills = [
     type: 'front-end',
     urlImg: 'https://img.icons8.com/?id=ttxR7mXaDvqS',
   },
-  {
-    name: 'Tailwind',
-    type: 'front-end',
-    urlImg: 'https://img.icons8.com/?size=512&id=4PiNHtUJVbLs&format=png',
-  },
+  // {
+  //   name: 'Tailwind',
+  //   type: 'front-end',
+  //   urlImg: 'https://img.icons8.com/?size=512&id=4PiNHtUJVbLs&format=png',
+  // },
 
   {
     name: 'React Redux',
@@ -203,7 +203,7 @@ export const skills = [
   {
     name: 'Github',
     type: 'settings',
-    urlImg: 'https://img.icons8.com/?id=106564',
+    urlImg: 'https://img.icons8.com/?id=12599',
   },
   {
     name: 'Linux',

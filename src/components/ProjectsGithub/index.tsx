@@ -20,11 +20,12 @@ export function ProjectsGithub({ repositories }: RepositoriesDataProps) {
   const filterRepos = useCallback((repos: RepositoriesProps[]) => {
     const filter = repos.filter(
       (item) =>
-        item.name !== 'portfolio-deprecated' &&
-        item.name !== 'SwitchThemesReactTS' &&
-        item.name !== 'joseiltonjunior' &&
-        item.name !== 'after-app-deprecated' &&
-        item.name !== 'dcoffee-shop-assets',
+        item.name === 'portfolio' ||
+        item.name === 'StarchatNode' ||
+        item.name === '04-ignite-shop' ||
+        item.name === 'after-app' ||
+        item.name === 'dcoffee-shop-api-node' ||
+        item.name === 'i-love-football',
     )
 
     setRepos(filter)

@@ -47,5 +47,14 @@ export const Box = styled.div`
   max-width: 70rem;
 `
 
+export const Link = styled.a`
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.Orange};
+
+  :hover {
+    text-decoration: underline;
+  }
+`
+
 Container.displayName = 'Section'
 Box.displayName = 'Box'

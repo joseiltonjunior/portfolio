@@ -58,14 +58,14 @@ export function Home() {
         <MobileContent>
           <Sidemenu />
           <Content>
-            <Section title={t('aboutTitle')}>
+            <Section title={t('aboutTitle')} show>
               <Abbout />
             </Section>
             <Section title={t('skillsTitle')} show>
               <Skills skills={skills} />
             </Section>
 
-            <Section title={t('projects')} show>
+            <Section title={t('projects')} show view>
               <Projects projects={projects} />
             </Section>
 
@@ -161,7 +161,7 @@ export function Home() {
               style={{ ...alignCenter, justifyContent: 'flex-end' }}
             >
               <div className={`${'card'} ${'parallax'}`}>
-                <Section title={t('projectsGithub')}>
+                <Section title={t('projectsGithub')} view>
                   <ProjectsGithub repositories={repos} />
                 </Section>
               </div>
