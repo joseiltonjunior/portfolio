@@ -1,4 +1,6 @@
-export interface CardProps {
+import { HTMLAttributes } from 'react'
+
+export interface CardProps extends HTMLAttributes<HTMLDivElement> {
   thumb: string
   id: string
   description: string

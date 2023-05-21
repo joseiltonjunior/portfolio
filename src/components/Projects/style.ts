@@ -3,19 +3,26 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   overflow: hidden;
-
+  margin-bottom: 1rem;
   @media (max-width: 900px) {
     width: calc(100vw - 60px);
   }
 `
 
 export const Slide = styled.a`
+  background-color: ${(props) => props.theme.colors.Dark_700};
+  border-radius: 8px;
   text-decoration: none;
-  flex-direction: column;
-  display: flex;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 400px auto;
 
   box-shadow: none;
   outline: none;
+
+  @media (max-width: 900px) {
+    grid-template-rows: 186px auto;
+  }
 `
 
 export const Title = styled.p`
@@ -34,23 +41,17 @@ export const Description = styled.p`
 export const ContentInfo = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: ${(props) => props.theme.colors.Dark_700};
+
   gap: 0.25rem;
-  padding: 0.5rem;
-
-  /* background-color: red; */
-
-  div: {
-    gap: 1rem;
-  }
+  padding: 1.5rem;
 `
 
 export const Img = styled.img`
-  object-fit: contain;
+  object-fit: cover;
 
   height: 100%;
   width: 100%;
-
-  border-radius: 8px;
 `
 
 export const TechBox = styled.span`

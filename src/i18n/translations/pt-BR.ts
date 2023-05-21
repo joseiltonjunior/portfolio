@@ -1,6 +1,6 @@
 export const TRANSLATIONS_PT_BR = {
   experienceTitle: 'Experiências',
-  aboutTitle: 'Mais sobre :)',
+  aboutTitle: 'Mais sobre 👨‍💻',
   aboutText:
     'Olá, me chamo Junior Ferreira sou Desenvolvedor Full-stack e criador de conteúdos de programação!',
   aboutTextPrimary:

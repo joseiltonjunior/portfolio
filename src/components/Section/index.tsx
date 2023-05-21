@@ -7,13 +7,13 @@ import { Container, Header, Content, Title, ShowButton, Link } from './style'
 interface SectionProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
   title: string
   show?: boolean
-  view?: boolean
+  viewUrl?: string
 }
 
 export function Section({
   title,
   show,
-  view,
+  viewUrl,
   children,
   ...rest
 }: SectionProps) {
@@ -38,12 +38,8 @@ export function Section({
             )}
           </ShowButton>
         )}
-        {view && (
-          <Link
-            href="https://github.com/joseiltonjunior?tab=repositories"
-            target="_blank"
-            rel="noreferrer"
-          >
+        {viewUrl && (
+          <Link href={viewUrl} target="_blank" rel="noreferrer">
             Ver todos
           </Link>
         )}

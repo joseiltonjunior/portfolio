@@ -1,26 +1,14 @@
 import styled from 'styled-components'
 
-export const MobileView = styled.div`
-  display: none;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-`
+export const Container = styled.div``
 
-export const WebView = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-`
+export const Content = styled.div`
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 1rem;
 
-export const Container = styled.div`
-  @media (max-width: 600px) {
-    ${MobileView} {
-      display: grid;
-    }
-
-    ${WebView} {
-      display: none;
-    }
+  @media (max-width: 900px) {
+    width: calc(100vw - 60px);
   }
 `
 

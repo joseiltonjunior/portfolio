@@ -40,7 +40,7 @@ export function Projects({ projects }: ProjectsDataProps) {
                 {item.stage === 'dev' && ` - Em desenvolvimento`}
               </Title>
               <Description>{item.description}</Description>
-              <div>
+              <div className="tags">
                 {item.skills.map((skill) => (
                   <Tag key={skill}>{skill}</Tag>
                 ))}
@@ -52,7 +52,7 @@ export function Projects({ projects }: ProjectsDataProps) {
       {projects.length > 1 && (
         <DotCorousel
           currentSlide={index}
-          projects={projects}
+          items={projects}
           instanceRef={instanceRef}
         />
       )}
