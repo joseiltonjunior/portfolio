@@ -10,9 +10,9 @@ import {
   Title,
   StarContent,
   Info,
-  Tag,
 } from './style'
 import { SkeletonCard } from './SkeletonCard'
+import { Tag } from '../Tag'
 
 export function ProjectsGithub({ repositories }: RepositoriesDataProps) {
   const [repos, setRepos] = useState<RepositoriesProps[]>()
@@ -59,7 +59,6 @@ export function ProjectsGithub({ repositories }: RepositoriesDataProps) {
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '2px',
                   marginTop: '10px',
                 }}
               >

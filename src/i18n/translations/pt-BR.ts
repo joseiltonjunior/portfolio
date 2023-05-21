@@ -69,7 +69,7 @@ export const TRANSLATIONS_PT_BR = {
 
   projects: 'Projetos',
   projectsGithub: 'Repositórios Github',
-  softwareDeveloper: 'Desenvolvedor Full-stack',
+  softwareDeveloper: 'Desenvolvedor de Software',
   video: 'Conteúdos sobre programação',
   noContent: 'Em breve novos conteúdos.',
 

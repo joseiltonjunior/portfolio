@@ -11,7 +11,11 @@ export const Container = styled.div`
 
 export const Slide = styled.a`
   text-decoration: none;
+  flex-direction: column;
+  display: flex;
+
   box-shadow: none;
+  outline: none;
 `
 
 export const Title = styled.p`
@@ -32,6 +36,12 @@ export const ContentInfo = styled.div`
   flex-direction: column;
   gap: 0.25rem;
   padding: 0.5rem;
+
+  /* background-color: red; */
+
+  div: {
+    gap: 1rem;
+  }
 `
 
 export const Img = styled.img`
@@ -41,4 +51,8 @@ export const Img = styled.img`
   width: 100%;
 
   border-radius: 8px;
+`
+
+export const TechBox = styled.span`
+  background-color: ${(props) => props.theme.colors.Orange};
 `

@@ -51,14 +51,6 @@ export const Info = styled.p`
   font-size: 0.75rem;
 `
 
-export const Tag = styled.p`
-  color: ${(props) => props.theme.colors.Dark_900};
-  font-size: 0.75rem;
-  background-color: ${(props) => props.theme.colors.Orange};
-  border-radius: 8px;
-  padding: 2px 4px;
-`
-
 export const RowContent = styled.div`
   display: flex;
   gap: 1rem;

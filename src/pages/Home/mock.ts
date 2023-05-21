@@ -18,8 +18,16 @@ export const projects = [
     description:
       'E-commerce do nincho de Café, Action Figure, Copos e Garrafas',
     stage: 'prod',
-    skills:
-      'Next, Typescript, Stripe, Stitches, Redux, React Hooks, Eslint, Prettier e outros',
+    skills: [
+      'Next',
+      'Typescript',
+      'Stripe',
+      'Stitches',
+      'Redux',
+      'React Hooks',
+      'Eslint',
+      'Prettier',
+    ],
   },
   {
     icon: 'https://i.ibb.co/M7RJRyL/flow-new-user.png',
@@ -27,8 +35,16 @@ export const projects = [
     name: 'After App',
     description: 'Guia de bolso dos melhores roles da cidade',
     stage: 'dev',
-    skills:
-      'React Native, Typescript, Styled-components, Redux, React Hooks, React Navigation, Eslint, Prettier e outros',
+    skills: [
+      'React Native',
+      'Typescript',
+      'Styled-components',
+      'Redux',
+      'React Hooks',
+      'React Navigation',
+      'Eslint',
+      'Prettier',
+    ],
   },
   {
     icon: 'https://i.ibb.co/B2X0Grk/api-solid.png',
@@ -36,8 +52,16 @@ export const projects = [
     name: 'API Node.js',
     description: 'API Solid PostgreSQL',
     stage: 'dev',
-    skills:
-      'Node, Prisma, PostgreSQL, Docker, Typescript, Eslint, Prettier, Vitest e outros',
+    skills: [
+      'Node',
+      'Prisma',
+      'PostgreSQL',
+      'Docker',
+      'Typescript',
+      'Eslint',
+      'Prettier',
+      'Vitest',
+    ],
   },
   {
     icon: 'https://i.ibb.co/6B1n2V2/storybook1.png',
@@ -45,7 +69,24 @@ export const projects = [
     name: 'Storybook Porfólio',
     description: 'Documentação dos componentes do Portfólio',
     stage: 'prod',
-    skills: 'React, Typescript, Storybook',
+    skills: ['React', 'Typescript', 'Storybook', 'Hooks', 'Eslint', 'Prettier'],
+  },
+  {
+    icon: 'https://i.ibb.co/k3sw82N/C-pia-de-Tela-produto.png',
+    url: 'https://github.com/joseiltonjunior/i-love-football',
+    name: 'I Love Football',
+    description:
+      'Para se manter atualizado sobre o mundo do futebol e as estatísticas do seu time favorito.',
+    stage: 'prod',
+    skills: [
+      'Next',
+      'Typescript',
+      'API Sports',
+      'Redux',
+      'Hooks',
+      'Eslint',
+      'Prettier',
+    ],
   },
 ]
 

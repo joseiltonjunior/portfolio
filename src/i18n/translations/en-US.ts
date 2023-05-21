@@ -68,7 +68,7 @@ export const TRANSLATIONS_EN_US = {
 
   projects: 'Projects',
   projectsGithub: 'Github repositories',
-  softwareDeveloper: 'Full-stack Developer',
+  softwareDeveloper: 'Software Developer',
   video: 'Programming content',
   noContent: 'New content coming soon.',
 

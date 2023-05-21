@@ -4,7 +4,7 @@ interface ProjectProps {
   name: string
   description: string
   stage: string
-  skills: string
+  skills: string[]
 }
 
 export interface ProjectsDataProps {
