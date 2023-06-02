@@ -12,17 +12,28 @@ import apiGitHub from '~/services/apiGithub'
 import { RepositoriesProps } from '~/types/repositories'
 import { Container, WebContent, MobileContent, Content } from './style'
 import { useToast } from '~/hooks/useToast'
+import { firestore } from '~/services/firebase'
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 import { ProjectsGithub } from '~/components/ProjectsGithub'
-import { projects, skills, videos } from './mock'
+import { skills, videos } from './mock'
 import { SocialLinks } from '~/components/SocialLinks'
 import { Trail } from '~/components/Trail'
 import { FaPlay } from 'react-icons/fa'
 
+import {
+  // getFirestore,
+  collection,
+  query,
+  // orderBy,
+  onSnapshot,
+} from 'firebase/firestore'
+import { ProjectProps } from '~/types/projects'
+
 export function Home() {
   const [repos, setRepos] = useState<RepositoriesProps[]>()
+  const [projects, setProjects] = useState<ProjectProps[]>()
   const { showToast } = useToast()
   const { t } = useTranslation()
 
@@ -43,6 +54,29 @@ export function Home() {
         })
       })
   }, [showToast])
+
+  const handleProjectsPortfolio = useCallback(() => {
+    const q = query(collection(firestore, 'projects'))
+    onSnapshot(q, (querySnapshot) => {
+      const techsResponses = querySnapshot.docs.map(
+        (doc) =>
+          ({
+            imgUrl: doc.data().imgUrl,
+            url: doc.data().url,
+            description: doc.data().description,
+            name: doc.data().name,
+            techs: doc.data().techs,
+            status: doc.data().status,
+          } as ProjectProps),
+      )
+
+      setProjects(techsResponses)
+    })
+  }, [])
+
+  useEffect(() => {
+    handleProjectsPortfolio()
+  }, [handleProjectsPortfolio])
 
   useEffect(() => {
     handleReposGitHub()

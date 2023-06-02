@@ -10,59 +10,6 @@ export const videos = [
   { thumb: thumb4, id: 'k1sgUGkyC_o' },
 ]
 
-export const projects = [
-  {
-    icon: 'https://i.ibb.co/bWfLzB7/Tela-produto.png',
-    url: 'https://dcoffee-shop.netlify.app',
-    name: `D'Coffee Shop`,
-    description:
-      'E-commerce do nincho de Café, Action Figure, Copos e Garrafas',
-    stage: 'prod',
-    skills: ['Next', 'Typescript', 'Stripe', 'Redux'],
-  },
-  {
-    icon: 'https://i.ibb.co/3fhnh2D/C-pia-de-Tela-produto.png',
-    url: 'https://i-love-football.netlify.app',
-    name: 'I Love Football',
-    description:
-      'Para se manter atualizado sobre o mundo do futebol e as estatísticas do seu time favorito.',
-    stage: 'prod',
-    skills: ['Next', 'Typescript', 'API Sports', 'Redux'],
-  },
-  {
-    icon: 'https://i.ibb.co/6B1n2V2/storybook1.png',
-    url: 'https://storybook-portfolio-dvlp.netlify.app',
-    name: 'Storybook Porfólio',
-    description: 'Documentação dos componentes do Portfólio',
-    stage: 'prod',
-    skills: ['React', 'Typescript', 'Storybook', 'i18n'],
-  },
-  {
-    icon: 'https://i.ibb.co/CJ9nSmT/figma-first.png',
-    url: 'https://www.figma.com/file/CJdK0YxzobC9FTnNikmyfg/To-Do?type=design&node-id=0%3A1&t=IDQBooL9CJrLwgh2-1',
-    name: 'Design system (TaskQuest)',
-    description: 'Design system do projeto TaskQuest',
-    stage: 'dev ',
-    skills: ['Figma', 'UX', 'UI'],
-  },
-  {
-    icon: 'https://i.ibb.co/M7RJRyL/flow-new-user.png',
-    url: 'https://github.com/joseiltonjunior/after-app/tree/develop',
-    name: 'After App',
-    description: 'Guia de bolso dos melhores roles da cidade',
-    stage: 'dev',
-    skills: ['React Native', 'Typescript', 'Redux', 'Navigation'],
-  },
-  {
-    icon: 'https://i.ibb.co/B2X0Grk/api-solid.png',
-    url: 'https://github.com/joseiltonjunior/dcoffee-shop-api-node',
-    name: 'API Solid',
-    description: "APIs e Banco de dados do e-commerce D'Coffee Shop",
-    stage: 'dev',
-    skills: ['Node', 'Prisma', 'PostgreSQL', 'Docker'],
-  },
-]
-
 export const skills = [
   {
     name: 'Javascript',
