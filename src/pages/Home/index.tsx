@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Abbout } from '~/components/About'
 import { Header } from '~/components/Header'
@@ -8,45 +8,23 @@ import { Section } from '~/components/Section'
 import { Sidemenu } from '~/components/Sidemenu'
 import { Skills } from '~/components/Skills'
 import { Videos } from '~/components/Videos'
-import apiGitHub from '~/services/apiGithub'
-import { RepositoriesProps } from '~/types/repositories'
+
 import { Container, WebContent, MobileContent, Content } from './style'
-import { useToast } from '~/hooks/useToast'
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 import { ProjectsGithub } from '~/components/ProjectsGithub'
-import { projects, skills, videos } from './mock'
+
 import { SocialLinks } from '~/components/SocialLinks'
 import { Trail } from '~/components/Trail'
 import { FaPlay } from 'react-icons/fa'
 
 export function Home() {
-  const [repos, setRepos] = useState<RepositoriesProps[]>()
-  const { showToast } = useToast()
   const { t } = useTranslation()
 
   const [open, setOpen] = useState(false)
 
   const alignCenter = { display: 'flex', alignItems: 'center' }
-
-  const handleReposGitHub = useCallback(() => {
-    apiGitHub
-      .get('/users/joseiltonjunior/repos')
-      .then((result) => {
-        setRepos(result.data)
-      })
-      .catch(() => {
-        showToast('Erro ao buscar repositórios', {
-          type: 'error',
-          theme: 'colored',
-        })
-      })
-  }, [showToast])
-
-  useEffect(() => {
-    handleReposGitHub()
-  }, [handleReposGitHub])
 
   return (
     <>
@@ -54,7 +32,6 @@ export function Home() {
 
       <Container>
         <Header />
-
         <MobileContent>
           <Sidemenu />
           <Content>
@@ -62,22 +39,22 @@ export function Home() {
               <Abbout />
             </Section>
             <Section title={t('skillsTitle')}>
-              <Skills skills={skills} />
+              <Skills />
             </Section>
 
             <Section title={t('projects')}>
-              <Projects projects={projects} />
+              <Projects />
             </Section>
 
             <Section
               title={t('projectsGithub')}
               viewUrl="https://github.com/joseiltonjunior?tab=repositories"
             >
-              <ProjectsGithub repositories={repos} />
+              <ProjectsGithub />
             </Section>
 
             <Section title={t('video')}>
-              <Videos videos={videos} />
+              <Videos />
             </Section>
           </Content>
         </MobileContent>
@@ -141,7 +118,7 @@ export function Home() {
             >
               <div className={`${'card'} ${'parallax'}`}>
                 <Section title={t('skillsTitle')}>
-                  <Skills skills={skills} />
+                  <Skills />
                 </Section>
               </div>
             </ParallaxLayer>
@@ -153,7 +130,7 @@ export function Home() {
             >
               <div className={`${'card'} ${'parallax'}`}>
                 <Section title={t('projects')}>
-                  <Projects projects={projects} />
+                  <Projects />
                 </Section>
               </div>
             </ParallaxLayer>
@@ -168,7 +145,7 @@ export function Home() {
                   title={t('projectsGithub')}
                   viewUrl="https://github.com/joseiltonjunior?tab=repositories"
                 >
-                  <ProjectsGithub repositories={repos} />
+                  <ProjectsGithub />
                 </Section>
               </div>
             </ParallaxLayer>
@@ -180,7 +157,7 @@ export function Home() {
             >
               <div className={`${'card'} ${'parallax'}`}>
                 <Section title={t('video')}>
-                  <Videos videos={videos} />
+                  <Videos />
                 </Section>
               </div>
             </ParallaxLayer>

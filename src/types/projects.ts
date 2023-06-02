@@ -1,12 +1,12 @@
-interface ProjectProps {
-  icon: string
-  url: string
+export interface ProjectProps {
+  imgUrl: string
   name: string
+  url: string
+  status: number
   description: string
-  stage: string
-  skills: string[]
+  techs: string[]
 }
 
 export interface ProjectsDataProps {
-  projects: ProjectProps[]
+  projects: ProjectProps[] | undefined
 }
