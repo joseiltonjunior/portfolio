@@ -1,15 +1,20 @@
-import { ProjectsDataProps } from '~/types/projects'
+import { ProjectProps } from '~/types/projects'
 
 import { useKeenSlider } from 'keen-slider/react'
 
 import { Slide, Container, Description, Title, Img, ContentInfo } from './style'
-import { useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { DotCorousel } from '../DotCarousel'
 import { Tag } from '../Tag'
 import Skeleton from 'react-loading-skeleton'
+import { collection, getDocs, query } from 'firebase/firestore'
+import { firestore } from '~/services/firebase'
+import { useToast } from '~/hooks/useToast'
 
-export function Projects({ projects }: ProjectsDataProps) {
+export function Projects() {
   const [index, setIndex] = useState(0)
+  const [projects, setProjects] = useState<ProjectProps[]>()
+  const { showToast } = useToast()
   const [sliderRef, instanceRef] = useKeenSlider({
     slides: {
       perView: 1,
@@ -20,6 +25,36 @@ export function Projects({ projects }: ProjectsDataProps) {
       setIndex(slider.track.details.rel)
     },
   })
+
+  const handleProjectsPortfolio = useCallback(() => {
+    const q = query(collection(firestore, 'projects'))
+    getDocs(q)
+      .then((querySnapshot) => {
+        const techsResponses = querySnapshot.docs.map(
+          (doc) =>
+            ({
+              imgUrl: doc.data().imgUrl,
+              url: doc.data().url,
+              description: doc.data().description,
+              name: doc.data().name,
+              techs: doc.data().techs,
+              status: doc.data().status,
+            } as ProjectProps),
+        )
+
+        setProjects(techsResponses)
+      })
+      .catch(() => {
+        showToast('Error while fetching projects', {
+          type: 'error',
+          theme: 'colored',
+        })
+      })
+  }, [showToast])
+
+  useEffect(() => {
+    handleProjectsPortfolio()
+  }, [handleProjectsPortfolio])
 
   if (!projects || projects.length === 0) {
     return (

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { FaRegStar } from 'react-icons/fa'
 
-import { RepositoriesDataProps, RepositoriesProps } from '~/types/repositories'
+import { RepositoriesProps } from '~/types/repositories'
 import {
   Card,
   Container,
@@ -13,9 +13,12 @@ import {
 } from './style'
 import { SkeletonCard } from './SkeletonCard'
 import { Tag } from '../Tag'
+import apiGitHub from '~/services/apiGithub'
+import { useToast } from '~/hooks/useToast'
 
-export function ProjectsGithub({ repositories }: RepositoriesDataProps) {
+export function ProjectsGithub() {
   const [repos, setRepos] = useState<RepositoriesProps[]>()
+  const { showToast } = useToast()
 
   const filterRepos = useCallback((repos: RepositoriesProps[]) => {
     const filter = repos.filter(
@@ -31,9 +34,23 @@ export function ProjectsGithub({ repositories }: RepositoriesDataProps) {
     setRepos(filter)
   }, [])
 
+  const handleReposGitHub = useCallback(() => {
+    apiGitHub
+      .get('/users/joseiltonjunior/repos')
+      .then((result) => {
+        filterRepos(result.data)
+      })
+      .catch(() => {
+        showToast('Error while fetching repositories', {
+          type: 'error',
+          theme: 'colored',
+        })
+      })
+  }, [filterRepos, showToast])
+
   useEffect(() => {
-    if (repositories) filterRepos(repositories)
-  }, [repositories, filterRepos])
+    handleReposGitHub()
+  }, [handleReposGitHub])
 
   return (
     <Container>
@@ -41,7 +58,7 @@ export function ProjectsGithub({ repositories }: RepositoriesDataProps) {
         repos.map((repo) => (
           <Card
             key={repo.id}
-            title={`Abrir o projeto ${repo.name} no Github`}
+            title={`Open project ${repo.name} in Github`}
             onClick={() => {
               window.open(repo.html_url, '_blank')
             }}
