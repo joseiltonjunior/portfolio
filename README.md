@@ -1,24 +1,41 @@
 <h1 align="center">My Portfolio</h1>
 
-<h3 align="center">In progress</h3>
 
 <p align="center">
-  <img src="https://i.ibb.co/9pfJm0t/portfolio.png" alt="portfolio" border="0">
+  <img src="https://i.ibb.co/Z83GSsF/protfolio01.png" alt="portfolio" border="0">
 
-  <img src="https://i.ibb.co/th0vC4g/dark.png" alt="dark-mode" border="0">
+  <img src="https://i.ibb.co/mTD1vgz/portfolio02.png" alt="dark-mode" border="0">
 
-  <img src="https://i.ibb.co/vDMz4XL/light.png" alt="light-mode" border="0">
+  <img src="https://i.ibb.co/yXqH6GV/portfolio03.png" alt="light-mode" border="0">
 </p>
 
+#### Step 1 (Clone the project)
 ```sh
-$ git clone https://github.com/joseiltonjunior/portfolio.git
-$ open paste: cd portfolio
-$ install dependencies: yarn
-$ run server: yarn start
-$ open your browser at localhost:3000
+git clone https://github.com/joseiltonjunior/portfolio.git
 ```
+
+#### Step 2 (Open a project)
+```sh
+cd portfolio
+```
+
+#### Step 3 (Install yours dependencies)
+```sh
+ yarn or npm
+```
+
+#### Step 4 (Run server)
+```sh
+yarn start or npm run start
+```
+
+#### Step 5 (Open your browser in localhost:3000)
+
+<br/>
 
 ## Credits
 
 - @dvlp.jr
 - @dvlp.code
+
+
