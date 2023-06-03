@@ -1,12 +1,8 @@
 import { Container, Link, Button } from './style'
 import { FiGithub, FiLinkedin, FiInstagram, FiYoutube } from 'react-icons/fi'
-import { VscDebugRestart } from 'react-icons/vsc'
+import { MdOutlineVerticalAlignTop } from 'react-icons/md'
 
-interface linksProps {
-  action(): void
-}
-
-export function SocialLinks({ action }: linksProps) {
+export function SocialLinks() {
   return (
     <Container>
       <Link
@@ -44,12 +40,11 @@ export function SocialLinks({ action }: linksProps) {
       <Button
         onClick={() => {
           const elem = document.getElementById('parallax')
-          action()
           elem?.scrollTo(0, 0)
         }}
-        title="Restart"
+        title="Go to top"
       >
-        <VscDebugRestart size={25} />
+        <MdOutlineVerticalAlignTop size={25} />
       </Button>
     </Container>
   )

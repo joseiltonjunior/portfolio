@@ -1,10 +1,9 @@
-import { useKeenSlider } from 'keen-slider/react'
 import { Card } from './Card'
 import { Container, Content, NoContent } from './style'
 
 import { useTranslation } from 'react-i18next'
 import { useCallback, useEffect, useState } from 'react'
-import { DotCorousel } from '../DotCarousel'
+
 import { collection, getDocs, query } from 'firebase/firestore'
 import { firestore } from '~/services/firebase'
 import { useToast } from '~/hooks/useToast'
@@ -18,19 +17,9 @@ interface VideosProps {
 
 export function Videos() {
   const { t } = useTranslation()
-  const [index, setIndex] = useState(0)
+
   const [videos, setVideos] = useState<VideosProps[]>()
   const { showToast } = useToast()
-  const [sliderRef, instanceRef] = useKeenSlider({
-    slides: {
-      perView: 1,
-      spacing: 48,
-    },
-    loop: true,
-    slideChanged(slider) {
-      setIndex(slider.track.details.rel)
-    },
-  })
 
   const handleProjectsPortfolio = useCallback(() => {
     const q = query(collection(firestore, 'videos'))
@@ -65,11 +54,10 @@ export function Videos() {
   }
 
   return (
-    <Container ref={sliderRef} className="ken-slider">
+    <Container>
       <Content>
         {videos.map((item) => (
           <Card
-            className="keen-slider__slide"
             key={item.id}
             description={item.description}
             thumb={item.thumb}
@@ -79,12 +67,6 @@ export function Videos() {
           />
         ))}
       </Content>
-
-      <DotCorousel
-        currentSlide={index}
-        items={videos}
-        instanceRef={instanceRef}
-      />
     </Container>
   )
 }

@@ -28,10 +28,10 @@ export const BoxModal = styled.div`
   padding: 1rem;
   border-radius: 6px;
   width: 100%;
-  max-width: 800px;
+  max-width: 50rem;
 
   @media (max-width: 558px) {
-    max-width: 370px;
+    max-width: 23.125rem;
   }
 `
 

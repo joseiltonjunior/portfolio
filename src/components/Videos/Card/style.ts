@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
-interface CardProps {
-  thumb: string
-}
-
-export const Play = styled.iframe`
+export const Play = styled.div`
   border: none;
-`
+  height: 28.125rem;
 
-export const PlayMobile = styled.iframe`
-  border: none;
-  display: none;
+  iframe {
+    border: none;
+  }
+
+  @media (max-width: 900px) {
+    height: 15.625rem;
+  }
 `
 
 export const Container = styled.div`
@@ -19,21 +19,16 @@ export const Container = styled.div`
   border-radius: 6px;
 
   display: grid;
-  grid-template-rows: 400px auto;
+  grid-template-columns: 12.5rem auto;
   cursor: pointer;
 
   @media (max-width: 900px) {
-    grid-template-rows: 186px auto;
-    ${Play} {
-      display: none;
-    }
-    ${PlayMobile} {
-      display: block;
-    }
+    display: flex;
+    flex-direction: column;
   }
 `
 
-export const Header = styled.div<CardProps>`
+export const Thumb = styled.div`
   position: relative;
   background-color: transparent;
 
@@ -59,7 +54,7 @@ export const Img = styled.img`
   border-radius: 8px;
 `
 
-export const Footer = styled.div`
+export const Info = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
