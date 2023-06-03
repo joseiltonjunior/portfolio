@@ -9,6 +9,8 @@
   <img src="https://i.ibb.co/yXqH6GV/portfolio03.png" alt="light-mode" border="0">
 </p>
 
+<h3><strong>In your terminal</strong></h3>
+
 #### Step 1 (Clone the project)
 ```sh
 git clone https://github.com/joseiltonjunior/portfolio.git
@@ -21,7 +23,7 @@ cd portfolio
 
 #### Step 3 (Install yours dependencies)
 ```sh
- yarn or npm
+ yarn install or npm install
 ```
 
 #### Step 4 (Run server)
@@ -33,7 +35,7 @@ yarn start or npm run start
 
 <br/>
 
-## Credits
+## By
 
 - @dvlp.jr
 - @dvlp.code

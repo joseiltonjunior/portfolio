@@ -17,13 +17,20 @@ export function Modal() {
         <Description>{message}</Description>
 
         {!type ? (
-          <Button onClick={confirm}>Fechar</Button>
+          <Button onClick={() => closeModal()}>Fechar</Button>
         ) : (
           <RowContent>
             <Button variant="secondary" onClick={closeModal}>
               Cancelar
             </Button>
-            <Button onClick={confirm}>Confirmar</Button>
+            <Button
+              onClick={() => {
+                if (confirm) confirm()
+                closeModal()
+              }}
+            >
+              Confirmar
+            </Button>
           </RowContent>
         )}
       </BoxModal>

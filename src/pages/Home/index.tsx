@@ -76,10 +76,10 @@ export function Home() {
               <div onClick={() => setOpen((state) => !state)}>
                 {open ? (
                   <Trail open={open}>
-                    <span>Web</span>
-                    <span>Mobile</span>
+                    <span>{`I'm a Developer`}</span>
+                    <span>Front-end</span>
                     <span>Back-end</span>
-                    <span>Software Developer</span>
+                    <span>Mobile</span>
                   </Trail>
                 ) : (
                   <button className="pressStart">
@@ -156,7 +156,10 @@ export function Home() {
               style={{ ...alignCenter, justifyContent: 'flex-end' }}
             >
               <div className={`${'card'} ${'parallax'}`}>
-                <Section title={t('video')}>
+                <Section
+                  title={t('video')}
+                  viewUrl="https://www.youtube.com/@dvlp-jr/videos"
+                >
                   <Videos />
                 </Section>
               </div>
@@ -170,11 +173,10 @@ export function Home() {
                 flexDirection: 'column',
                 justifyContent: 'center',
                 alignItems: 'center',
-
                 gap: '2rem',
               }}
             >
-              <SocialLinks action={() => setOpen(false)} />
+              <SocialLinks />
               <p
                 style={{
                   fontSize: '1.5rem',

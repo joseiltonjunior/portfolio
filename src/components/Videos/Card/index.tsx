@@ -1,7 +1,8 @@
 import { CardProps } from '~/types/cardVideo'
-import { Container, Header, Footer, Play, PlayMobile, Img } from './style'
-import { useState } from 'react'
+import { Container, Thumb, Info, Play, Img } from './style'
+
 import { AiFillPlayCircle } from 'react-icons/ai'
+import { useModal } from '~/hooks/useModal'
 
 export function Card({
   description,
@@ -11,46 +12,41 @@ export function Card({
   mobile,
   ...rest
 }: CardProps) {
-  const [isVisibleVideo, setIsVisibleVideo] = useState(false)
+  const { openModal } = useModal()
 
   return (
-    <Container {...rest} onMouseLeave={() => setIsVisibleVideo(false)}>
-      <Header thumb={thumb}>
-        {isVisibleVideo ? (
-          <>
-            <PlayMobile
-              src={`https://www.youtube.com/embed/${id}`}
-              width={340}
-              height={186}
-              allow="autoplay; fullscreen"
-              allowFullScreen
-            />
-            <Play
-              src={`https://www.youtube.com/embed/${id}`}
-              width={734}
-              height={400}
-              allow="autoplay; fullscreen"
-              allowFullScreen
-            />
-          </>
-        ) : (
-          <>
-            <div
-              onClick={() => setIsVisibleVideo(true)}
-              className="iconPlay"
-              title={`Open video ${title}`}
-            >
-              <AiFillPlayCircle size={60} />
-            </div>
-            <Img src={thumb} />
-          </>
-        )}
-      </Header>
+    <Container
+      {...rest}
+      onClick={() =>
+        openModal({
+          message: description,
+          children: (
+            <Play>
+              <iframe
+                src={`https://www.youtube.com/embed/${id}`}
+                width={'100%'}
+                height={'100%'}
+                allow="autoplay; fullscreen"
+                allowFullScreen
+              />
+            </Play>
+          ),
+        })
+      }
+    >
+      <Thumb>
+        <>
+          <div className="iconPlay" title={`Open video ${title}`}>
+            <AiFillPlayCircle size={60} />
+          </div>
+          <Img src={thumb} />
+        </>
+      </Thumb>
 
-      <Footer>
+      <Info>
         <strong>{title}</strong>
         <span>{description}</span>
-      </Footer>
+      </Info>
     </Container>
   )
 }
