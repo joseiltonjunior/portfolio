@@ -1,5 +1,6 @@
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
 import { Abbout } from '~/components/About'
 import { Header } from '~/components/Header'
 import { Modal } from '~/components/Modal'
@@ -8,21 +9,14 @@ import { Section } from '~/components/Section'
 import { Sidemenu } from '~/components/Sidemenu'
 import { Skills } from '~/components/Skills'
 import { Videos } from '~/components/Videos'
+import { ProjectsGithub } from '~/components/ProjectsGithub'
+import { SocialLinks } from '~/components/SocialLinks'
+import { TypingEffect } from '~/components/TypingEffect'
 
 import { Container, WebContent, MobileContent, Content } from './style'
 
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-
-import { ProjectsGithub } from '~/components/ProjectsGithub'
-
-import { SocialLinks } from '~/components/SocialLinks'
-import { Trail } from '~/components/Trail'
-import { FaPlay } from 'react-icons/fa'
-
 export function Home() {
   const { t } = useTranslation()
-
-  const [open, setOpen] = useState(false)
 
   const alignCenter = { display: 'flex', alignItems: 'center' }
 
@@ -73,20 +67,14 @@ export function Home() {
                 backgroundImage: 'red',
               }}
             >
-              <div onClick={() => setOpen((state) => !state)}>
-                {open ? (
-                  <Trail open={open}>
-                    <span>{`I'm a Developer`}</span>
-                    <span>Front-end</span>
-                    <span>Back-end</span>
-                    <span>Mobile</span>
-                  </Trail>
-                ) : (
-                  <button className="pressStart">
-                    <FaPlay />
-                    Press start
-                  </button>
-                )}
+              <div>
+                <TypingEffect text="Hi, i'am" isHideCursor />
+                <TypingEffect
+                  text="Junior Ferreira"
+                  delay={2600}
+                  isHideCursor
+                />
+                <TypingEffect text="Full-stack Developer" delay={5600} />
               </div>
             </ParallaxLayer>
 
