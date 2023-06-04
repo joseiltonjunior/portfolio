@@ -17,14 +17,10 @@ export function Techs({ skills, title }: TechsProps) {
   }
 
   return (
-    <Container
-      style={{
-        alignItems: 'center',
-        display: 'flex',
-        flexDirection: 'column',
-      }}
-    >
-      <Title>{title}</Title>
+    <Container>
+      <Title>
+        <strong>{title}</strong>
+      </Title>
       <Content>
         {skills &&
           skills.map((item) => (

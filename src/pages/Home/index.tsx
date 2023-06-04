@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Abbout } from '~/components/About'
 import { Header } from '~/components/Header'
@@ -16,13 +16,14 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { ProjectsGithub } from '~/components/ProjectsGithub'
 
 import { SocialLinks } from '~/components/SocialLinks'
-import { Trail } from '~/components/Trail'
-import { FaPlay } from 'react-icons/fa'
+// import { Trail } from '~/components/Trail'
+// import { FaPlay } from 'react-icons/fa'
+import { TypingEffect } from '~/components/TypingEffect'
 
 export function Home() {
   const { t } = useTranslation()
 
-  const [open, setOpen] = useState(false)
+  // const [open, setOpen] = useState(false)
 
   const alignCenter = { display: 'flex', alignItems: 'center' }
 
@@ -73,20 +74,14 @@ export function Home() {
                 backgroundImage: 'red',
               }}
             >
-              <div onClick={() => setOpen((state) => !state)}>
-                {open ? (
-                  <Trail open={open}>
-                    <span>{`I'm a Developer`}</span>
-                    <span>Front-end</span>
-                    <span>Back-end</span>
-                    <span>Mobile</span>
-                  </Trail>
-                ) : (
-                  <button className="pressStart">
-                    <FaPlay />
-                    Press start
-                  </button>
-                )}
+              <div>
+                <TypingEffect text="Hi, i'am" isHideCursor />
+                <TypingEffect
+                  text="Junior Ferreira"
+                  delay={2600}
+                  isHideCursor
+                />
+                <TypingEffect text="Full-stack Developer" delay={5600} />
               </div>
             </ParallaxLayer>
 
