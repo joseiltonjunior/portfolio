@@ -25,7 +25,7 @@ export function ProjectsGithub() {
       (item) =>
         item.name === 'portfolio' ||
         item.name === 'StarchatNode' ||
-        item.name === '04-ignite-shop' ||
+        item.name === 'dcoffee-shop' ||
         item.name === 'after-app' ||
         item.name === 'dcoffee-shop-api-node' ||
         item.name === 'i-love-football',
