@@ -68,13 +68,18 @@ export function Home() {
               }}
             >
               <div>
-                <TypingEffect text="Hi, i'am" isHideCursor />
+                <TypingEffect text={t('textWelcome')} isHideCursor />
                 <TypingEffect
-                  text="Junior Ferreira"
-                  delay={2600}
+                  text={t('textApresentation')}
+                  delay={4500}
                   isHideCursor
                 />
-                <TypingEffect text="Full-stack Developer" delay={5600} />
+                <TypingEffect text={t('textWork')} delay={9000} isHideCursor />
+                <TypingEffect
+                  text={t('textMyJob')}
+                  delay={16000}
+                  isHideCursor
+                />
               </div>
             </ParallaxLayer>
 

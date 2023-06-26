@@ -59,7 +59,7 @@ export function Skills() {
 
       <Techs skills={filterTech('back')} title={'Back-end'} />
 
-      <Techs skills={filterTech('settings')} title={'Settings'} />
+      <Techs skills={filterTech('settings')} title={'General'} />
     </Container>
   )
 }

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Containe = styled.div`
+export const Container = styled.div`
   background: linear-gradient(
     30deg,
     ${(props) => props.theme.colors.Orange},
@@ -11,11 +11,10 @@ export const Containe = styled.div`
   -moz-box-shadow: 0px 0.5px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
 
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
 
   display: flex;
   justify-content: center;
-  height: 4.375rem;
 
   transition: all 0.2s;
 
@@ -36,10 +35,4 @@ export const Content = styled.div`
 export const Flag = styled.img`
   width: 1.8rem;
   height: 1.8rem;
-`
-
-export const Logo = styled.img`
-  width: 2.5rem;
-  height: 2.5rem;
-  position: absolute;
 `
