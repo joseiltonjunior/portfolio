@@ -1,16 +1,19 @@
 export const TRANSLATIONS_EN_US = {
+  textWelcome: 'Hello, welcome',
+  textApresentation: 'My name is Joseilton Jr.',
+  textWork: 'I am Softwre Developer, and',
+  textMyJob: 'Here you will find some of my work.',
   experienceTitle: 'Experiences',
-  aboutTitle: 'More about 👨‍💻',
+  aboutTitle: 'More about',
   aboutText:
-    'Hello, my name is Junior Ferreira and I am a Full-stack Developer and programming content creator!',
+    'Hello, I am a Full-stack Developer with experience in Mobile and Web projects.',
   aboutTextPrimary:
-    'Passionate about technology and development, I started my journey in 2020 working on Mobile projects with Javascript, React Native, API consumption, Hooks, Redux, Agile, AWS, Design Patterns, Clean Code, Git Flow, and others.',
+    'I have solid skills in React Native, Javascript/Typescript, React, Next, Tailwind, Stripe, Styled-components, API consumption, Redux, Hooks, i18next, Firebase, Agile Methodologies, Storybook, Design Patterns, Clean code, Testing, and other technologies.',
   aboutTextSecondary:
-    'In 2021, I wanted to learn more about Web development and worked on projects with Typescript, React, Hooks, API consumption, Context API, Agile, Design Patterns, Clean Code, Azure, CI/CD, Tests (E2E and Automated).',
+    'In the field of mobile projects, I had the opportunity to develop several applications, with a special emphasis on two apps focused on transportation for drivers and passengers in the state of Pernambuco. As for web projects, I highlight the development of a customer invoice payment system using React instead of Vue.js. Additionally, I implemented the option of PIX payment, which was not available previously. This functionality was very well received by the customers, resulting in strong adoption.',
   aboutTextActual:
-    'Currently, I also work on Backend and Database projects using other technologies such as Typescript, Node, Prisma, Docker, PostgreSQL, Fastify, JWT, Design Patterns, Clean Code, Unit Tests, E2E Tests, and others.',
-  aboutTextObjectives:
-    'I strive to evolve and acquire new knowledge daily in order to become a more complete Developer, capable of solving problems and contributing to the community.',
+    'Currently, I am expanding my field of expertise and working on Backend and Database projects. I have knowledge in Node.js, Prisma, Fastify, Docker, Docker-compose, PostgreSQL, authToken, JWT, Zod, Swagger, and other technologies.',
+  aboutTextObjectives: '',
   educationTitle: 'Education',
   skillsTitle: 'Skills',
 

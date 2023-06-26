@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   color: ${(props) => props.theme.colors.Orange};
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 800;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 `
 
 export const CursorSpan = styled.span`
@@ -12,8 +13,10 @@ export const CursorSpan = styled.span`
   position: relative;
   display: inline-block;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 3rem;
   color: transparent;
+
+  text-shadow: '12px 12px 14px red';
 
   &:before {
     content: '';
