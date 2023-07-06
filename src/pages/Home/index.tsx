@@ -11,9 +11,9 @@ import { Skills } from '~/components/Skills'
 import { Videos } from '~/components/Videos'
 import { ProjectsGithub } from '~/components/ProjectsGithub'
 import { SocialLinks } from '~/components/SocialLinks'
-import { TypingEffect } from '~/components/TypingEffect'
 
 import { Container, WebContent, MobileContent, Content } from './style'
+import { HomeAnimated } from '~/components/HomeAnimated'
 
 export function Home() {
   const { t } = useTranslation()
@@ -68,18 +68,7 @@ export function Home() {
               }}
             >
               <div>
-                <TypingEffect text={t('textWelcome')} isHideCursor />
-                <TypingEffect
-                  text={t('textApresentation')}
-                  delay={4500}
-                  isHideCursor
-                />
-                <TypingEffect text={t('textWork')} delay={9000} isHideCursor />
-                <TypingEffect
-                  text={t('textMyJob')}
-                  delay={16000}
-                  isHideCursor
-                />
+                <HomeAnimated />
               </div>
             </ParallaxLayer>
 

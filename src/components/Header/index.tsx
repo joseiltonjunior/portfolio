@@ -18,14 +18,13 @@ export function Header() {
       localStorage.setItem('i18nextLng', ptBR)
       i18next.changeLanguage(ptBR)
       setLang(ptBR)
-      window.location.reload()
+
       return
     }
 
     localStorage.setItem('i18nextLng', enUS)
     i18next.changeLanguage(enUS)
     setLang(enUS)
-    window.location.reload()
   }
 
   useEffect(() => {
