@@ -13,10 +13,11 @@ export const Input = styled.div<errorProps>`
   background-color: transparent;
   border-bottom: 1px solid
     ${(props) =>
-      props.isError ? props.theme.colors.Red_500 : props.theme.colors.Orange};
+      props.isError ? props.theme.colors.Red_500 : props.theme.colors.Dark_600};
 
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 
   svg {
     fill: ${(props) =>
@@ -27,7 +28,7 @@ export const Input = styled.div<errorProps>`
     width: 100%;
     background-color: transparent;
     border: none;
-    padding: 8px;
+    padding: 0.5rem 0;
     color: ${(props) => props.theme.colors.Light};
 
     :focus {

@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactLoading from 'react-loading'
 import { Container } from './styles'
-import theme from '~/styles/theme'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary'
@@ -20,7 +19,7 @@ export function Button({
         <ReactLoading
           className="loading"
           type="bars"
-          color={theme.colors.Orange}
+          color={'#ff8c00'}
           width={40}
           height={40}
         />

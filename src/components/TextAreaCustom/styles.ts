@@ -10,9 +10,6 @@ export const Container = styled.div`
 
 export const TextArea = styled.div<errorProps>`
   background-color: transparent;
-  border-bottom: 1px solid
-    ${(props) =>
-      props.isError ? props.theme.colors.Red_500 : props.theme.colors.Orange};
 
   display: flex;
   align-items: flex-start;
@@ -24,9 +21,11 @@ export const TextArea = styled.div<errorProps>`
   }
 
   textarea {
+    resize: none;
     width: 100%;
     background-color: transparent;
     border: none;
+    height: 8rem;
 
     color: ${(props) => props.theme.colors.Light};
 

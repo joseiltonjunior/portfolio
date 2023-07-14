@@ -1,33 +1,26 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  background-color: ${(props) => props.theme.colors.Dark_800};
-
   border-radius: 8px;
+  overflow: hidden;
 
   gap: 8px;
 
   form {
-    flex-direction: column;
-    display: flex;
-    gap: 1.2rem;
-    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+
+    height: 100%;
 
     @media (max-width: 900px) {
       margin-top: 1rem;
+      grid-template-columns: 1fr;
     }
   }
 
   strong {
-    font-size: 1.3rem;
+    font-size: 1;
     text-align: center;
-
-    @media (max-width: 900px) {
-      font-size: 1rem;
-    }
   }
 
   button {
@@ -35,12 +28,28 @@ export const Container = styled.div`
   }
 `
 
-export const FlexRowResponsive = styled.div`
+export const UserInfo = styled.div`
+  padding-right: 16px;
   display: flex;
-  gap: 8px;
+  flex-direction: column;
+
+  gap: 2rem;
+  border-right: 1px solid ${(props) => props.theme.colors.Dark_600};
+
+  @media (max-width: 900px) {
+    padding: 0;
+    border: none;
+  }
+`
+
+export const MessageInfo = styled.div`
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
   @media (max-width: 900px) {
-    flex-direction: column;
+    padding: 0;
+    margin-top: 2rem;
   }
 `

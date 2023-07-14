@@ -2,35 +2,6 @@ import styled from 'styled-components'
 import background from '~/assets/bkgd3.jpg'
 
 export const WebContent = styled.div`
-  background-color: 'blue';
-
-  .pressStart {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-
-    background-color: rgba(0, 0, 0, 0.5);
-    color: ${(props) => props.theme.colors.Orange};
-
-    border: 1px solid ${(props) => props.theme.colors.Orange};
-    border-radius: 6px;
-    padding: 0.5rem 1rem;
-
-    cursor: pointer;
-
-    font-weight: bold;
-    font-size: 1.5rem;
-
-    transition: all 0.2s;
-
-    :hover {
-      background-color: ${(props) => props.theme.colors.Orange};
-      border: 1px solid ${(props) => props.theme.colors.Orange};
-
-      color: ${(props) => props.theme.colors.Dark_700};
-    }
-  }
-
   .firstLayer {
     background-image: url(${background});
     background-size: contain;
@@ -106,7 +77,10 @@ export const MobileContent = styled.div`
   }
 `
 
-export const Container = styled.main``
+export const Container = styled.div`
+  /* background-color: red; */
+  /* width: 100%; */
+`
 
 export const Content = styled.div`
   display: flex;

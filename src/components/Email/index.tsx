@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { collection, addDoc } from 'firebase/firestore'
 import { firestore } from '~/services/firebase'
 import { useForm } from 'react-hook-form'
@@ -7,7 +7,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 import { FaUser, FaEnvelope, FaAt } from 'react-icons/fa'
 
-import { Container, FlexRowResponsive } from './styles'
+import { Container, UserInfo, MessageInfo } from './styles'
 import { useToast } from '~/hooks/useToast'
 import { InputCustom } from '../InputCustom'
 import { Button } from '../Button'
@@ -65,9 +65,8 @@ export function Email() {
 
   return (
     <Container>
-      <strong>Formulário</strong>
       <form onSubmit={handleSubmit(handleSendEmail)}>
-        <FlexRowResponsive>
+        <UserInfo>
           <InputCustom
             icon={FaUser}
             name="name"
@@ -82,17 +81,19 @@ export function Email() {
             register={register}
             error={errors.email}
           />
-        </FlexRowResponsive>
-        <TextAreaCustom
-          icon={FaEnvelope}
-          name="message"
-          placeholder="Digite sua mensagem"
-          register={register}
-          error={errors.message}
-        />
-        <Button isLoading={isLoading} type="submit">
-          Enviar
-        </Button>
+        </UserInfo>
+        <MessageInfo>
+          <TextAreaCustom
+            icon={FaEnvelope}
+            name="message"
+            placeholder="Digite sua mensagem"
+            register={register}
+            error={errors.message}
+          />
+          <Button isLoading={isLoading} type="submit">
+            Enviar
+          </Button>
+        </MessageInfo>
       </form>
     </Container>
   )
