@@ -12,6 +12,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.1.1",
     "@react-spring/parallax": "^9.7.2",
     "@react-spring/web": "^9.7.2",
     "axios": "^1.2.4",
@@ -19,13 +20,17 @@
     "i18next": "^22.0.8",
     "i18next-browser-languagedetector": "^7.0.1",
     "keen-slider": "^6.8.5",
+    "nodemailer": "^6.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.1",
     "react-i18next": "^12.0.0",
     "react-icons": "^4.7.1",
+    "react-loading": "^2.0.3",
     "react-loading-skeleton": "^3.1.1",
     "react-toastify": "^9.1.2",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -39,6 +44,7 @@
     "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.0.13",
     "@types/node": "^18.11.10",
+    "@types/nodemailer": "^6.4.8",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@types/styled-components": "^5.1.26",

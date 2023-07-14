@@ -9,12 +9,22 @@ export const Container = styled.button<ContainerProps>`
   border: 1px solid ${(props) => props.theme.colors.Orange};
   font-weight: 600;
   padding: 0.6rem;
-  height: 40px;
-  border-radius: 6px;
+  height: 50px;
+  border-radius: 8px;
   color: ${(props) => props.theme.colors.Orange};
   width: 100%;
   cursor: pointer;
   transition: all 0.3s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :hover {
+    svg {
+      fill: ${(props) => props.theme.colors.Light};
+    }
+  }
 
   ${(props) =>
     props.variant === 'secondary' &&
