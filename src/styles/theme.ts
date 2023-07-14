@@ -10,5 +10,6 @@ export default {
 
     Light: '#fff',
     Orange: '#ff8c00',
+    Red_500: '#ff3333',
   },
 }
