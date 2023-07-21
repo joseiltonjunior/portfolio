@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  color: ${(props) => props.theme.colors.Orange};
+  color: ${(props) => props.theme.colors.Primary};
   font-size: 3rem;
   font-weight: 800;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -23,7 +23,7 @@ export const CursorSpan = styled.span`
     position: absolute;
     width: 15px;
     height: 100%;
-    background-color: ${(props) => props.theme.colors.Orange};
+    background-color: ${(props) => props.theme.colors.Primary};
     opacity: 0.5;
     animation: cursorAnimation 1s infinite;
   }

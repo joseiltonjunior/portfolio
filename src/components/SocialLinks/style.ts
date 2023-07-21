@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Link = styled.a<linkProps>`
   background: ${(props) =>
-    props.restart ? props.theme.colors.Light : props.theme.colors.Orange};
+    props.restart ? props.theme.colors.Light : props.theme.colors.Primary};
   color: ${(props) => props.theme.colors.Dark_600};
 
   border-radius: 8px;
@@ -25,14 +25,14 @@ export const Link = styled.a<linkProps>`
 
   :hover {
     color: ${(props) =>
-      props.restart ? props.theme.colors.Orange : props.theme.colors.Dark_100};
+      props.restart ? props.theme.colors.Primary : props.theme.colors.Dark_100};
   }
 `
 
 export const Button = styled.button`
   background: transparent;
-  color: ${(props) => props.theme.colors.Orange};
-  border: 1px solid ${(props) => props.theme.colors.Orange};
+  color: ${(props) => props.theme.colors.Primary};
+  border: 1px solid ${(props) => props.theme.colors.Primary};
   border-radius: 8px;
   padding: 0.5rem;
 
@@ -43,7 +43,7 @@ export const Button = styled.button`
   transition: background 0.3s;
 
   :hover {
-    background: ${(props) => props.theme.colors.Orange};
+    background: ${(props) => props.theme.colors.Primary};
     color: ${(props) => props.theme.colors.Dark_800};
   }
 `

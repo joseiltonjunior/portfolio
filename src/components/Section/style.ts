@@ -29,7 +29,7 @@ export const ShowButton = styled.button`
   cursor: pointer;
 
   :hover {
-    color: ${(props) => props.theme.colors.Orange};
+    color: ${(props) => props.theme.colors.Primary};
   }
 `
 
@@ -49,7 +49,7 @@ export const Box = styled.div`
 
 export const Link = styled.a`
   text-decoration: none;
-  color: ${(props) => props.theme.colors.Orange};
+  color: ${(props) => props.theme.colors.Primary};
 
   :hover {
     text-decoration: underline;

@@ -9,5 +9,5 @@ export const Content = styled.div`
 `
 
 export const NoContent = styled.p`
-  color: ${(props) => props.theme.colors.Orange};
+  color: ${(props) => props.theme.colors.Primary};
 `

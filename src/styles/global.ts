@@ -4,7 +4,7 @@ import theme from './theme'
 export default createGlobalStyle`
 :focus{
   outline: transparent;
-  box-shadow: 0 0 0 1px ${theme.colors.Orange};
+  box-shadow: 0 0 0 1px ${theme.colors.Primary};
 }
 
 * {
@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: ${theme.colors.Orange};
+  background: ${theme.colors.Primary};
 }
 
 body,
@@ -45,5 +45,5 @@ button {
 
 export const Line = styled.div`
   margin: 1rem 0;
-  border-bottom: 1px solid ${theme.colors.Orange};
+  border-bottom: 1px solid ${theme.colors.Primary};
 `

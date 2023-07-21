@@ -8,7 +8,7 @@ export const Container = styled.div`
     width: 100%;
     height: 80px;
     line-height: 80px;
-    color: ${(props) => props.theme.colors.Orange};
+    color: ${(props) => props.theme.colors.Primary};
     font-size: 5rem;
     font-weight: 800;
     letter-spacing: -0.05em;
