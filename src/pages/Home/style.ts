@@ -18,7 +18,7 @@ export const WebContent = styled.div`
     }
 
     ::-webkit-scrollbar-thumb {
-      background: ${(props) => props.theme.colors.Orange};
+      background: ${(props) => props.theme.colors.Primary};
     }
   }
 

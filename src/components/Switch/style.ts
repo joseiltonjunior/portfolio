@@ -37,11 +37,11 @@ export const Switch = styled.label`
   height: 12px;
 
   ${Checkbox}:checked + ${Slider} {
-    background-color: ${(props) => props.theme.colors.Orange};
+    background-color: ${(props) => props.theme.colors.Primary};
   }
 
   ${Checkbox}:focus + ${Slider} {
-    box-shadow: 0 0 1px ${(props) => props.theme.colors.Orange};
+    box-shadow: 0 0 1px ${(props) => props.theme.colors.Primary};
   }
 
   ${Checkbox}:checked + ${Slider}:before {

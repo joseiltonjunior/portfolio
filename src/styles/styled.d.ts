@@ -14,6 +14,7 @@ declare module 'styled-components' {
       Light: string
       Orange: string
       Red_500: string
+      Primary: string
     }
   }
 }

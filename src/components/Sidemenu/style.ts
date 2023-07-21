@@ -35,7 +35,7 @@ export const PicProfile = styled.img`
   height: calc(3rem + 12px);
   border-radius: 8px;
   border: 4px solid ${(props) => props.theme.colors.Dark_900};
-  outline: 2px solid ${(props) => props.theme.colors.Orange};
+  outline: 2px solid ${(props) => props.theme.colors.Primary};
 `
 
 export const NameProfile = styled.p`
@@ -63,7 +63,7 @@ export const Footer = styled.div`
 `
 
 export const Link = styled.a`
-  background: ${(props) => props.theme.colors.Orange};
+  background: ${(props) => props.theme.colors.Primary};
   color: ${(props) => props.theme.colors.Dark_600};
 
   border-radius: 50%;

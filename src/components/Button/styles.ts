@@ -6,12 +6,12 @@ interface ContainerProps {
 
 export const Container = styled.button<ContainerProps>`
   background-color: transparent;
-  border: 1px solid ${(props) => props.theme.colors.Orange};
+  border: 1px solid ${(props) => props.theme.colors.Primary};
   font-weight: 600;
   padding: 0.6rem;
   height: 50px;
   border-radius: 8px;
-  color: ${(props) => props.theme.colors.Orange};
+  color: ${(props) => props.theme.colors.Primary};
   width: 100%;
   cursor: pointer;
   transition: all 0.3s;
@@ -46,7 +46,7 @@ export const Container = styled.button<ContainerProps>`
       : css`
           :hover {
             color: ${(props) => props.theme.colors.Dark_100};
-            background-color: ${(props) => props.theme.colors.Orange};
+            background-color: ${(props) => props.theme.colors.Primary};
           }
 
           ${props.variant === 'secondary' &&

@@ -25,7 +25,7 @@ export const Card = styled.button`
   transition: all 0.2s;
 
   :hover:not(:disabled) {
-    border: 1px solid ${(props) => props.theme.colors.Orange};
+    border: 1px solid ${(props) => props.theme.colors.Primary};
   }
 
   :disabled {
@@ -35,7 +35,7 @@ export const Card = styled.button`
 
 export const Title = styled.p`
   font-weight: 600;
-  color: ${(props) => props.theme.colors.Orange};
+  color: ${(props) => props.theme.colors.Primary};
   font-size: 1rem;
   text-align: left;
 `

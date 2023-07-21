@@ -27,7 +27,7 @@ export const Slide = styled.a`
 
 export const Title = styled.p`
   font-weight: 600;
-  color: ${(props) => props.theme.colors.Orange};
+  color: ${(props) => props.theme.colors.Primary};
   font-size: 1rem;
   text-align: left;
 `
@@ -55,5 +55,5 @@ export const Img = styled.img`
 `
 
 export const TechBox = styled.span`
-  background-color: ${(props) => props.theme.colors.Orange};
+  background-color: ${(props) => props.theme.colors.Primary};
 `

@@ -15,11 +15,11 @@ export function HomeAnimated() {
     },
     enter: [
       { opacity: 1, height: 80, innerHeight: 80 },
-      { transform: 'perspective(600px) rotateX(180deg)', color: '#ff8c00' },
+      { transform: 'perspective(600px) rotateX(180deg)', color: '#8128E7' },
       { transform: 'perspective(600px) rotateX(0deg)' },
     ],
     leave: [{ color: '#fff' }, { innerHeight: 0 }, { opacity: 0, height: 0 }],
-    update: { color: '#ff8c00' },
+    update: { color: '#8128E7' },
   })
 
   const reset = useCallback(() => {

@@ -24,9 +24,9 @@ export function ProjectsGithub() {
     const filter = repos.filter(
       (item) =>
         item.name === 'portfolio' ||
-        item.name === 'StarchatNode' ||
+        item.name === 'solar-plus' ||
         item.name === 'dcoffee-shop' ||
-        item.name === 'after-app' ||
+        item.name === 'guia-de-bolso' ||
         item.name === 'dcoffee-shop-api-node' ||
         item.name === 'i-love-football',
     )

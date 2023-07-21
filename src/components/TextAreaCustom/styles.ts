@@ -17,7 +17,7 @@ export const TextArea = styled.div<errorProps>`
 
   svg {
     fill: ${(props) =>
-      props.isError ? props.theme.colors.Red_500 : props.theme.colors.Orange};
+      props.isError ? props.theme.colors.Red_500 : props.theme.colors.Primary};
   }
 
   textarea {

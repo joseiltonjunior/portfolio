@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   background: linear-gradient(
     30deg,
-    ${(props) => props.theme.colors.Orange},
+    ${(props) => props.theme.colors.Primary},
     ${(props) => props.theme.colors.Dark_800}
   );
 

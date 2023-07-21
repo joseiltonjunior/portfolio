@@ -12,7 +12,7 @@ export const Skill = styled.img`
   height: 3rem;
 `
 export const Title = styled.div`
-  color: ${(props) => props.theme.colors.Orange};
+  color: ${(props) => props.theme.colors.Primary};
   background-color: ${(props) => props.theme.colors.Dark_900};
   text-align: center;
   padding: 0.5rem 0;
