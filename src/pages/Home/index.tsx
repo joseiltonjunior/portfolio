@@ -14,7 +14,6 @@ import { SocialLinks } from '~/components/SocialLinks'
 
 import { Container, WebContent, MobileContent, Content } from './style'
 import { HomeAnimated } from '~/components/HomeAnimated'
-import { Email } from '~/components/Email'
 
 export function Home() {
   const { t } = useTranslation()
@@ -51,15 +50,11 @@ export function Home() {
             <Section title={t('video')}>
               <Videos />
             </Section>
-
-            <Section title="Contate-me">
-              <Email />
-            </Section>
           </Content>
         </MobileContent>
 
         <WebContent>
-          <Parallax pages={10} className="content-parallax" id="parallax">
+          <Parallax pages={9} className="content-parallax" id="parallax">
             <ParallaxLayer
               className="firstLayer"
               offset={0}
@@ -78,7 +73,7 @@ export function Home() {
             </ParallaxLayer>
 
             <ParallaxLayer
-              sticky={{ start: 1, end: 8 }}
+              sticky={{ start: 1, end: 7 }}
               style={{ ...alignCenter, justifyContent: 'flex-start' }}
             >
               <div className={`${'card'} ${'sticky'}`}>
@@ -153,19 +148,7 @@ export function Home() {
             </ParallaxLayer>
 
             <ParallaxLayer
-              sticky={{ start: 8, end: 8 }}
-              speed={1.5}
-              style={{ ...alignCenter, justifyContent: 'flex-end' }}
-            >
-              <div className={`${'card'} ${'parallax'}`}>
-                <Section title="Contate-me">
-                  <Email />
-                </Section>
-              </div>
-            </ParallaxLayer>
-
-            <ParallaxLayer
-              offset={9}
+              offset={8}
               speed={1.5}
               style={{
                 display: 'flex',
