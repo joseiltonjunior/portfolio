@@ -10,6 +10,16 @@ export const Container = styled.div`
 export const Skill = styled.img`
   width: 3rem;
   height: 3rem;
+
+  object-fit: fill;
+  transform: none;
+  transition: transform 300ms;
+
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `
 export const Title = styled.div`
   color: ${(props) => props.theme.colors.Primary};

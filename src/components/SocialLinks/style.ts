@@ -23,7 +23,12 @@ export const Link = styled.a<linkProps>`
 
   transition: color 0.3s;
 
+  object-fit: fill;
+  transform: none;
+  transition: transform 300ms;
+
   :hover {
+    transform: scale(1.2);
     color: ${(props) =>
       props.restart ? props.theme.colors.Primary : props.theme.colors.Dark_100};
   }
@@ -42,7 +47,14 @@ export const Button = styled.button`
 
   transition: background 0.3s;
 
+  object-fit: fill;
+  transform: none;
+  transition: transform 300ms;
+
+  cursor: pointer;
+
   :hover {
+    transform: scale(1.2);
     background: ${(props) => props.theme.colors.Primary};
     color: ${(props) => props.theme.colors.Dark_800};
   }

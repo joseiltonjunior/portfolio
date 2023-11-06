@@ -21,15 +21,16 @@ export function ProjectsGithub() {
   const { showToast } = useToast()
 
   const filterRepos = useCallback((repos: RepositoriesProps[]) => {
-    const filter = repos.filter(
-      (item) =>
-        item.name === 'portfolio' ||
-        item.name === 'solar-plus' ||
-        item.name === 'dcoffee-shop' ||
-        item.name === 'guia-de-bolso' ||
-        item.name === 'dcoffee-shop-api-node' ||
-        item.name === 'i-love-football',
-    )
+    const onlyProjects = [
+      'portfolio',
+      'solar-plus',
+      'street-shop',
+      'sonoriza',
+      'solid-api-node',
+      'goafter',
+    ]
+
+    const filter = repos.filter((item) => onlyProjects.includes(item.name))
 
     setRepos(filter)
   }, [])
