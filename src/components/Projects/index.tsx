@@ -4,7 +4,7 @@ import { useKeenSlider } from 'keen-slider/react'
 
 import { Slide, Container, Description, Title, Img, ContentInfo } from './style'
 import { useCallback, useEffect, useState } from 'react'
-import { DotCorousel } from '../DotCarousel'
+
 import { Tag } from '../Tag'
 import Skeleton from 'react-loading-skeleton'
 import { collection, getDocs, query } from 'firebase/firestore'
@@ -12,7 +12,6 @@ import { firestore } from '~/services/firebase'
 import { useToast } from '~/hooks/useToast'
 
 export function Projects() {
-  const [index, setIndex] = useState(0)
   const [projects, setProjects] = useState<ProjectProps[]>()
   const { showToast } = useToast()
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -21,9 +20,6 @@ export function Projects() {
       spacing: 48,
     },
     loop: true,
-    slideChanged(slider) {
-      setIndex(slider.track.details.rel)
-    },
   })
 
   const handleProjectsPortfolio = useCallback(() => {
@@ -51,6 +47,16 @@ export function Projects() {
         })
       })
   }, [showToast])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      instanceRef.current?.next()
+    }, 5000)
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [instanceRef])
 
   useEffect(() => {
     handleProjectsPortfolio()
@@ -96,13 +102,6 @@ export function Projects() {
             </Slide>
           ))}
       </Container>
-      {projects.length > 1 && (
-        <DotCorousel
-          currentSlide={index}
-          items={projects}
-          instanceRef={instanceRef}
-        />
-      )}
     </>
   )
 }
