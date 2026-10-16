@@ -1,0 +1,7 @@
+[build]
+  # Run Yarn through npx so the build works even when Yarn isn't preinstalled
+  command = "npx --yes yarn@1.22.22 install && npx --yes yarn@1.22.22 build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
