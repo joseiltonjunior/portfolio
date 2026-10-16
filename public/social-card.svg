@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Junior Ferreira | Engenharia de software</title>
+  <desc>Da ideia ao produto: sistemas sob medida, aplicações web e mobile e integrações para pequenas empresas.</desc>
+  <rect width="1200" height="630" fill="#FAFAFB" />
+  <rect x="24" y="24" width="1152" height="582" rx="24" fill="#F3F1F8" stroke="#E4E2EA" />
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="72" y="72" width="8" height="72" rx="4" fill="#8128E7" />
+    <text x="100" y="103" font-size="36" font-weight="700" fill="#16131F">Junior Ferreira</text>
+    <text x="100" y="137" font-size="22" fill="#5B576B">Engenharia de software</text>
+    <text x="72" y="294" font-size="80" font-weight="700" letter-spacing="-3" fill="#16131F">Da ideia <tspan fill="#8128E7">ao produto.</tspan></text>
+    <text x="76" y="362" font-size="28" fill="#5B576B">Sistemas sob medida, aplicações web e mobile</text>
+    <text x="76" y="402" font-size="28" fill="#5B576B">e integrações para pequenas empresas.</text>
+    <path d="M76 472H1124" stroke="#D9D4E5" />
+    <text x="76" y="532" font-size="18" letter-spacing="2" fill="#5B576B">INTERFACE · API · BANCO DE DADOS · PUBLICAÇÃO</text>
+    <rect x="1076" y="502" width="48" height="48" rx="12" fill="#8128E7" />
+    <path d="M1090 536L1110 516M1092 516H1110V534" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

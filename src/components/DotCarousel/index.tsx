@@ -23,7 +23,7 @@ export function DotCorousel({
     <Container>
       <Button
         orientation="prev"
-        onClick={(e) => {
+        onClick={() => {
           instanceRef.current?.prev()
         }}
       >
@@ -36,7 +36,7 @@ export function DotCorousel({
       </div>
       <Button
         orientation="next"
-        onClick={(e) => {
+        onClick={() => {
           instanceRef.current?.next()
         }}
       >
